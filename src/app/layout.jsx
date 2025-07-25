@@ -5,18 +5,18 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "CloudFlow - Modern SaaS Platform",
-  description:
-    "Streamline your workflow with our powerful SaaS platform. Built for modern teams.",
+    title: "SmartNode Solutions - Automation for Small Businesses",
+    description:
+        "Streamline your workflow with our powerful AI Automation Solutions. Built for modern teams.",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
-        {children}
-        <Toaster />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" className="scroll-smooth">
+            <body className={inter.className}>
+                {children}
+                <Toaster />
+            </body>
+        </html>
+    );
 }

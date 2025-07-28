@@ -50,7 +50,7 @@ const plans = [
         buttonVariant: "default",
     },
     {
-        name: "Ongoing Optimization & Support",
+        name: "Optimization & Support",
         // price: "Retainer",
         period: "Monthly",
         description:
@@ -69,10 +69,10 @@ const plans = [
     },
 ];
 
-const Pricing = () => {
+const Plans = () => {
     return (
         <section
-            id="pricing"
+            id="plans"
             className="py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50"
         >
             <div className="container mx-auto px-4">
@@ -91,7 +91,7 @@ const Pricing = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {plans.map((plan, index) => (
                         <Card
                             key={index}
@@ -181,4 +181,4 @@ const Pricing = () => {
     );
 };
 
-export default Pricing;
+export default Plans;

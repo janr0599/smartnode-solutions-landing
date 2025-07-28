@@ -83,7 +83,7 @@ const Testimonials = () => {
                     {testimonials.map((testimonial, index) => (
                         <Card
                             key={index}
-                            className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white border-0 shadow-lg"
+                            className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white border-0 shadow-lg"
                         >
                             <CardContent className="p-6">
                                 <div className="flex items-center mb-4">

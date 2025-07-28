@@ -17,8 +17,13 @@ import {
     Smartphone,
     Clock,
     Settings,
-} from "lucide-react";
+    Play, // Icon for starting a process
+    Settings2, // Icon for customization/processing
+    Check, // Icon for completion/output
+} from "lucide-react"; // Make sure to import new icons
+import React from "react";
 
+// Define features with specific grid span properties for different breakpoints
 const features = [
     {
         icon: Zap,
@@ -26,6 +31,16 @@ const features = [
         description:
             "Custom-built AI workflows using low-code, no-code, or full code to fit your unique business needs.",
         color: "text-yellow-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-2",
+            lg: "lg:col-span-2",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-2",
+            lg: "lg:row-span-4",
+        },
     },
     {
         icon: Users,
@@ -33,6 +48,16 @@ const features = [
         description:
             "Empower your team by automating tedious tasks, freeing them to focus on high-value work.",
         color: "text-blue-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
     },
     {
         icon: Shield,
@@ -40,6 +65,16 @@ const features = [
         description:
             "Reduce operational costs and save countless hours through efficient, automated processes.",
         color: "text-green-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
     },
     {
         icon: BarChart,
@@ -47,6 +82,16 @@ const features = [
         description:
             "Implement AI for lead nurturing, campaign management, and personalized customer interactions.",
         color: "text-purple-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
     },
     {
         icon: Globe,
@@ -54,6 +99,16 @@ const features = [
         description:
             "Automate client onboarding, data entry, and internal workflows for smoother operations.",
         color: "text-cyan-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
     },
     {
         icon: Smartphone,
@@ -61,6 +116,16 @@ const features = [
         description:
             "Our solutions are designed to grow with your business, adapting to evolving demands.",
         color: "text-pink-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
     },
     {
         icon: Clock,
@@ -68,6 +133,16 @@ const features = [
         description:
             "Gain clarity and control over your processes with systems that work for you, not against you.",
         color: "text-orange-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-2",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
     },
     {
         icon: Settings,
@@ -75,6 +150,16 @@ const features = [
         description:
             "We ensure your new AI solutions integrate smoothly with your existing tools and platforms.",
         color: "text-indigo-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-2",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
     },
 ];
 
@@ -96,33 +181,99 @@ const Features = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Bento Grid Layout - adjusted for three distinct layouts */}
+                <div
+                    className="mx-auto grid max-w-5xl gap-4
+                                grid-cols-1
+                                md:grid-cols-2
+                                lg:grid-cols-4
+                                grid-rows-[repeat(8,_minmax(150px,_1fr))]
+                                md:grid-rows-[repeat(auto-fill,_minmax(150px,_1fr))]
+                                lg:grid-rows-6
+                                auto-rows-fr"
+                >
                     {features.map((feature, index) => (
                         <Card
                             key={index}
-                            className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-white/80 backdrop-blur-sm"
+                            className={`hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm
+                                        ${feature.colSpan.base} ${feature.colSpan.md} ${feature.colSpan.lg}
+                                        ${feature.rowSpan.base} ${feature.rowSpan.md} ${feature.rowSpan.lg}
+                                        flex flex-col justify-between`}
                         >
-                            <CardHeader className="pb-3">
+                            <CardHeader className="pb-1">
                                 <div
-                                    className={`w-12 h-12 rounded-xl bg-gradient-to-r from-gray-50 to-gray-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                                    className={`w-6 h-6 rounded-xl bg-gradient-to-r from-gray-50 to-gray-100 flex items-center justify-center mb-4`}
                                 >
-                                    <feature.icon
-                                        className={`w-6 h-6 ${feature.color}`}
-                                    />
+                                    {React.createElement(feature.icon, {
+                                        className: `w-6 h-6 ${feature.color}`,
+                                    })}
                                 </div>
                                 <CardTitle className="text-xl font-semibold text-gray-900">
                                     {feature.title}
                                 </CardTitle>
                             </CardHeader>
-                            <CardContent>
+                            <CardContent className="flex-grow flex flex-col justify-between">
                                 <CardDescription className="text-gray-600 leading-relaxed">
                                     {feature.description}
                                 </CardDescription>
+
+                                {/* Infographic-like element for Tailored AI Automation */}
+                                {index === 0 && (
+                                    <div className="hidden md:flex md:flex-grow md:items-center md:justify-center px-4 pt-4">
+                                        {" "}
+                                        {/* Added padding and changed to flex for centering */}
+                                        <div className="relative w-full max-w-sm">
+                                            {" "}
+                                            {/* Increased max-width slightly */}
+                                            <div className="bg-white rounded-2xl shadow-xl p-6 relative z-10 border border-gray-100 overflow-hidden">
+                                                <h4 className="text-md font-semibold text-gray-800 text-center mb-6">
+                                                    Your Automated Workflow
+                                                </h4>
+                                                <div className="flex flex-col items-center justify-center space-y-4 ">
+                                                    {/* Node 1: Input/Discovery */}
+                                                    <div className="flex items-center space-x-3 bg-blue-50 text-blue-800 p-3 rounded-xl shadow-sm w-full max-w-[180px] justify-center text-sm font-medium">
+                                                        <Play className="w-4 h-4" />
+                                                        <span>
+                                                            Input & Data
+                                                        </span>
+                                                    </div>
+
+                                                    {/* Connector 1 */}
+                                                    <div className="w-0.5 h-6 bg-blue-300 relative">
+                                                        <div className="absolute left-1/2 -ml-1.5 -bottom-0.5 w-3 h-3 bg-blue-300 rotate-45 transform" />
+                                                    </div>
+
+                                                    {/* Node 2: Tailored AI Processing */}
+                                                    <div className="flex items-center space-x-3 bg-purple-50 text-purple-800 p-3 rounded-xl shadow-sm w-full max-w-[220px] justify-center text-sm font-medium">
+                                                        <Settings2 className="w-4 h-4" />
+                                                        <span>
+                                                            Custom AI Logic
+                                                        </span>
+                                                    </div>
+
+                                                    {/* Connector 2 */}
+                                                    <div className="w-0.5 h-6 bg-purple-300 relative">
+                                                        <div className="absolute left-1/2 -ml-1.5 -bottom-0.5 w-3 h-3 bg-purple-300 rotate-45 transform" />
+                                                    </div>
+
+                                                    {/* Node 3: Automated Output */}
+                                                    <div className="flex items-center space-x-3 bg-green-50 text-green-800 p-3 rounded-xl shadow-sm w-full max-w-[180px] justify-center text-sm font-medium">
+                                                        <Check className="w-4 h-4" />
+                                                        <span>
+                                                            Automated Output
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
                             </CardContent>
                         </Card>
                     ))}
                 </div>
 
+                {/* The "Future of Your Small Business" section with statistics (remains unchanged) */}
                 <div className="mt-20 bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 lg:p-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>

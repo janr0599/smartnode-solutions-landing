@@ -1,3 +1,4 @@
+// src/components/Hero.jsx
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -9,21 +10,14 @@ const Hero = () => {
     return (
         <section className="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-blue-50">
             <div className="absolute inset-0 z-0 hidden md:block">
-                <BackgroundBeams
-                    className="pointer-events-none"
-                    color="#000000"
-                    intensity={0.5}
-                    speed={0.5}
-                    rotation={Math.PI / 4}
-                    scale={1.2}
-                />
+                <BackgroundBeams />
             </div>
 
             <div className="container mx-auto px-4 relative z-10 pointer-events-none">
                 <div className="text-center max-w-4xl mx-auto">
                     <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-sm font-medium mb-8">
                         <TrendingUp className="w-4 h-4 mr-2" />
-                        Join 50,000+ teams already using SmartNode Solutions
+                        Empowering Small Businesses with AI Automation
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -34,36 +28,36 @@ const Hero = () => {
                     </h1>
 
                     <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Transform your team&apos;s productivity with our
-                        AI-powered SaaS platform. Automate tasks, collaborate
-                        seamlessly, and scale your business effortlessly.
+                        Tailored AI-powered workflows for small businesses.
                     </p>
 
                     <div className="justify-center items-center mb-12">
                         <Link href="/contact">
                             {/* *** KEY CHANGE: Add 'pointer-events-auto' to interactive elements *** */}
+
                             <Button
                                 size="lg"
                                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 h-auto text-lg font-semibold group pointer-events-auto"
                             >
-                                Get in touch
+                                Free Consultation
                                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
                     </div>
 
+                    {/* This section still uses "SmartNode Solutions" references. You might want to update these if your agency has a different name or to reflect the AI agency's focus. */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-700">
                         <div className="flex items-center">
                             <Users className="w-5 h-5 mr-2 text-blue-600" />
-                            <span>50,000+ users</span>
+                            <span>Customized for diverse use cases</span>
                         </div>
                         <div className="flex items-center">
                             <Shield className="w-5 h-5 mr-2 text-green-600" />
-                            <span>SOC 2 compliant</span>
+                            <span>Secure & Reliable Implementations</span>
                         </div>
                         <div className="flex items-center">
                             <TrendingUp className="w-5 h-5 mr-2 text-purple-600" />
-                            <span>99.9% uptime</span>
+                            <span>Proven ROI & Efficiency Gains</span>
                         </div>
                     </div>
                 </div>
@@ -79,10 +73,11 @@ const Hero = () => {
                                         <div className="w-6 h-6 bg-blue-500 rounded" />
                                     </div>
                                     <h3 className="text-white font-semibold mb-2">
-                                        Dashboard
+                                        Sales Automation
                                     </h3>
                                     <p className="text-gray-400 text-sm">
-                                        Real-time analytics and insights
+                                        Automate lead qualification, CRM
+                                        updates, and follow-ups.
                                     </p>
                                 </div>
                                 <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
@@ -90,10 +85,11 @@ const Hero = () => {
                                         <div className="w-6 h-6 bg-purple-500 rounded-full" />
                                     </div>
                                     <h3 className="text-white font-semibold mb-2">
-                                        Automation
+                                        Marketing Efficiency
                                     </h3>
                                     <p className="text-gray-400 text-sm">
-                                        Smart workflow automation
+                                        Streamline campaigns, content
+                                        scheduling, and analytics.
                                     </p>
                                 </div>
                                 <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
@@ -101,10 +97,11 @@ const Hero = () => {
                                         <div className="w-6 h-6 bg-green-500 rounded-lg" />
                                     </div>
                                     <h3 className="text-white font-semibold mb-2">
-                                        Collaboration
+                                        Workflow Streamlining
                                     </h3>
                                     <p className="text-gray-400 text-sm">
-                                        Team communication tools
+                                        Automate repetitive tasks and integrate
+                                        disparate systems.
                                     </p>
                                 </div>
                             </div>

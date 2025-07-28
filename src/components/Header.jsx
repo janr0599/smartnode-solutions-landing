@@ -57,7 +57,7 @@ const Header = () => {
                     <div className="hidden md:flex items-center space-x-4">
                         <Link href="/contact">
                             <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
-                                Get Started
+                                Get in touch
                             </Button>
                         </Link>
                     </div>
@@ -110,7 +110,7 @@ const Header = () => {
                             <div className="flex flex-col space-y-2 pt-4">
                                 <Link href="/contact">
                                     <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
-                                        Get Started
+                                        Get in touch
                                     </Button>
                                 </Link>
                             </div>

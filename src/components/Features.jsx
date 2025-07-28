@@ -1,3 +1,4 @@
+// src/components/Features.jsx
 "use client";
 
 import {
@@ -21,56 +22,58 @@ import {
 const features = [
     {
         icon: Zap,
-        title: "Lightning Fast",
+        title: "Tailored AI Automation",
         description:
-            "Built for speed with optimized performance and instant loading times.",
+            "Custom-built AI workflows using low-code, no-code, or full code to fit your unique business needs.",
         color: "text-yellow-500",
     },
     {
         icon: Users,
-        title: "Team Collaboration",
+        title: "Boost Productivity",
         description:
-            "Real-time collaboration tools that keep your team in sync.",
+            "Empower your team by automating tedious tasks, freeing them to focus on high-value work.",
         color: "text-blue-500",
     },
     {
         icon: Shield,
-        title: "Enterprise Security",
+        title: "Cost & Time Savings",
         description:
-            "Bank-level security with end-to-end encryption and compliance.",
+            "Reduce operational costs and save countless hours through efficient, automated processes.",
         color: "text-green-500",
     },
     {
         icon: BarChart,
-        title: "Advanced Analytics",
+        title: "Enhanced Sales & Marketing",
         description:
-            "Deep insights with customizable dashboards and reporting.",
+            "Implement AI for lead nurturing, campaign management, and personalized customer interactions.",
         color: "text-purple-500",
     },
     {
         icon: Globe,
-        title: "Global Scale",
-        description: "Scale worldwide with multi-region deployment and CDN.",
+        title: "Streamlined Intake & Ops",
+        description:
+            "Automate client onboarding, data entry, and internal workflows for smoother operations.",
         color: "text-cyan-500",
     },
     {
         icon: Smartphone,
-        title: "Mobile Ready",
+        title: "Scalable Solutions",
         description:
-            "Fully responsive design that works perfectly on all devices.",
+            "Our solutions are designed to grow with your business, adapting to evolving demands.",
         color: "text-pink-500",
     },
     {
         icon: Clock,
-        title: "24/7 Support",
-        description: "Round-the-clock customer support from our expert team.",
+        title: "Less Hassle, More Control",
+        description:
+            "Gain clarity and control over your processes with systems that work for you, not against you.",
         color: "text-orange-500",
     },
     {
         icon: Settings,
-        title: "Easy Integration",
+        title: "Seamless Integration",
         description:
-            "Connect with 1000+ apps and services via our powerful API.",
+            "We ensure your new AI solutions integrate smoothly with your existing tools and platforms.",
         color: "text-indigo-500",
     },
 ];
@@ -81,15 +84,15 @@ const Features = () => {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        Everything You Need to{" "}
+                        Solutions Crafted to Transform{" "}
                         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                            Succeed
+                            Your Business
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 leading-relaxed">
-                        Our comprehensive platform provides all the tools and
-                        features you need to streamline your workflow and boost
-                        productivity.
+                        We provide comprehensive AI automation services that
+                        tackle your unique business challenges, delivering
+                        tangible improvements across all departments.
                     </p>
                 </div>
 
@@ -124,14 +127,14 @@ const Features = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                                Built for Modern Teams
+                                The Future of Your Small Business
                             </h3>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                SmartNode Solutions is designed from the ground
-                                up to support the way modern teams work. With
-                                powerful automation, seamless collaboration, and
-                                intelligent insights, we help you focus on what
-                                matters most.
+                                Our AI agency focuses on delivering practical,
+                                impactful automation. We help small businesses
+                                navigate the complexities of AI to implement
+                                solutions that drive real growth and operational
+                                excellence.
                             </p>
                             <div className="space-y-4">
                                 <div className="flex items-center">
@@ -139,7 +142,8 @@ const Features = () => {
                                         <div className="w-2 h-2 bg-white rounded-full" />
                                     </div>
                                     <span className="text-gray-700">
-                                        Automated workflow management
+                                        Custom workflows for sales, marketing &
+                                        operations
                                     </span>
                                 </div>
                                 <div className="flex items-center">
@@ -147,7 +151,8 @@ const Features = () => {
                                         <div className="w-2 h-2 bg-white rounded-full" />
                                     </div>
                                     <span className="text-gray-700">
-                                        Real-time collaboration tools
+                                        Expert guidance on low-code, no-code,
+                                        and custom code
                                     </span>
                                 </div>
                                 <div className="flex items-center">
@@ -155,7 +160,8 @@ const Features = () => {
                                         <div className="w-2 h-2 bg-white rounded-full" />
                                     </div>
                                     <span className="text-gray-700">
-                                        Advanced analytics and reporting
+                                        Measurable improvements in time, money,
+                                        and productivity
                                     </span>
                                 </div>
                             </div>
@@ -165,7 +171,7 @@ const Features = () => {
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between">
                                         <span className="text-sm font-medium text-gray-500">
-                                            Today&apos;s Progress
+                                            Productivity Boost
                                         </span>
                                         <span className="text-2xl font-bold text-green-500">
                                             94%
@@ -180,7 +186,7 @@ const Features = () => {
                                                 47
                                             </div>
                                             <div className="text-sm text-gray-500">
-                                                Tasks Done
+                                                Hours Saved
                                             </div>
                                         </div>
                                         <div className="text-center">
@@ -188,7 +194,7 @@ const Features = () => {
                                                 23
                                             </div>
                                             <div className="text-sm text-gray-500">
-                                                In Progress
+                                                Processes Automated
                                             </div>
                                         </div>
                                         <div className="text-center">
@@ -196,7 +202,7 @@ const Features = () => {
                                                 8
                                             </div>
                                             <div className="text-sm text-gray-500">
-                                                Pending
+                                                New Clients
                                             </div>
                                         </div>
                                     </div>

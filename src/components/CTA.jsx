@@ -19,9 +19,10 @@ const CTA = () => {
                         Ready to Transform Your Workflow?
                     </h2>
                     <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Join thousands of teams who have already revolutionized
-                        their productivity with SmartNode Solutions. Start your
-                        free trial today.
+                        Discover how tailored AI automation and workflow
+                        solutions can save you time, cut costs, and boost
+                        productivity. Let's build the future of your small
+                        business, together.
                     </p>
 
                     <div className="justify-center items-center mb-12">
@@ -30,7 +31,7 @@ const CTA = () => {
                                 size="lg"
                                 className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold group shadow-xl"
                             >
-                                Schedule Free Consultation
+                                Schedule Your Free Consultation
                                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
@@ -42,10 +43,10 @@ const CTA = () => {
                                 <Users className="w-8 h-8 text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-white mb-2">
-                                50,000+ Users
+                                For Small Businesses
                             </h3>
                             <p className="text-blue-100">
-                                Trusted by growing teams worldwide
+                                Solutions designed for your growth
                             </p>
                         </div>
                         <div className="flex flex-col items-center text-center">
@@ -53,10 +54,10 @@ const CTA = () => {
                                 <Shield className="w-8 h-8 text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-white mb-2">
-                                Enterprise Security
+                                Secure & Reliable
                             </h3>
                             <p className="text-blue-100">
-                                SOC 2 compliant with bank-level security
+                                Robust implementations you can trust
                             </p>
                         </div>
                         <div className="flex flex-col items-center text-center">
@@ -64,18 +65,18 @@ const CTA = () => {
                                 <Zap className="w-8 h-8 text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-white mb-2">
-                                99.9% Uptime
+                                Drive Efficiency
                             </h3>
                             <p className="text-blue-100">
-                                Reliable performance you can count on
+                                Automate for maximum impact
                             </p>
                         </div>
                     </div>
 
+                    {/* Removed the "No credit card required" line as it implies a product trial, not a service consultation. */}
                     <div className="mt-12 text-center">
                         <p className="text-blue-100 text-sm">
-                            No credit card required • 14-day free trial • Cancel
-                            anytime
+                            Your custom AI journey starts here.
                         </p>
                     </div>
                 </div>

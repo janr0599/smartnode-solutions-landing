@@ -22,9 +22,10 @@ const Footer = () => {
                             </span>
                         </Link>
                         <p className="text-gray-400 mb-6 max-w-md">
-                            Streamline your workflow with our powerful SaaS
-                            platform. Built for modern teams who want to achieve
-                            more.
+                            Transform your operations with our tailored AI
+                            automation solutions. We empower small businesses to
+                            achieve more by designing workflows that truly fit
+                            their unique needs.
                         </p>
                         <div className="flex space-x-4">
                             <Link

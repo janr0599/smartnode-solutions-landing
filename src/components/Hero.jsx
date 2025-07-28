@@ -28,7 +28,9 @@ const Hero = () => {
                     </h1>
 
                     <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Tailored AI-powered workflows for small businesses.
+                        Tailored AI-powered workflows for small businesses. Save
+                        time, cut costs, reduce hassle, and achieve greater
+                        productivity.
                     </p>
 
                     <div className="justify-center items-center mb-12">

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Zap, Twitter, Github, Linkedin, Mail } from "lucide-react";
+import { Workflow } from "lucide-react";
+import { FiInstagram, FiFacebook, FiLinkedin, FiMail } from "react-icons/fi";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -14,7 +15,7 @@ const Footer = () => {
                             className="flex items-center space-x-2 mb-4"
                         >
                             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                                <Zap className="w-5 h-5 text-white" />
+                                <Workflow className="w-5 h-5 text-white" />
                             </div>
                             <span className="text-xl font-bold">
                                 SmartNode Solutions
@@ -30,25 +31,25 @@ const Footer = () => {
                                 href="#"
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
-                                <Twitter className="w-5 h-5" />
+                                <FiInstagram className="w-5 h-5" />
                             </Link>
                             <Link
                                 href="#"
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
-                                <Github className="w-5 h-5" />
+                                <FiFacebook className="w-5 h-5" />
                             </Link>
                             <Link
                                 href="#"
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
-                                <Linkedin className="w-5 h-5" />
+                                <FiLinkedin className="w-5 h-5" />
                             </Link>
                             <Link
-                                href="#"
+                                href="mailto:smartnode.solutions"
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
-                                <Mail className="w-5 h-5" />
+                                <FiMail className="w-5 h-5" />
                             </Link>
                         </div>
                     </div>
@@ -74,26 +75,10 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    href="/integrations"
+                                    href="/case-studies"
                                     className="text-gray-400 hover:text-white transition-colors"
                                 >
-                                    Integrations
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/api"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    API
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/changelog"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Changelog
+                                    Case Studies
                                 </Link>
                             </li>
                         </ul>
@@ -120,26 +105,10 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    href="/careers"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Careers
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
                                     href="/contact"
                                     className="text-gray-400 hover:text-white transition-colors"
                                 >
                                     Contact
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/press"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Press
                                 </Link>
                             </li>
                         </ul>

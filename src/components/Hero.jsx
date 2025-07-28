@@ -3,14 +3,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Users, TrendingUp, Shield } from "lucide-react";
 import Link from "next/link";
-// import Squares from "@/components/ui/Squares";
-// import Silk from "@/components/ui/Silk";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const Hero = () => {
     return (
         <section className="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-blue-50">
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 hidden md:block">
                 <BackgroundBeams
                     className="pointer-events-none"
                     color="#000000"

@@ -6,57 +6,57 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
     {
-        name: "Sarah Johnson",
-        role: "VP of Operations",
-        company: "TechCorp",
-        avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100",
+        name: "Maria Sanchez",
+        role: "Owner",
+        company: "Local Bake Shop",
+        avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100", // Placeholder, ideally specific to small business owners
         content:
-            "SmartNode Solutions has revolutionized how our team collaborates. The automation features alone have saved us 20+ hours per week.",
+            "Our administrative tasks used to take hours. This AI solution handles everything seamlessly, freeing us to focus on our craft. Truly a game-changer for our small business!",
         rating: 5,
     },
     {
-        name: "Michael Chen",
-        role: "Founder & CEO",
-        company: "StartupXYZ",
-        avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100",
+        name: "John Miller",
+        role: "CEO",
+        company: "E-commerce Boutique",
+        avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100", // Placeholder
         content:
-            "The analytics dashboard gives us insights we never had before. It's like having a crystal ball for our business.",
+            "The custom workflow automation implemented by the agency has drastically improved our order processing and customer service. It's like having an extra team member.",
         rating: 5,
     },
     {
-        name: "Emily Rodriguez",
-        role: "Project Manager",
-        company: "Digital Agency",
-        avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100",
+        name: "Aisha Khan",
+        role: "Clinic Manager",
+        company: "Family Health Clinic",
+        avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100", // Placeholder
         content:
-            "Switching to SmartNode Solutions was the best decision we made this year. Our productivity has increased by 40%.",
+            "We needed a specific solution for patient scheduling and reminders. This agency delivered a perfect, tailored AI system that fits our clinic's unique needs.",
         rating: 5,
     },
     {
-        name: "David Thompson",
-        role: "CTO",
-        company: "InnovateLabs",
-        avatar: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100",
+        name: "Roberto Gomez",
+        role: "Operations Director",
+        company: "Logistics Innovators",
+        avatar: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100", // Placeholder
         content:
-            "The security features and compliance tools give us peace of mind. Perfect for our enterprise needs.",
+            "Their expertise in AI for logistics is unmatched. The custom solution they built streamlined our inventory management and reduced errors significantly.",
         rating: 5,
     },
     {
-        name: "Lisa Wang",
-        role: "Marketing Director",
-        company: "GrowthCo",
-        avatar: "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=100",
+        name: "Sophia Lee",
+        role: "Marketing Lead",
+        company: "Creative Digital Studio",
+        avatar: "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=100", // Placeholder
         content:
-            "SmartNode Solutions's integration capabilities are outstanding. We connected all our tools in just one afternoon.",
+            "We thought AI was only for big corporations, but this agency showed us how accessible and powerful it is for small businesses. Our marketing campaigns are now smarter and more efficient.",
         rating: 5,
     },
     {
-        name: "James Wilson",
-        role: "Operations Lead",
-        company: "ScaleUp Inc",
-        avatar: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=100",
+        name: "Kevin Wong",
+        role: "Restaurant Owner",
+        company: "Gourmet Bistro",
+        avatar: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=100", // Placeholder
         content:
-            "The customer support is exceptional. They helped us migrate our entire workflow seamlessly.",
+            "The personalized approach to automation made all the difference. They truly understood our pain points and delivered a solution that has transformed our daily operations.",
         rating: 5,
     },
 ];
@@ -67,15 +67,15 @@ const Testimonials = () => {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        Trusted by{" "}
+                        Empowering{" "}
                         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                            50,000+ Teams
+                            Small Businesses
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 leading-relaxed">
-                        See what our customers are saying about SmartNode
-                        Solutions and how it&apos;s transforming their
-                        workflows.
+                        Hear directly from the small business owners and teams
+                        who are achieving new levels of efficiency and growth
+                        with our tailored AI automation solutions.
                     </p>
                 </div>
 
@@ -157,7 +157,7 @@ const Testimonials = () => {
                                     ))}
                             </div>
                             <span className="ml-4 text-sm text-gray-600">
-                                Join 50,000+ satisfied customers
+                                Trusted by businesses like yours
                             </span>
                         </div>
                         <div className="flex items-center">
@@ -170,7 +170,7 @@ const Testimonials = () => {
                                 ))}
                             </div>
                             <span className="ml-2 text-sm text-gray-600">
-                                4.9/5 rating
+                                5-star success stories
                             </span>
                         </div>
                     </div>

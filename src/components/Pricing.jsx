@@ -85,9 +85,9 @@ const Pricing = () => {
                     </h2>
                     <p className="text-xl text-gray-600 leading-relaxed">
                         Our services are designed to deliver measurable results,
-                        saving you time, reducing costs, and increasing
-                        productivity. Start with a free consultation to explore
-                        the possibilities.
+                        optimizing operations, enhancing efficiency, and driving
+                        growth. Start with a free consultation to explore the
+                        possibilities.
                     </p>
                 </div>
 

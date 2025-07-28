@@ -39,26 +39,17 @@ const Hero = () => {
                         seamlessly, and scale your business effortlessly.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                        <Link href="/signup">
+                    <div className="justify-center items-center mb-12">
+                        <Link href="/contact">
                             {/* *** KEY CHANGE: Add 'pointer-events-auto' to interactive elements *** */}
                             <Button
                                 size="lg"
                                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 h-auto text-lg font-semibold group pointer-events-auto"
                             >
-                                Start Free Trial
+                                Get in touch
                                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
-                        {/* *** KEY CHANGE: Add 'pointer-events-auto' to interactive elements *** */}
-                        <Button
-                            variant="outline"
-                            size="lg"
-                            className="px-8 py-4 h-auto text-lg font-semibold border-2 hover:bg-gray-50 pointer-events-auto"
-                        >
-                            <Play className="mr-2 w-5 h-5" />
-                            Watch Demo
-                        </Button>
                     </div>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-700">

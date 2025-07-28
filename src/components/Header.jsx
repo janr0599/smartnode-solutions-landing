@@ -55,15 +55,7 @@ const Header = () => {
                     </nav>
 
                     <div className="hidden md:flex items-center space-x-4">
-                        <Link href="/login">
-                            <Button
-                                variant="ghost"
-                                className="text-gray-600 hover:text-blue-600"
-                            >
-                                Sign In
-                            </Button>
-                        </Link>
-                        <Link href="/signup">
+                        <Link href="/contact">
                             <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
                                 Get Started
                             </Button>
@@ -116,12 +108,7 @@ const Header = () => {
                                 Blog
                             </Link>
                             <div className="flex flex-col space-y-2 pt-4">
-                                <Link href="/login">
-                                    <Button variant="ghost" className="w-full">
-                                        Sign In
-                                    </Button>
-                                </Link>
-                                <Link href="/signup">
+                                <Link href="/contact">
                                     <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
                                         Get Started
                                     </Button>

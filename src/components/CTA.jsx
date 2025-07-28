@@ -24,22 +24,14 @@ const CTA = () => {
                         free trial today.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                        <Link href="/signup">
-                            <Button
-                                size="lg"
-                                className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold group shadow-xl"
-                            >
-                                Start Free Trial
-                                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                            </Button>
-                        </Link>
+                    <div className="justify-center items-center mb-12">
                         <Link href="/contact">
                             <Button
                                 size="lg"
                                 className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold group shadow-xl"
                             >
-                                Contact Sales
+                                Schedule Free Consultation
+                                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
                     </div>

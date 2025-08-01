@@ -185,7 +185,7 @@ export default function Contact() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                            {/* <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
                                 <CardHeader>
                                     <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
                                         <Phone className="w-5 h-5 mr-2 text-green-500" />
@@ -273,7 +273,7 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </CardContent>
-                            </Card>
+                            </Card> */}
                         </div>
                     </div>
                 </div>

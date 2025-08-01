@@ -9,171 +9,120 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Check, Star } from "lucide-react";
-
-// Redefine plans to be service offerings or engagement models
-const plans = [
-    {
-        name: "Free Consultation",
-        // price: "No Cost",
-        period: "1-on-1 Session",
-        description:
-            "Discover how AI can transform your small business. No obligation.",
-        features: [
-            "Initial business process assessment",
-            "Identify key automation opportunities",
-            "High-level strategy discussion",
-            "Understand potential ROI",
-            "Pathway to tailored solutions",
-        ],
-        popular: false, // You can make this popular if you want to highlight it
-        buttonText: "Schedule Now",
-        buttonVariant: "default", // Make this a primary button
-    },
-    {
-        name: "Custom Automation Solutions",
-        // price: "Tailored Quote",
-        period: "Per Project",
-        description:
-            "Receive a bespoke solution crafted to your exact business needs and goals.",
-        features: [
-            "In-depth workflow analysis",
-            "Custom low-code/no-code/full code development",
-            "Integration with existing systems (CRM, ERP, Marketing Tools)",
-            "Comprehensive implementation & testing",
-            "Full documentation & training",
-            "Dedicated project management",
-        ],
-        popular: true, // This is your core offering, make it popular
-        buttonText: "Get Your Custom Quote",
-        buttonVariant: "default",
-    },
-    {
-        name: "Optimization & Support",
-        // price: "Retainer",
-        period: "Monthly",
-        description:
-            "Continuous improvement and expert support for your AI-driven workflows.",
-        features: [
-            "Proactive monitoring & maintenance",
-            "Performance optimization",
-            "Feature enhancements & upgrades",
-            "Priority technical support",
-            "Regular performance reports",
-            "Strategic consulting & new use cases",
-        ],
-        popular: false,
-        buttonText: "Discuss Support Needs",
-        buttonVariant: "outline",
-    },
-];
+import { Check } from "lucide-react";
+import Link from "next/link";
 
 const Plans = () => {
+    // We only need the data for the Free Consultation
+    const freeConsultationPlan = {
+        name: "Schedule Your Free Consultation",
+        description:
+            "Ready to see how SmartNode Solutions can transform your business? Book a personalized 1-on-1 session with our experts.",
+        features: [
+            "Understand your current workflows & pain points",
+            "Identify tailored AI automation opportunities for your business",
+            "Receive high-level strategy and potential ROI insights",
+            "Explore a clear pathway to custom solutions",
+            "Absolutely no commitment or hidden costs",
+        ],
+        buttonText: "Book Your Free Consultation",
+    };
+
     return (
         <section
-            id="plans"
+            id="plans" // Keep the ID for navigation
             className="py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50"
         >
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        Invest in Your Business's{" "}
+                        Unlock Your Business's{" "}
                         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                            Automated Future
+                            Automation Potential
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 leading-relaxed">
-                        Our services are designed to deliver measurable results,
-                        optimizing operations, enhancing efficiency, and driving
-                        growth. Start with a free consultation to explore the
-                        possibilities.
+                        Every successful automation journey begins with
+                        understanding. Let's discuss your unique needs and how
+                        our tailored AI solutions can drive efficiency and
+                        growth.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    {plans.map((plan, index) => (
-                        <Card
-                            key={index}
-                            className={`relative overflow-hidden ${
-                                plan.popular
-                                    ? "border-2 border-blue-500 shadow-2xl scale-105"
-                                    : "border border-gray-200 shadow-lg"
-                            } bg-white hover:shadow-xl transition-all duration-300`}
-                        >
-                            {plan.popular && (
-                                <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-2 text-sm font-semibold">
-                                    <Star className="w-4 h-4 inline mr-1" />
-                                    Our Core Offering
-                                </div>
-                            )}
+                {/* Single Card for Free Consultation */}
+                <div className="flex justify-center">
+                    <Card
+                        className="w-full max-w-xl relative border-2 border-blue-500 shadow-2xl bg-white hover:shadow-3xl transition-all duration-300 py-8 px-6 md:py-10 md:px-8" // Increased overall card padding
+                    >
+                        {/* No Obligation Badge: Moved further from the title with more margin */}
+                        <div className="absolute top-0 right-0 -mt-4 -mr-3 md:-mt-4 md:-mr-8">
+                            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800">
+                                <Check className="w-3 h-3 mr-1" /> No Obligation
+                            </span>
+                        </div>
 
-                            <CardHeader
-                                className={`text-center ${
-                                    plan.popular ? "pt-12" : "pt-6"
-                                }`}
+                        <CardHeader className="text-center pt-6 pb-4">
+                            {" "}
+                            {/* pt and pb can be adjusted if needed, but overall card padding helps */}
+                            <CardTitle className="text-3xl font-bold text-gray-900 leading-tight">
+                                {freeConsultationPlan.name}
+                            </CardTitle>
+                            <CardDescription className="text-gray-600 mt-2 text-lg">
+                                {freeConsultationPlan.description}
+                            </CardDescription>
+                        </CardHeader>
+
+                        <CardContent className="px-6 pb-6">
+                            {" "}
+                            <Link
+                                href="https://cal.com/smartnode.solutions/30-min-consultation"
+                                passHref
+                                target="_blank"
                             >
-                                <CardTitle className="text-2xl font-bold text-gray-900">
-                                    {plan.name}
-                                </CardTitle>
-                                <div className="mt-4">
-                                    <span className="text-4xl font-bold text-gray-900">
-                                        {plan.price}
-                                    </span>
-                                    {plan.period && (
-                                        <span className="text-gray-500 ml-2">
-                                            {plan.period}
-                                        </span>
-                                    )}
-                                </div>
-                                <CardDescription className="text-gray-600 mt-2">
-                                    {plan.description}
-                                </CardDescription>
-                            </CardHeader>
-
-                            <CardContent className="px-6 pb-6">
                                 <Button
-                                    className={`w-full mb-6 ${
-                                        plan.name === "Free Consultation" ||
-                                        plan.popular
-                                            ? "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white"
-                                            : ""
-                                    }`}
-                                    variant={plan.buttonVariant}
+                                    className="w-full mb-8 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white text-lg py-7"
                                     size="lg"
                                 >
-                                    {plan.buttonText}
+                                    {freeConsultationPlan.buttonText}
                                 </Button>
-
-                                <div className="space-y-3">
-                                    {plan.features.map(
-                                        (feature, featureIndex) => (
-                                            <div
-                                                key={featureIndex}
-                                                className="flex items-center"
-                                            >
-                                                <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                                <span className="text-gray-700">
-                                                    {feature}
-                                                </span>
-                                            </div>
-                                        )
-                                    )}
-                                </div>
-                            </CardContent>
-                        </Card>
-                    ))}
+                            </Link>
+                            <div className="space-y-4">
+                                {freeConsultationPlan.features.map(
+                                    (feature, featureIndex) => (
+                                        <div
+                                            key={featureIndex}
+                                            className="flex items-start"
+                                        >
+                                            <Check className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0 mt-1" />
+                                            <span className="text-gray-700 text-base">
+                                                {feature}
+                                            </span>
+                                        </div>
+                                    )
+                                )}
+                            </div>
+                        </CardContent>
+                    </Card>
                 </div>
 
                 <div className="mt-16 text-center">
-                    <p className="text-gray-600 mb-4">
-                        Every solution is uniquely tailored to maximize your
-                        business's efficiency and growth.
+                    <p className="text-gray-600 mb-4 text-lg">
+                        Our approach is always transparent, client-focused, and
+                        designed for your success.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
-                        <span>✓ Transparent pricing model</span>
-                        <span>✓ Focus on measurable ROI</span>
-                        <span>✓ Expert support & guidance</span>
+                    <div className="flex flex-wrap justify-center gap-6 text-base text-gray-500 font-medium">
+                        <span className="flex items-center">
+                            <Check className="w-4 h-4 mr-2 text-green-500" />{" "}
+                            Transparent process
+                        </span>
+                        <span className="flex items-center">
+                            <Check className="w-4 h-4 mr-2 text-green-500" />{" "}
+                            Focus on measurable ROI
+                        </span>
+                        <span className="flex items-center">
+                            <Check className="w-4 h-4 mr-2 text-green-500" />{" "}
+                            Expert guidance at every step
+                        </span>
                     </div>
                 </div>
             </div>

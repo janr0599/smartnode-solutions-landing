@@ -1,4 +1,3 @@
-// src/components/Features.jsx
 "use client";
 
 import {
@@ -20,8 +19,9 @@ import {
     Play, // Icon for starting a process
     Settings2, // Icon for customization/processing
     Check, // Icon for completion/output
-} from "lucide-react"; // Make sure to import new icons
-import React from "react";
+} from "lucide-react";
+import CountUp from "react-countup";
+import React, { useState, useEffect, useRef } from "react"; // Import useState, useEffect, and useRef
 
 // Define features with specific grid span properties for different breakpoints
 const features = [
@@ -164,6 +164,33 @@ const features = [
 ];
 
 const Features = () => {
+    const [progressBarWidth, setProgressBarWidth] = useState(0);
+    const progressBarRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setProgressBarWidth(94); // Animate to 94% when in view
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            },
+            {
+                threshold: 0.5, // Trigger when 50% of the element is visible
+            }
+        );
+
+        if (progressBarRef.current) {
+            observer.observe(progressBarRef.current);
+        }
+
+        return () => {
+            if (progressBarRef.current) {
+                observer.unobserve(progressBarRef.current);
+            }
+        };
+    }, []);
+
     return (
         <section id="features" className="py-20 lg:py-32">
             <div className="container mx-auto px-4">
@@ -184,21 +211,21 @@ const Features = () => {
                 {/* Bento Grid Layout - adjusted for three distinct layouts */}
                 <div
                     className="mx-auto grid max-w-5xl gap-4
-                                grid-cols-1
-                                md:grid-cols-2
-                                lg:grid-cols-4
-                                grid-rows-[repeat(8,_minmax(150px,_1fr))]
-                                md:grid-rows-[repeat(auto-fill,_minmax(150px,_1fr))]
-                                lg:grid-rows-6
-                                auto-rows-fr"
+                                 grid-cols-1
+                                 md:grid-cols-2
+                                 lg:grid-cols-4
+                                 grid-rows-[repeat(8,_minmax(150px,_1fr))]
+                                 md:grid-rows-[repeat(auto-fill,_minmax(150px,_1fr))]
+                                 lg:grid-rows-6
+                                 auto-rows-fr"
                 >
                     {features.map((feature, index) => (
                         <Card
                             key={index}
                             className={`hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm
-                                        ${feature.colSpan.base} ${feature.colSpan.md} ${feature.colSpan.lg}
-                                        ${feature.rowSpan.base} ${feature.rowSpan.md} ${feature.rowSpan.lg}
-                                        flex flex-col justify-between`}
+                                         ${feature.colSpan.base} ${feature.colSpan.md} ${feature.colSpan.lg}
+                                         ${feature.rowSpan.base} ${feature.rowSpan.md} ${feature.rowSpan.lg}
+                                         flex flex-col justify-between`}
                         >
                             <CardHeader className="pb-1">
                                 <div
@@ -324,34 +351,72 @@ const Features = () => {
                                         <span className="text-sm font-medium text-gray-500">
                                             Productivity Boost
                                         </span>
-                                        <span className="text-2xl font-bold text-green-500">
+                                        <CountUp
+                                            className="text-2xl font-bold text-green-500"
+                                            start={0}
+                                            end={94}
+                                            duration={3.5}
+                                            suffix="%"
+                                            enableScrollSpy
+                                            scrollSpyOnce={true}
+                                        >
                                             94%
-                                        </span>
+                                        </CountUp>
                                     </div>
-                                    <div className="w-full bg-gray-200 rounded-full h-2">
-                                        <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full w-[94%]" />
+                                    {/* Progress Bar Div */}
+                                    <div
+                                        className="w-full bg-gray-200 rounded-full h-2"
+                                        ref={progressBarRef}
+                                    >
+                                        <div
+                                            className="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full transition-all duration-1000 ease-out"
+                                            style={{
+                                                width: `${progressBarWidth}%`,
+                                            }}
+                                        />
                                     </div>
                                     <div className="grid grid-cols-3 gap-4 pt-4">
                                         <div className="text-center">
-                                            <div className="text-2xl font-bold text-gray-900">
+                                            <CountUp
+                                                className="text-2xl font-bold text-gray-900"
+                                                start={0}
+                                                end={47}
+                                                duration={3.5}
+                                                enableScrollSpy
+                                                scrollSpyOnce={true}
+                                            >
                                                 47
-                                            </div>
+                                            </CountUp>
                                             <div className="text-sm text-gray-500">
                                                 Hours Saved
                                             </div>
                                         </div>
                                         <div className="text-center">
-                                            <div className="text-2xl font-bold text-gray-900">
+                                            <CountUp
+                                                className="text-2xl font-bold text-gray-900"
+                                                start={0}
+                                                end={23}
+                                                duration={3.5}
+                                                enableScrollSpy
+                                                scrollSpyOnce={true}
+                                            >
                                                 23
-                                            </div>
+                                            </CountUp>
                                             <div className="text-sm text-gray-500">
                                                 Processes Automated
                                             </div>
                                         </div>
                                         <div className="text-center">
-                                            <div className="text-2xl font-bold text-gray-900">
-                                                8
-                                            </div>
+                                            <CountUp
+                                                className="text-2xl font-bold text-gray-900"
+                                                start={0}
+                                                end={18}
+                                                duration={3.5}
+                                                enableScrollSpy
+                                                scrollSpyOnce={true}
+                                            >
+                                                18
+                                            </CountUp>
                                             <div className="text-sm text-gray-500">
                                                 New Clients
                                             </div>

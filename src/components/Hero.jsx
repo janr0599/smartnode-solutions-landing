@@ -34,9 +34,11 @@ const Hero = () => {
                     </p>
 
                     <div className="justify-center items-center mb-12">
-                        <Link href="/contact">
-                            {/* *** KEY CHANGE: Add 'pointer-events-auto' to interactive elements *** */}
-
+                        <Link
+                            href="https://cal.com/smartnode.solutions/30-min-consultation"
+                            passHref
+                            target="_blank"
+                        >
                             <Button
                                 size="lg"
                                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 h-auto text-lg font-semibold group pointer-events-auto"

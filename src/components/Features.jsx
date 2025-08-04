@@ -360,7 +360,12 @@ const Features = () => {
                                             enableScrollSpy
                                             scrollSpyOnce={true}
                                         >
-                                            94%
+                                            {({ countUpRef }) => (
+                                                <span
+                                                    ref={countUpRef}
+                                                    className="text-2xl font-bold"
+                                                />
+                                            )}
                                         </CountUp>
                                     </div>
                                     {/* Progress Bar Div */}
@@ -385,7 +390,12 @@ const Features = () => {
                                                 enableScrollSpy
                                                 scrollSpyOnce={true}
                                             >
-                                                47
+                                                {({ countUpRef }) => (
+                                                    <span
+                                                        ref={countUpRef}
+                                                        className="text-2xl font-bold"
+                                                    />
+                                                )}
                                             </CountUp>
                                             <div className="text-sm text-gray-500">
                                                 Hours Saved
@@ -400,7 +410,12 @@ const Features = () => {
                                                 enableScrollSpy
                                                 scrollSpyOnce={true}
                                             >
-                                                23
+                                                {({ countUpRef }) => (
+                                                    <span
+                                                        ref={countUpRef}
+                                                        className="text-2xl font-bold"
+                                                    />
+                                                )}
                                             </CountUp>
                                             <div className="text-sm text-gray-500">
                                                 Processes Automated
@@ -415,7 +430,12 @@ const Features = () => {
                                                 enableScrollSpy
                                                 scrollSpyOnce={true}
                                             >
-                                                18
+                                                {({ countUpRef }) => (
+                                                    <span
+                                                        ref={countUpRef}
+                                                        className="text-2xl font-bold"
+                                                    />
+                                                )}
                                             </CountUp>
                                             <div className="text-sm text-gray-500">
                                                 New Clients

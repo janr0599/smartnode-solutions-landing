@@ -26,7 +26,11 @@ const CTA = () => {
                     </p>
 
                     <div className="justify-center items-center mb-12">
-                        <Link href="/contact">
+                        <Link
+                            href="https://cal.com/smartnode.solutions/30-min-consultation"
+                            passHref
+                            target="_blank"
+                        >
                             <Button
                                 size="lg"
                                 className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold group shadow-xl"

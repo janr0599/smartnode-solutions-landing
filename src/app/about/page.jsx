@@ -1,42 +1,35 @@
+"use client";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Users, Target, Award, Globe } from "lucide-react";
+import CountUp from "react-countup";
 
 const team = [
     {
-        name: "Alex Johnson",
-        role: "CEO & Founder",
-        avatar: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150",
-        bio: "Former VP of Engineering at TechCorp with 15+ years of experience building scalable platforms.",
+        name: "Javier Noguera",
+        role: "CEO & Co-Founder", // Kept the CEO/CTO title for clarity and authority
+        avatar: "/javiernoguera202311.jpg",
+        bio: "Javier brings a unique blend of engineering and low-code expertise, building the technical foundation for our tailored automation solutions. He is the architect behind our mission to simplify complex workflows.",
     },
     {
-        name: "Sarah Kim",
-        role: "CTO",
-        avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150",
-        bio: "Full-stack engineer and architect who led the development of SmartNode Solutions core infrastructure.",
-    },
-    {
-        name: "Michael Chen",
-        role: "VP of Product",
-        avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150",
-        bio: "Product strategist with a passion for creating intuitive user experiences and growth.",
-    },
-    {
-        name: "Emily Rodriguez",
-        role: "VP of Marketing",
-        avatar: "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=150",
-        bio: "Growth marketing expert who has helped scale multiple SaaS companies from startup to IPO.",
+        name: "Roselis Perez",
+        role: "Project Management Lead",
+        avatar: "/roselisperez2023111.jpg",
+        bio: "With a Master's in Project Management, Roselis ensures every client project is executed flawlessly. Her focus on clear communication and methodical execution guarantees that our solutions deliver tangible results.",
     },
 ];
 
 const stats = [
-    { icon: Users, label: "Team Members", value: "50+" },
-    { icon: Globe, label: "Countries", value: "25+" },
-    { icon: Target, label: "Customer Satisfaction", value: "99%" },
-    { icon: Award, label: "Awards Won", value: "12" },
+    // This is placeholder content for now. If you have real stats, use them.
+    // Otherwise, these can be aspirational or removed.
+    { icon: Users, label: "Projects Delivered", value: "50" },
+    { icon: Globe, label: "Industries Served", value: "10" },
+    { icon: Target, label: "Average ROI", value: "300" },
+    { icon: Award, label: "Hours Saved", value: "1000" },
 ];
 
 export default function About() {
@@ -48,19 +41,21 @@ export default function About() {
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-4xl mx-auto mb-16">
                         <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
-                            About SmartNode Solutions
+                            Our Story
                         </Badge>
                         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                            Building the Future of{" "}
+                            Simplifying Business with{" "}
                             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                                Workplace Productivity
+                                Smart Automation
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 leading-relaxed">
-                            We&apos;re on a mission to help teams worldwide work
-                            smarter, not harder. Founded in 2020, SmartNode
-                            Solutions has grown from a simple idea to a platform
-                            trusted by over 50,000 teams globally.
+                            At SmartNode Solutions, we believe that powerful
+                            automation should be accessible to every business,
+                            regardless of size. We’re on a mission to free small
+                            business owners and their teams from tedious,
+                            repetitive tasks so they can focus on what truly
+                            matters: growth and innovation.
                         </p>
                     </div>
 
@@ -75,7 +70,25 @@ export default function About() {
                                         <stat.icon className="w-6 h-6 text-white" />
                                     </div>
                                     <CardTitle className="text-3xl font-bold text-gray-900">
-                                        {stat.value}
+                                        <CountUp
+                                            start={0}
+                                            end={stat.value}
+                                            duration={3.5}
+                                            suffix={
+                                                stat.label.includes("ROI")
+                                                    ? "%"
+                                                    : "+"
+                                            }
+                                            enableScrollSpy
+                                            scrollSpyOnce={true}
+                                        >
+                                            {({ countUpRef }) => (
+                                                <span
+                                                    ref={countUpRef}
+                                                    className="text-2xl font-bold"
+                                                />
+                                            )}
+                                        </CountUp>
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
@@ -90,22 +103,24 @@ export default function About() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
                         <div>
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                                Our Story
+                                Our Mission
                             </h2>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                SmartNode Solutions was born out of frustration
-                                with the fragmented tools and inefficient
-                                processes that plagued modern workplaces. Our
-                                founders, having experienced these pain points
-                                firsthand at their previous companies, set out
-                                to create a unified platform that would truly
-                                streamline workflows.
+                                We are dedicated to empowering small and
+                                medium-sized businesses with custom-built AI
+                                automation solutions. Our approach is to work
+                                closely with you to understand your unique
+                                challenges and build powerful, scalable
+                                workflows using low-code, no-code, and full code
+                                tools that deliver a clear return on investment.
                             </p>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                What started as a small team of engineers has
-                                grown into a diverse, global company with one
-                                shared vision: to eliminate the friction that
-                                prevents teams from doing their best work.
+                                Our vision is to be the go-to partner for
+                                businesses seeking to harness the power of AI to
+                                work smarter, not harder. We don't just build
+                                solutions; we build long-term partnerships based
+                                on trust, expertise, and a shared commitment to
+                                your success.
                             </p>
                             <div className="space-y-4">
                                 <div className="flex items-center">
@@ -113,8 +128,8 @@ export default function About() {
                                         <div className="w-2 h-2 bg-white rounded-full" />
                                     </div>
                                     <span className="text-gray-700">
-                                        Founded in 2020 by former enterprise
-                                        software leaders
+                                        Founded on the principle of accessible
+                                        technology
                                     </span>
                                 </div>
                                 <div className="flex items-center">
@@ -122,7 +137,8 @@ export default function About() {
                                         <div className="w-2 h-2 bg-white rounded-full" />
                                     </div>
                                     <span className="text-gray-700">
-                                        Raised $50M in Series B funding
+                                        Dedicated to tailored solutions, not
+                                        one-size-fits-all products
                                     </span>
                                 </div>
                                 <div className="flex items-center">
@@ -130,7 +146,8 @@ export default function About() {
                                         <div className="w-2 h-2 bg-white rounded-full" />
                                     </div>
                                     <span className="text-gray-700">
-                                        Trusted by Fortune 500 companies
+                                        Expertise in low-code, no-code, and full
+                                        code platforms
                                     </span>
                                 </div>
                             </div>
@@ -138,13 +155,16 @@ export default function About() {
                         <div className="relative">
                             <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
                                 <h3 className="text-2xl font-bold mb-4">
-                                    Our Mission
+                                    Why We Do What We Do
                                 </h3>
                                 <p className="text-lg leading-relaxed">
-                                    To empower every team to achieve
-                                    extraordinary results by providing the most
-                                    intuitive, powerful, and integrated
-                                    productivity platform in the world.
+                                    We started SmartNode Solutions to eliminate
+                                    the daily frustrations caused by manual,
+                                    repetitive work. Our motivation comes from
+                                    seeing businesses thrive once they are freed
+                                    from mundane tasks, allowing them to focus
+                                    on innovation, strategy, and serving their
+                                    customers better.
                                 </p>
                             </div>
                         </div>
@@ -152,15 +172,16 @@ export default function About() {
 
                     <div>
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-                            Meet Our Team
+                            Meet Our Leadership
                         </h2>
                         <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-                            We&apos;re a diverse team of dreamers, builders, and
-                            problem-solvers united by our passion for creating
-                            exceptional software.
+                            We are a small but mighty team of builders and
+                            strategists, united by a passion for solving complex
+                            business problems with elegant, effective
+                            automation.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:max-w-2xl gap-8 lg:mx-auto">
                             {team.map((member, index) => (
                                 <Card
                                     key={index}
@@ -171,6 +192,7 @@ export default function About() {
                                             <AvatarImage
                                                 src={member.avatar}
                                                 alt={member.name}
+                                                style={{ objectFit: "cover" }}
                                             />
                                             <AvatarFallback>
                                                 {member.name

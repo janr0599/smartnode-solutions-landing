@@ -162,10 +162,10 @@ export default function Contact() {
                                                 General:
                                             </span>
                                             <span className="text-gray-900">
-                                                smartnodesystems@gmail.com
+                                                contact@smartnode.solutions
                                             </span>
                                         </div>
-                                        {/* <div className="flex items-center">
+                                        <div className="flex items-center">
                                             <span className="text-sm text-gray-500 w-20">
                                                 Support:
                                             </span>
@@ -180,7 +180,7 @@ export default function Contact() {
                                             <span className="text-gray-900">
                                                 sales@smartnode.solutions
                                             </span>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </CardContent>
                             </Card>

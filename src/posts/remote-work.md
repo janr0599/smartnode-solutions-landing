@@ -4,11 +4,11 @@ title: "The Future of Remote Work: How SaaS Tools Are Shaping Tomorrow's Workpla
 excerpt: "Discover how modern SaaS platforms are revolutionizing remote work and enabling teams to collaborate more effectively than ever before."
 author:
     {
-        name: "Sarah Johnson",
-        avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100",
-        role: "Product Manager",
+        name: "Javier Noguera",
+        avatar: "/javiernoguera202311.png",
+        role: "CEO & Co-Founder",
     }
-date: "2024-01-15"
+date: "2025-05-15"
 readTime: "5 min read"
 category: "Remote Work"
 image: "https://images.pexels.com/photos/4792369/pexels-photo-4792369.jpeg?auto=compress&cs=tinysrgb&w=1260"

@@ -18,7 +18,7 @@ const team = [
     {
         name: "Roselis Perez",
         role: "Project Management Lead",
-        avatar: "/roselisperez2023111.jpg",
+        avatar: "/roselisperez202311.jpg",
         bio: "With a Master's in Project Management, Roselis ensures every client project is executed flawlessly. Her focus on clear communication and methodical execution guarantees that our solutions deliver tangible results.",
     },
 ];

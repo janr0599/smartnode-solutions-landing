@@ -161,30 +161,40 @@ export default function Contact() {
                                             <span className="text-sm text-gray-500 w-20">
                                                 General:
                                             </span>
-                                            <span className="text-gray-900">
+                                            <a
+                                                href="mailto:contact@smartnode.solutions"
+                                                className="text-gray-900 hover:text-blue-600 transition-colors"
+                                            >
                                                 contact@smartnode.solutions
-                                            </span>
+                                            </a>
                                         </div>
                                         <div className="flex items-center">
                                             <span className="text-sm text-gray-500 w-20">
                                                 Support:
                                             </span>
-                                            <span className="text-gray-900">
+                                            <a
+                                                href="mailto:support@smartnode.solutions"
+                                                className="text-gray-900 hover:text-blue-600 transition-colors"
+                                            >
                                                 support@smartnode.solutions
-                                            </span>
+                                            </a>
                                         </div>
                                         <div className="flex items-center">
                                             <span className="text-sm text-gray-500 w-20">
                                                 Sales:
                                             </span>
-                                            <span className="text-gray-900">
+                                            <a
+                                                href="mailto:sales@smartnode.solutions"
+                                                className="text-gray-900 hover:text-blue-600 transition-colors"
+                                            >
                                                 sales@smartnode.solutions
-                                            </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </CardContent>
                             </Card>
 
+                            {/* ... (rest of the cards) */}
                             {/* <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
                                 <CardHeader>
                                     <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
@@ -201,17 +211,23 @@ export default function Contact() {
                                             <span className="text-sm text-gray-500 w-20">
                                                 US:
                                             </span>
-                                            <span className="text-gray-900">
+                                            <a
+                                                href="tel:+15551234567"
+                                                className="text-gray-900 hover:text-blue-600 transition-colors"
+                                            >
                                                 +1 (555) 123-4567
-                                            </span>
+                                            </a>
                                         </div>
                                         <div className="flex items-center">
                                             <span className="text-sm text-gray-500 w-20">
                                                 UK:
                                             </span>
-                                            <span className="text-gray-900">
+                                            <a
+                                                href="tel:+442071234567"
+                                                className="text-gray-900 hover:text-blue-600 transition-colors"
+                                            >
                                                 +44 20 7123 4567
-                                            </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </CardContent>
@@ -236,7 +252,7 @@ export default function Contact() {
                                         United States
                                     </address>
                                 </CardContent>
-                            </Card>
+                            </Card> */}
 
                             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
                                 <CardHeader>
@@ -252,7 +268,7 @@ export default function Contact() {
                                                 Monday - Friday:
                                             </span>
                                             <span className="text-gray-900">
-                                                9AM - 6PM PST
+                                                9AM - 5PM EST
                                             </span>
                                         </div>
                                         <div className="flex items-center justify-between">
@@ -260,7 +276,7 @@ export default function Contact() {
                                                 Saturday:
                                             </span>
                                             <span className="text-gray-900">
-                                                10AM - 4PM PST
+                                                10AM - 4PM EST
                                             </span>
                                         </div>
                                         <div className="flex items-center justify-between">
@@ -273,7 +289,7 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </CardContent>
-                            </Card> */}
+                            </Card>
                         </div>
                     </div>
                 </div>

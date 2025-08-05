@@ -11,7 +11,7 @@ import CountUp from "react-countup";
 const team = [
     {
         name: "Javier Noguera",
-        role: "CEO & Co-Founder", // Kept the CEO/CTO title for clarity and authority
+        role: "CEO & Co-Founder", // Kept the CEO title for clarity and authority
         avatar: "/javiernoguera202311.jpg",
         bio: "Javier brings a unique blend of engineering and low-code expertise, building the technical foundation for our tailored automation solutions. He is the architect behind our mission to simplify complex workflows.",
     },

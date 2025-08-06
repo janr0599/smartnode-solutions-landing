@@ -109,6 +109,7 @@ const Testimonials = () => {
                                         <AvatarImage
                                             src={testimonial.avatar}
                                             alt={testimonial.name}
+                                            style={{ objectFit: "cover" }}
                                         />
                                         <AvatarFallback>
                                             {testimonial.name
@@ -146,6 +147,7 @@ const Testimonials = () => {
                                             <AvatarImage
                                                 src={testimonial.avatar}
                                                 alt={testimonial.name}
+                                                style={{ objectFit: "cover" }}
                                             />
                                             <AvatarFallback>
                                                 {testimonial.name

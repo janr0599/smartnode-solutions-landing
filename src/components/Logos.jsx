@@ -44,7 +44,7 @@ export function Logos() {
                             alt={`${logo.name} Logo`}
                             width={100}
                             height={50}
-                            className="h-12 w-auto transition-all duration-300 drop-shadow-lg"
+                            className="h-12 w-auto transition-all duration-300 drop-shadow-lg hover:scale-110"
                         />
                     </div>
                 ))}

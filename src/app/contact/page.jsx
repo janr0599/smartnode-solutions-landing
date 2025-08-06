@@ -51,9 +51,11 @@ export default function Contact() {
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 leading-relaxed">
-                            Have questions about SmartNode Solutions? Want to
-                            see a demo? Our team is here to help. Reach out and
-                            we&apos;ll get back to you within 24 hours.
+                            Ready to streamline your operations and unlock new
+                            growth? Connect with our team of AI experts to
+                            discuss how intelligent automation can enhance your
+                            business. We're here to build reliable solutions
+                            that deliver tangible value.
                         </p>
                     </div>
 

@@ -27,7 +27,7 @@ const CTA = () => {
 
                     <div className="justify-center items-center mb-12">
                         <Link
-                            href="https://cal.com/smartnode.solutions/30-min-consultation"
+                            href="https://calendly.com/smartnode-solutions/30min"
                             passHref
                             target="_blank"
                         >

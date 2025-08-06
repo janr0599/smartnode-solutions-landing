@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils"; // Assuming you have a utility for class mergi
 // Array of logos for the scroll
 const logos = [
     { name: "Airtable", src: "/logos/airtable.svg" },
+    { name: "Make", src: "/logos/make.png" },
     { name: "Asana", src: "/logos/asana.svg" },
     { name: "Trello", src: "/logos/trello.svg" },
     { name: "Gmail", src: "/logos/gmail.svg" },
@@ -17,6 +18,7 @@ const logos = [
     { name: "Supabase", src: "/logos/supabase.svg" },
     { name: "OpenAI", src: "/logos/openai.svg" },
     { name: "Monday", src: "/logos/monday.svg" },
+    { name: "Zapier", src: "/logos/zapier.png" },
     { name: "Slack", src: "/logos/slack.svg" },
     { name: "Facebook", src: "/logos/facebook.svg" },
 ];

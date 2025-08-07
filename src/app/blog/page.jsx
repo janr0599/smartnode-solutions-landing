@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import BlogControls from "@/components/BlogControls"; // Import the new client component
 import { Badge } from "@/components/ui/badge";
 import { getSortedPostsData } from "@/lib/posts"; // Import the data fetching function
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default async function Blog() {
     const allPostsData = getSortedPostsData();
@@ -37,16 +38,7 @@ export default async function Blog() {
                         <p className="text-gray-600 mb-4">
                             Want to stay updated with our latest posts?
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                            />
-                            <button className="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
-                                Subscribe
-                            </button>
-                        </div>
+                        <NewsletterForm />
                     </div>
                 </div>
             </section>

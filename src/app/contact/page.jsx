@@ -20,18 +20,36 @@ export default function Contact() {
         message: "",
     });
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission here
-        toast.success("We'll get back to you within 24 hours.");
-        setFormData({ name: "", email: "", company: "", message: "" });
-    };
-
     const handleChange = (e) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value,
         });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                toast.success(
+                    "Thank you for your message! We'll get back to you within 24 hours."
+                );
+                setFormData({ name: "", email: "", company: "", message: "" });
+            } else {
+                toast.error("Failed to send message. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Submission error:", error);
+            toast.error("An error occurred. Please try again.");
+        }
     };
 
     return (
@@ -144,7 +162,6 @@ export default function Contact() {
                                 </CardContent>
                             </Card>
                         </div>
-
                         <div className="space-y-8">
                             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
                                 <CardHeader>
@@ -195,67 +212,6 @@ export default function Contact() {
                                     </div>
                                 </CardContent>
                             </Card>
-
-                            {/* ... (rest of the cards) */}
-                            {/* <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
-                                <CardHeader>
-                                    <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
-                                        <Phone className="w-5 h-5 mr-2 text-green-500" />
-                                        Call us
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-gray-600 mb-4">
-                                        Speak with our team directly.
-                                    </p>
-                                    <div className="space-y-2">
-                                        <div className="flex items-center">
-                                            <span className="text-sm text-gray-500 w-20">
-                                                US:
-                                            </span>
-                                            <a
-                                                href="tel:+15551234567"
-                                                className="text-gray-900 hover:text-blue-600 transition-colors"
-                                            >
-                                                +1 (555) 123-4567
-                                            </a>
-                                        </div>
-                                        <div className="flex items-center">
-                                            <span className="text-sm text-gray-500 w-20">
-                                                UK:
-                                            </span>
-                                            <a
-                                                href="tel:+442071234567"
-                                                className="text-gray-900 hover:text-blue-600 transition-colors"
-                                            >
-                                                +44 20 7123 4567
-                                            </a>
-                                        </div>
-                                    </div>
-                                </CardContent>
-                            </Card>
-
-                            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
-                                <CardHeader>
-                                    <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
-                                        <MapPin className="w-5 h-5 mr-2 text-red-500" />
-                                        Visit us
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-gray-600 mb-4">
-                                        Our headquarters in San Francisco.
-                                    </p>
-                                    <address className="text-gray-900 not-italic">
-                                        123 Innovation Drive
-                                        <br />
-                                        San Francisco, CA 94105
-                                        <br />
-                                        United States
-                                    </address>
-                                </CardContent>
-                            </Card> */}
-
                             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
                                 <CardHeader>
                                     <CardTitle className="text-xl font-bold text-gray-900 flex items-center">

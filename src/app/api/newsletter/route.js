@@ -1,11 +1,7 @@
 // src/app/api/newsletter/route.js
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-
-console.log(
-    "RESEND_API_KEY is:",
-    process.env.RESEND_API_KEY ? "Loaded" : "Not loaded"
-);
+import WelcomeEmail from "@/app/emails/WelcomeEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const audienceId = "c3a4e09d-9827-4d5a-83ab-9c8691e51138";
@@ -13,19 +9,39 @@ const audienceId = "c3a4e09d-9827-4d5a-83ab-9c8691e51138";
 export async function POST(request) {
     try {
         const { email } = await request.json();
-        console.log("Received email:", email);
 
-        const { data, error } = await resend.contacts.create({
-            email,
-            audienceId,
-        });
+        // 1. Add contact to the Resend audience
+        const { data: contactData, error: contactError } =
+            await resend.contacts.create({
+                email,
+                audienceId,
+            });
 
-        if (error) {
-            return NextResponse.json({ error }, { status: 500 });
+        if (contactError) {
+            console.error("Error adding contact to audience:", contactError);
+            return NextResponse.json({ error: contactError }, { status: 500 });
         }
 
-        return NextResponse.json({ data }, { status: 200 });
+        // 2. Send the welcome email
+        const { data: emailData, error: emailError } = await resend.emails.send(
+            {
+                from: "SmartNode Solutions <contact@updates.smartnode.solutions>",
+                to: [email],
+                replyTo: "contact@smartnode.solutions",
+                subject: "Welcome to SmartNode Solutions!",
+                react: <WelcomeEmail subscriberEmail={email} />,
+            }
+        );
+
+        if (emailError) {
+            // Log the specific error from Resend
+            console.error("Error sending welcome email:", emailError);
+            return NextResponse.json({ error: emailError }, { status: 500 });
+        }
+
+        return NextResponse.json({ contactData, emailData }, { status: 200 });
     } catch (error) {
-        return NextResponse.json({ error }, { status: 500 });
+        console.error("Server-side error:", error);
+        return NextResponse.json({ error: error.message }, { status: 500 });
     }
 }

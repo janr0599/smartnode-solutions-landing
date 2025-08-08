@@ -7,6 +7,7 @@ import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPostData, getAllPostIds } from "@/lib/posts";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default async function BlogPostPage({ params }) {
     const { id } = await params;
@@ -102,6 +103,18 @@ export default async function BlogPostPage({ params }) {
                         className="prose prose-lg mx-auto text-gray-800"
                         dangerouslySetInnerHTML={{ __html: contentHtml }}
                     />
+
+                    {/* Newsletter Subscription Section */}
+                    <div className="mt-20 text-center border-t border-gray-200 pt-16">
+                        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Liked this article?
+                        </h3>
+                        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                            Join our newsletter to get more exclusive insights
+                            and content delivered directly to your inbox.
+                        </p>
+                        <NewsletterForm />
+                    </div>
                 </div>
             </article>
 

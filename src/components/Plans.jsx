@@ -75,7 +75,7 @@ const Plans = () => {
                         <CardContent className="px-6 pb-6">
                             {" "}
                             <Link
-                                href="https://cal.com/smartnode.solutions/30-min-consultation"
+                                href="https://calendly.com/smartnode-solutions/30min"
                                 passHref
                                 target="_blank"
                             >

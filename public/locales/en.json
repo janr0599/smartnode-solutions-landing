@@ -122,7 +122,7 @@
             "customJourney": "Your custom AI journey starts here."
         },
         "Features": {
-            "title": "Solutions Crafted to Transform",
+            "title": "Solutions Crafted to Transform ",
             "titleHighlight": "Your Business",
             "description": "We provide comprehensive AI automation services that tackle your unique business challenges, delivering tangible improvements across all departments.",
             "infographic": {
@@ -335,7 +335,8 @@
         },
         "Hero": {
             "badge": "Empowering Small Businesses with AI Automation",
-            "title": "Streamline Your Workflow with Smart Automation",
+            "title": "Streamline Your Workflow with ",
+            "titleHighlight": "Smart Automation",
             "description": "Tailored AI-powered workflows for small businesses. Save time, cut costs, reduce hassle, and achieve greater productivity.",
             "button": "Free Consultation",
             "buttonUrl": "https://calendly.com/smartnode-solutions/30min",
@@ -360,7 +361,8 @@
             "errorGeneric": "An error occurred. Please try again."
         },
         "Plans": {
-            "title": "Unlock Your Business's Automation Potential",
+            "title": "Unlock Your Business's ",
+            "titleHighlight": "Automation Potential",
             "description": "Every successful automation journey begins with understanding. Let's discuss your unique needs and how our tailored AI solutions can drive efficiency and growth.",
             "planName": "Schedule Your Free Consultation",
             "planDescription": "Ready to see how SmartNode Solutions can transform your business? Book a personalized 1-on-1 session with our experts.",

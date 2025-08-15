@@ -34,9 +34,6 @@ const iconMap = {
     Smartphone,
     Clock,
     Settings,
-    Play,
-    Settings2,
-    Check,
 };
 
 const Features = () => {
@@ -93,7 +90,6 @@ const Features = () => {
                         {featuresData.description}
                     </p>
                 </div>
-
                 <div
                     className="mx-auto grid max-w-5xl gap-4
                             grid-cols-1
@@ -150,53 +146,44 @@ const Features = () => {
                                                     </h4>
                                                     <div className="flex flex-col items-center justify-center space-y-4 ">
                                                         {infographic.nodes.map(
-                                                            (node, i) => {
-                                                                const NodeIcon =
-                                                                    iconMap[
-                                                                        node
-                                                                            .icon
-                                                                    ];
-                                                                return (
-                                                                    <React.Fragment
-                                                                        key={i}
+                                                            (node, i) => (
+                                                                <React.Fragment
+                                                                    key={i}
+                                                                >
+                                                                    <div
+                                                                        className={cn(
+                                                                            "flex items-center space-x-3 p-3 rounded-xl shadow-sm w-full max-w-[220px] justify-center text-sm font-medium",
+                                                                            node.color
+                                                                        )}
                                                                     >
+                                                                        <node.icon className="w-4 h-4" />
+                                                                        <span>
+                                                                            {
+                                                                                node.label
+                                                                            }
+                                                                        </span>
+                                                                    </div>
+                                                                    {i <
+                                                                        infographic
+                                                                            .nodes
+                                                                            .length -
+                                                                            1 && (
                                                                         <div
                                                                             className={cn(
-                                                                                "flex items-center space-x-3 p-3 rounded-xl shadow-sm w-full max-w-[220px] justify-center text-sm font-medium",
-                                                                                node.color
+                                                                                "w-0.5 h-6 relative",
+                                                                                node.arrowColor
                                                                             )}
                                                                         >
-                                                                            {NodeIcon && (
-                                                                                <NodeIcon className="w-4 h-4" />
-                                                                            )}
-                                                                            <span>
-                                                                                {
-                                                                                    node.label
-                                                                                }
-                                                                            </span>
-                                                                        </div>
-                                                                        {i <
-                                                                            infographic
-                                                                                .nodes
-                                                                                .length -
-                                                                                1 && (
                                                                             <div
                                                                                 className={cn(
-                                                                                    "w-0.5 h-6 relative",
+                                                                                    "absolute left-1/2 -ml-1.5 -bottom-0.5 w-3 h-3 rotate-45 transform",
                                                                                     node.arrowColor
                                                                                 )}
-                                                                            >
-                                                                                <div
-                                                                                    className={cn(
-                                                                                        "absolute left-1/2 -ml-1.5 -bottom-0.5 w-3 h-3 rotate-45 transform",
-                                                                                        node.arrowColor
-                                                                                    )}
-                                                                                />
-                                                                            </div>
-                                                                        )}
-                                                                    </React.Fragment>
-                                                                );
-                                                            }
+                                                                            />
+                                                                        </div>
+                                                                    )}
+                                                                </React.Fragment>
+                                                            )
                                                         )}
                                                     </div>
                                                 </div>
@@ -208,7 +195,6 @@ const Features = () => {
                         );
                     })}
                 </div>
-
                 <div className="mt-20 bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 lg:p-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>

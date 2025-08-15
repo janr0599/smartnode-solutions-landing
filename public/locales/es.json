@@ -122,14 +122,14 @@
             "customJourney": "Tu viaje personalizado con IA comienza aquí."
         },
         "Features": {
-            "title": "Soluciones diseñadas para transformar",
+            "title": "Soluciones diseñadas para transformar ",
             "titleHighlight": "Tu negocio",
-            "description": "Ofrecemos servicios integrales de automatización con IA que abordan tus desafíos empresariales únicos, generando mejoras tangibles en todos los departamentos.",
+            "description": "Ofrecemos servicios integrales de automatización con IA que abordan tus desafíos únicos, generando mejoras tangibles en todos los departamentos.",
             "infographic": {
                 "title": "Tu Flujo de Trabajo Automatizado",
                 "nodes": [
                     {
-                        "label": "Entrada y Datos",
+                        "label": "Entrada de Datos",
                         "icon": "Play",
                         "color": "bg-blue-50 text-blue-800",
                         "arrowColor": "bg-blue-300"
@@ -335,13 +335,14 @@
         },
         "Hero": {
             "badge": "Impulsando pequeñas empresas con automatización IA",
-            "title": "Optimiza tu flujo de trabajo con Automatización Inteligente",
-            "description": "Flujos de trabajo personalizados con IA para pequeñas empresas. Ahorra tiempo, reduce costos, elimina complicaciones y logra mayor productividad.",
+            "title": "Optimiza tu trabajo con ",
+            "titleHighlight": "Automatización Inteligente",
+            "description": "Flujos de trabajo personalizados con IA para pequeñas empresas. Ahorra tiempo, reduce costos y logra mayor productividad.",
             "button": "Consulta gratuita",
             "buttonUrl": "https://calendly.com/smartnode-solutions/30min",
-            "customized": "Personalizado para diversos casos de uso",
-            "secureReliable": "Implementaciones seguras y confiables",
-            "provenROI": "ROI probado y mejoras en eficiencia",
+            "customized": "Personalizado para diversos casos",
+            "secureReliable": "Implementación segura y confiable",
+            "provenROI": "ROI probado",
             "salesAutomationTitle": "Automatización de ventas",
             "salesAutomationDesc": "Automatiza la calificación de leads, actualizaciones de CRM y seguimientos.",
             "marketingEfficiencyTitle": "Eficiencia en marketing",
@@ -360,7 +361,8 @@
             "errorGeneric": "Ocurrió un error. Por favor, inténtalo de nuevo."
         },
         "Plans": {
-            "title": "Desbloquea el potencial de automatización de tu negocio",
+            "title": "Desbloquea el potencial de automatización de ",
+            "titleHighlight": "Tu negocio",
             "description": "Todo viaje exitoso de automatización comienza con el entendimiento. Hablemos de tus necesidades únicas y cómo nuestras soluciones de IA pueden impulsar la eficiencia y el crecimiento.",
             "planName": "Agenda tu consulta gratuita",
             "planDescription": "¿Listo para ver cómo SmartNode Solutions puede transformar tu negocio? Reserva una sesión personalizada 1-a-1 con nuestros expertos.",
@@ -379,7 +381,8 @@
             "clientFocused": "Nuestro enfoque siempre es transparente, centrado en el cliente y diseñado para tu éxito."
         },
         "Testimonials": {
-            "title": "Impulsando pequeñas empresas",
+            "title": "Impulsando ",
+            "titleHighlight": "Pequeñas Empresas",
             "description": "Escucha directamente a los dueños y equipos de pequeñas empresas que están logrando nuevos niveles de eficiencia y crecimiento con nuestras soluciones de automatización con IA a medida.",
             "trustedBy": "Confiado por empresas como la tuya",
             "fiveStar": "Historias de éxito de 5 estrellas",
@@ -388,6 +391,7 @@
                     "name": "Maria Sanchez",
                     "role": "Propietaria",
                     "company": "Panadería Local",
+                    "avatar": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "¡Nuestras tareas administrativas solían tomar horas! Esta solución de IA lo gestiona todo sin problemas, permitiéndonos enfocarnos en nuestro trabajo. ¡Un cambio total para nuestro negocio!",
                     "rating": 5
                 },
@@ -395,6 +399,7 @@
                     "name": "John Miller",
                     "role": "Director Ejecutivo",
                     "company": "Boutique de Comercio Electrónico",
+                    "avatar": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "La automatización personalizada implementada por la agencia ha mejorado drásticamente nuestro procesamiento de pedidos y atención al cliente. Es como tener un miembro extra en el equipo.",
                     "rating": 5
                 },
@@ -402,6 +407,7 @@
                     "name": "Aisha Khan",
                     "role": "Gerente de Clínica",
                     "company": "Clínica Familiar de Salud",
+                    "avatar": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "Necesitábamos una solución específica para la programación y recordatorios de pacientes. Esta agencia entregó un sistema de IA perfecto y adaptado a las necesidades únicas de nuestra clínica.",
                     "rating": 5
                 },
@@ -409,6 +415,7 @@
                     "name": "Roberto Gomez",
                     "role": "Director de Operaciones",
                     "company": "Innovadores Logísticos",
+                    "avatar": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "Su experiencia en IA para logística es insuperable. La solución personalizada que construyeron optimizó nuestra gestión de inventario y redujo significativamente los errores.",
                     "rating": 5
                 },
@@ -416,6 +423,7 @@
                     "name": "Sophia Lee",
                     "role": "Líder de Marketing",
                     "company": "Estudio Creativo Digital",
+                    "avatar": "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "Pensábamos que la IA era solo para grandes corporaciones, pero esta agencia nos mostró lo accesible y poderosa que es para pequeñas empresas. Nuestras campañas de marketing ahora son más inteligentes y eficientes.",
                     "rating": 5
                 },
@@ -423,6 +431,7 @@
                     "name": "Kevin Wong",
                     "role": "Propietario de Restaurante",
                     "company": "Bistró Gourmet",
+                    "avatar": "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "El enfoque personalizado en la automatización marcó la diferencia. Realmente entendieron nuestros puntos de dolor y entregaron una solución que ha transformado nuestras operaciones diarias.",
                     "rating": 5
                 }

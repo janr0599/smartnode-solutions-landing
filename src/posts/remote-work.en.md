@@ -1,5 +1,5 @@
 ---
-slug: "remote-work"
+slug: "remote-work.en.md"
 title: "Boosting Your Remote Team: The Power of AI-Powered Workflows"
 excerpt: "Discover how tailored AI automation is revolutionizing remote work, enabling your team to collaborate more effectively and get more done."
 author:

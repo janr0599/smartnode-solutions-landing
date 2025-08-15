@@ -1,5 +1,5 @@
 ---
-slug: "security.md"
+slug: "security.en.md"
 title: "Security First: Building Trust in the Age of AI"
 excerpt: "Understanding the security measures that make modern AI workflows safer and how to protect your data."
 author:

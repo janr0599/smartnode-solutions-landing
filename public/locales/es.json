@@ -37,7 +37,7 @@
             }
         ],
         "badge": "Nuestra Historia",
-        "mainTitle": "Simplificando los negocios con Automatización Inteligente",
+        "mainTitle": "Simplificando Negocios Con Automatización Inteligente",
         "mainTitleHighlight": "Automatización Inteligente",
         "mainDescription": "En SmartNode Solutions, creemos que la automatización poderosa debe ser accesible para cualquier empresa, sin importar su tamaño. Nuestra misión es liberar a los dueños de pequeñas empresas y sus equipos de tareas tediosas y repetitivas para que puedan enfocarse en lo que realmente importa: el crecimiento y la innovación.",
         "missionTitle": "Nuestra Misión",
@@ -64,6 +64,7 @@
         "title": "Comencemos una Conversación",
         "description": "¿Listo para optimizar tus operaciones y desbloquear nuevo crecimiento? Conéctate con nuestro equipo de expertos en IA para discutir cómo la automatización inteligente puede mejorar tu negocio. Estamos aquí para construir soluciones confiables que generen valor tangible.",
         "form": {
+            "title": "Envíanos un mensaje",
             "name": "Nombre",
             "email": "Correo electrónico",
             "company": "Empresa",
@@ -110,7 +111,7 @@
             "readMore": "Leer más"
         },
         "CTA": {
-            "title": "¿Listo para transformar tu flujo de trabajo?",
+            "title": "¿Listo Para Transformar Tu Flujo De Trabajo?",
             "description": "Descubre cómo la automatización y los flujos de trabajo con IA pueden ahorrarte tiempo, reducir costos y aumentar la productividad. Construyamos juntos el futuro de tu pequeña empresa.",
             "button": "Agenda tu consulta gratuita",
             "forSmallBusinesses": "Para pequeñas empresas",
@@ -122,14 +123,14 @@
             "customJourney": "Tu viaje personalizado con IA comienza aquí."
         },
         "Features": {
-            "title": "Soluciones diseñadas para transformar ",
-            "titleHighlight": "Tu negocio",
-            "description": "Ofrecemos servicios integrales de automatización con IA que abordan tus desafíos únicos, generando mejoras tangibles en todos los departamentos.",
+            "title": "Soluciones Diseñadas Para Transformar",
+            "titleHighlight": "Tu Negocio",
+            "description": "Ofrecemos servicios integrales de automatización con IA que abordan tus desafíos empresariales únicos, generando mejoras tangibles en todos los departamentos.",
             "infographic": {
                 "title": "Tu Flujo de Trabajo Automatizado",
                 "nodes": [
                     {
-                        "label": "Entrada de Datos",
+                        "label": "Entrada y Datos",
                         "icon": "Play",
                         "color": "bg-blue-50 text-blue-800",
                         "arrowColor": "bg-blue-300"
@@ -149,7 +150,7 @@
                 ]
             },
             "statistics": {
-                "title": "El Futuro de tu Empresa",
+                "title": "El Futuro De Tu Empresa",
                 "description": "Nuestra agencia de IA se centra en ofrecer automatización práctica e impactante. Ayudamos a las pequeñas empresas a navegar la complejidad de la IA para implementar soluciones que impulsan el crecimiento real y la excelencia operativa.",
                 "bullets": [
                     "Flujos de trabajo a medida para ventas, marketing y operaciones",
@@ -193,7 +194,7 @@
                     }
                 },
                 {
-                    "title": "Impulsa la productividad",
+                    "title": "Impulsa la Productividad",
                     "description": "Empodera a tu equipo automatizando tareas tediosas, liberándolos para enfocarse en trabajo de alto valor.",
                     "icon": "Users",
                     "color": "text-blue-500",
@@ -209,7 +210,7 @@
                     }
                 },
                 {
-                    "title": "Ahorro de costos y tiempo",
+                    "title": "Ahorro de Costos y Tiempo",
                     "description": "Reduce costos operativos y ahorra horas a través de procesos eficientes y automatizados.",
                     "icon": "Shield",
                     "color": "text-green-500",
@@ -225,7 +226,7 @@
                     }
                 },
                 {
-                    "title": "Ventas y marketing mejorados",
+                    "title": "Ventas y Marketing Mejorados",
                     "description": "Implementa IA para nutrir leads, gestionar campañas y personalizar la interacción con clientes.",
                     "icon": "BarChart",
                     "color": "text-purple-500",
@@ -241,7 +242,7 @@
                     }
                 },
                 {
-                    "title": "Intake y operaciones optimizadas",
+                    "title": "Intake y Operaciones Optimizadas",
                     "description": "Automatiza la incorporación de clientes, la entrada de datos y los flujos internos para operaciones más fluidas.",
                     "icon": "Globe",
                     "color": "text-cyan-500",
@@ -257,7 +258,7 @@
                     }
                 },
                 {
-                    "title": "Soluciones escalables",
+                    "title": "Soluciones Escalables",
                     "description": "Nuestras soluciones están diseñadas para crecer con tu negocio, adaptándose a nuevas demandas.",
                     "icon": "Smartphone",
                     "color": "text-pink-500",
@@ -273,7 +274,7 @@
                     }
                 },
                 {
-                    "title": "Menos complicaciones, más control",
+                    "title": "Menos Complicaciones, Más Control",
                     "description": "Obtén claridad y control sobre tus procesos con sistemas que trabajan para ti, no en tu contra.",
                     "icon": "Clock",
                     "color": "text-orange-500",
@@ -289,7 +290,7 @@
                     }
                 },
                 {
-                    "title": "Integración sin fricciones",
+                    "title": "Integración Sin Fricciones",
                     "description": "Nos aseguramos de que tus nuevas soluciones de IA se integren perfectamente con tus herramientas y plataformas existentes.",
                     "icon": "Settings",
                     "color": "text-indigo-500",
@@ -335,7 +336,7 @@
         },
         "Hero": {
             "badge": "Impulsando pequeñas empresas con automatización IA",
-            "title": "Optimiza tu trabajo con ",
+            "title": "Optimiza Tu Trabajo Con ",
             "titleHighlight": "Automatización Inteligente",
             "description": "Flujos de trabajo personalizados con IA para pequeñas empresas. Ahorra tiempo, reduce costos y logra mayor productividad.",
             "button": "Consulta gratuita",
@@ -361,8 +362,8 @@
             "errorGeneric": "Ocurrió un error. Por favor, inténtalo de nuevo."
         },
         "Plans": {
-            "title": "Desbloquea el potencial de automatización de ",
-            "titleHighlight": "Tu negocio",
+            "title": "Desbloquea El Potencial De Automatización De ",
+            "titleHighlight": "Tu Negocio",
             "description": "Todo viaje exitoso de automatización comienza con el entendimiento. Hablemos de tus necesidades únicas y cómo nuestras soluciones de IA pueden impulsar la eficiencia y el crecimiento.",
             "planName": "Agenda tu consulta gratuita",
             "planDescription": "¿Listo para ver cómo SmartNode Solutions puede transformar tu negocio? Reserva una sesión personalizada 1-a-1 con nuestros expertos.",
@@ -441,6 +442,78 @@
             "backToArticles": "Volver a todos los artículos",
             "likedArticle": "¿Te gustó este artículo?",
             "newsletterPrompt": "Únete a nuestro boletín para recibir más contenido exclusivo y novedades directamente en tu correo."
+        },
+        "LegalPages": {
+            "privacy": {
+                "title": "Política de Privacidad",
+                "lastUpdated": "Última Actualización: 08/15/2025",
+                "sections": [
+                    {
+                        "heading": "1. Información que Recopilamos",
+                        "content": "Recopilamos información para proporcionar y mejorar nuestros servicios de automatización con IA. Esto puede incluir: Información de Contacto: Nombre, dirección de correo electrónico, número de teléfono y nombre de la empresa cuando llenas un formulario de contacto o agendas una consulta. Datos de Uso: Información sobre cómo interactúas con nuestro sitio web, como tu dirección IP, tipo de navegador, páginas vistas y la hora y fecha de tu visita. Datos del Servicio: Detalles sobre los flujos de trabajo y procesos de tu negocio, que nos proporcionas con el propósito de construir e implementar una solución de IA a medida."
+                    },
+                    {
+                        "heading": "2. Cómo Usamos tu Información",
+                        "content": "Usamos la información que recopilamos para los siguientes propósitos: Para proporcionar y mantener nuestros servicios. Para comunicarnos contigo sobre tus proyectos, consultas o peticiones. Para mejorar nuestro sitio web, servicios y esfuerzos de marketing. Para personalizar tu experiencia y proporcionar soluciones a medida. Para fines de facturación y administración."
+                    },
+                    {
+                        "heading": "3. Compartición y Divulgación de Datos",
+                        "content": "No vendemos tus datos personales. Podemos compartir tu información con proveedores de servicios de terceros (por ejemplo, socios de alojamiento, proveedores de análisis) solo en la medida necesaria para operar nuestro negocio y proporcionar nuestros servicios. También podemos divulgar tu información si así lo exige la ley."
+                    },
+                    {
+                        "heading": "4. Tus Derechos de Privacidad",
+                        "content": "Tienes derecho a acceder, actualizar o solicitar la eliminación de tu información personal. Si deseas ejercer estos derechos, por favor contáctanos en contact@smartnode.solutions."
+                    },
+                    {
+                        "heading": "5. Seguridad de los Datos",
+                        "content": "Implementamos medidas de seguridad razonables para proteger tus datos de accesos no autorizados, alteración o destrucción. Sin embargo, ningún método de transmisión a través de Internet o almacenamiento electrónico es 100% seguro."
+                    }
+                ]
+            },
+            "terms": {
+                "title": "Términos de Servicio",
+                "lastUpdated": "Última Actualización: 08/15/2025",
+                "sections": [
+                    {
+                        "heading": "1. Nuestros Servicios",
+                        "content": "SmartNode Solutions ofrece orientación experta y flujos de trabajo de automatización con IA a medida para pequeñas empresas. Nuestros servicios están diseñados para optimizar tus operaciones, aumentar la eficiencia e impulsar un crecimiento medible."
+                    },
+                    {
+                        "heading": "2. Obligaciones del Usuario",
+                        "content": "Al usar nuestros servicios, aceptas: Proporcionar información precisa y completa. Usar los servicios solo para fines lícitos. No interferir con la seguridad u operación de nuestros servicios. Mantener la confidencialidad de la información de tu cuenta."
+                    },
+                    {
+                        "heading": "3. Propiedad Intelectual",
+                        "content": "Todo el contenido, marcas comerciales y propiedad intelectual en nuestro sitio web y en nuestros servicios son propiedad de SmartNode Solutions. No puedes usar, copiar o distribuir ninguna parte de nuestra propiedad intelectual sin nuestro consentimiento expreso por escrito."
+                    },
+                    {
+                        "heading": "4. Limitación de Responsabilidad",
+                        "content": "SmartNode Solutions no se hace responsable de ningún daño indirecto, incidental o consecuente que resulte del uso de nuestros servicios. Nuestra responsabilidad total no excederá la cantidad que nos hayas pagado por el servicio en cuestión."
+                    },
+                    {
+                        "heading": "5. Terminación",
+                        "content": "Nos reservamos el derecho de suspender o terminar tu acceso a nuestros servicios en cualquier momento y por cualquier motivo, incluso si violas estos Términos."
+                    }
+                ]
+            },
+            "cookies": {
+                "title": "Política de Cookies",
+                "lastUpdated": "Última Actualización: 08/15/2025",
+                "sections": [
+                    {
+                        "heading": "1. ¿Qué son las Cookies?",
+                        "content": "Las cookies son pequeños archivos de texto que un sitio web que visitas coloca en tu dispositivo. Son ampliamente utilizadas para que los sitios web funcionen de manera más eficiente y para proporcionar una mejor experiencia de usuario."
+                    },
+                    {
+                        "heading": "2. Cómo Usamos las Cookies",
+                        "content": "Usamos cookies para varios propósitos: Cookies Esenciales: Estas cookies son necesarias para que el sitio web funcione correctamente. Cookies de Análisis: Usamos cookies para recopilar datos anónimos sobre cómo los visitantes usan nuestro sitio web. Esto nos ayuda a entender el comportamiento del usuario y a mejorar el rendimiento de nuestro sitio. Cookies de Marketing: Estas cookies nos ayudan a mostrarte anuncios relevantes basados en tus intereses."
+                    },
+                    {
+                        "heading": "3. Tus Opciones",
+                        "content": "Tienes derecho a elegir si aceptas o rechazas las cookies. Puedes gestionar tus preferencias de cookies a través de la configuración de tu navegador. Ten en cuenta que desactivar ciertas cookies puede afectar la funcionalidad de nuestro sitio web."
+                    }
+                ]
+            }
         }
     }
 }

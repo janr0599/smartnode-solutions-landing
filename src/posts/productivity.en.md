@@ -1,8 +1,13 @@
 ---
-slug: "productivity.md"
+slug: "productivity.en.md"
 title: "Boosting Team Productivity: 10 Automation Strategies That Actually Work"
 excerpt: "Learn practical automation techniques that can save your team hours of manual work every week."
-author: { name: "Roselis Perez", avatar: "g", role: "Project Management Lead" }
+author:
+    {
+        name: "Roselis Perez",
+        avatar: "/roselisperez202311.png",
+        role: "Project Management Lead",
+    }
 date: "2025-03-12"
 readTime: "7 min read"
 category: "Productivity"

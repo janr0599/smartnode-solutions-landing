@@ -37,7 +37,7 @@
             }
         ],
         "badge": "Our Story",
-        "mainTitle": "Simplifying Business with Smart Automation",
+        "mainTitle": "Simplifying Business With Smart Automation",
         "mainTitleHighlight": "Smart Automation",
         "mainDescription": "At SmartNode Solutions, we believe that powerful automation should be accessible to every business, regardless of size. We’re on a mission to free small business owners and their teams from tedious, repetitive tasks so they can focus on what truly matters: growth and innovation.",
         "missionTitle": "Our Mission",
@@ -64,6 +64,7 @@
         "title": "Let's Start a Conversation",
         "description": "Ready to streamline your operations and unlock new growth? Connect with our team of AI experts to discuss how intelligent automation can enhance your business. We're here to build reliable solutions that deliver tangible value.",
         "form": {
+            "title": "Send us a message",
             "name": "Name",
             "email": "Email",
             "company": "Company",
@@ -110,7 +111,7 @@
             "readMore": "Read More"
         },
         "CTA": {
-            "title": "Ready to Transform Your Workflow?",
+            "title": "Ready To Transform Your Workflow?",
             "description": "Discover how tailored AI automation and workflow solutions can save you time, cut costs, and boost productivity. Let's build the future of your small business, together.",
             "button": "Schedule Your Free Consultation",
             "forSmallBusinesses": "For Small Businesses",
@@ -122,7 +123,7 @@
             "customJourney": "Your custom AI journey starts here."
         },
         "Features": {
-            "title": "Solutions Crafted to Transform ",
+            "title": "Solutions Crafted To Transform",
             "titleHighlight": "Your Business",
             "description": "We provide comprehensive AI automation services that tackle your unique business challenges, delivering tangible improvements across all departments.",
             "infographic": {
@@ -334,8 +335,8 @@
             "close": "Close"
         },
         "Hero": {
-            "badge": "Empowering Small Businesses with AI Automation",
-            "title": "Streamline Your Workflow with ",
+            "badge": "Empowering Small Businesses With AI Automation",
+            "title": "Streamline Your Workflow With ",
             "titleHighlight": "Smart Automation",
             "description": "Tailored AI-powered workflows for small businesses. Save time, cut costs, reduce hassle, and achieve greater productivity.",
             "button": "Free Consultation",
@@ -390,6 +391,7 @@
                     "name": "Maria Sanchez",
                     "role": "Owner",
                     "company": "Local Bake Shop",
+                    "avatar": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "Our administrative tasks used to take hours. This AI solution handles everything seamlessly, freeing us to focus on our craft. Truly a game-changer for our small business!",
                     "rating": 5
                 },
@@ -397,6 +399,7 @@
                     "name": "John Miller",
                     "role": "CEO",
                     "company": "E-commerce Boutique",
+                    "avatar": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "The custom workflow automation implemented by the agency has drastically improved our order processing and customer service. It's like having an extra team member.",
                     "rating": 5
                 },
@@ -404,6 +407,7 @@
                     "name": "Aisha Khan",
                     "role": "Clinic Manager",
                     "company": "Family Health Clinic",
+                    "avatar": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "We needed a specific solution for patient scheduling and reminders. This agency delivered a perfect, tailored AI system that fits our clinic's unique needs.",
                     "rating": 5
                 },
@@ -411,6 +415,7 @@
                     "name": "Roberto Gomez",
                     "role": "Operations Director",
                     "company": "Logistics Innovators",
+                    "avatar": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "Their expertise in AI for logistics is unmatched. The custom solution they built streamlined our inventory management and reduced errors significantly.",
                     "rating": 5
                 },
@@ -418,6 +423,7 @@
                     "name": "Sophia Lee",
                     "role": "Marketing Lead",
                     "company": "Creative Digital Studio",
+                    "avatar": "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "We thought AI was only for big corporations, but this agency showed us how accessible and powerful it is for small businesses. Our marketing campaigns are now smarter and more efficient.",
                     "rating": 5
                 },
@@ -425,6 +431,7 @@
                     "name": "Kevin Wong",
                     "role": "Restaurant Owner",
                     "company": "Gourmet Bistro",
+                    "avatar": "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=100",
                     "content": "The personalized approach to automation made all the difference. They truly understood our pain points and delivered a solution that has transformed our daily operations.",
                     "rating": 5
                 }
@@ -434,6 +441,78 @@
             "backToArticles": "Back to all articles",
             "likedArticle": "Liked this article?",
             "newsletterPrompt": "Join our newsletter to get more exclusive insights and content delivered directly to your inbox."
+        },
+        "LegalPages": {
+            "privacy": {
+                "title": "Privacy Policy",
+                "lastUpdated": "Last Updated: 08/15/2025",
+                "sections": [
+                    {
+                        "heading": "1. Information We Collect",
+                        "content": "We collect information to provide and improve our AI automation services. This may include: Contact Information: Name, email address, phone number, and company name when you fill out a contact form or schedule a consultation. Usage Data: Information about how you interact with our website, such as your IP address, browser type, pages viewed, and the time and date of your visit. Service Data: Details about your business workflows and processes, which you provide to us for the purpose of building and implementing a custom AI solution."
+                    },
+                    {
+                        "heading": "2. How We Use Your Information",
+                        "content": "We use the information we collect for the following purposes: To provide and maintain our services. To communicate with you about your projects, consultations, or inquiries. To improve our website, services, and marketing efforts. To personalize your experience and provide tailored solutions. For billing and administrative purposes."
+                    },
+                    {
+                        "heading": "3. Data Sharing and Disclosure",
+                        "content": "We do not sell your personal data. We may share your information with third-party service providers (e.g., hosting partners, analytics providers) only to the extent necessary to operate our business and provide our services. We may also disclose your information if required by law."
+                    },
+                    {
+                        "heading": "4. Your Privacy Rights",
+                        "content": "You have the right to access, update, or request the deletion of your personal information. If you wish to exercise these rights, please contact us at contact@smartnode.solutions."
+                    },
+                    {
+                        "heading": "5. Data Security",
+                        "content": "We implement reasonable security measures to protect your data from unauthorized access, alteration, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure."
+                    }
+                ]
+            },
+            "terms": {
+                "title": "Terms of Service",
+                "lastUpdated": "Last Updated: 08/15/2025",
+                "sections": [
+                    {
+                        "heading": "1. Our Services",
+                        "content": "SmartNode Solutions provides expert guidance and custom-built AI automation workflows for small businesses. Our services are designed to streamline your operations, increase efficiency, and drive measurable growth."
+                    },
+                    {
+                        "heading": "2. User Obligations",
+                        "content": "When using our services, you agree to: Provide accurate and complete information. Use the services only for lawful purposes. Not interfere with the security or operation of our services. Maintain the confidentiality of your account information."
+                    },
+                    {
+                        "heading": "3. Intellectual Property",
+                        "content": "All content, trademarks, and intellectual property on our website and in our services are the property of SmartNode Solutions. You may not use, copy, or distribute any part of our intellectual property without our express written consent."
+                    },
+                    {
+                        "heading": "4. Limitation of Liability",
+                        "content": "SmartNode Solutions is not liable for any indirect, incidental, or consequential damages resulting from your use of our services. Our total liability will not exceed the amount you have paid to us for the specific service in question."
+                    },
+                    {
+                        "heading": "5. Termination",
+                        "content": "We reserve the right to suspend or terminate your access to our services at any time, for any reason, including if you violate these Terms."
+                    }
+                ]
+            },
+            "cookies": {
+                "title": "Cookie Policy",
+                "lastUpdated": "Last Updated: 08/15/2025",
+                "sections": [
+                    {
+                        "heading": "1. What Are Cookies?",
+                        "content": "Cookies are small text files placed on your device by a website that you visit. They are widely used to make websites work more efficiently and to provide a better user experience."
+                    },
+                    {
+                        "heading": "2. How We Use Cookies",
+                        "content": "We use cookies for various purposes: Essential Cookies: These cookies are necessary for the website to function properly. Analytics Cookies: We use cookies to collect anonymous data about how visitors use our website. This helps us understand user behavior and improve our site's performance. Marketing Cookies: These cookies help us show you relevant advertisements based on your interests."
+                    },
+                    {
+                        "heading": "3. Your Choices",
+                        "content": "You have the right to choose whether to accept or reject cookies. You can manage your cookie preferences through your browser settings. Be aware that disabling certain cookies may affect the functionality of our website."
+                    }
+                ]
+            }
         }
     }
 }

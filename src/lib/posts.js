@@ -1,4 +1,3 @@
-// src/lib/posts.js
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -7,30 +6,23 @@ import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "src/posts");
 
-export function getSortedPostsData() {
+export function getSortedPostsData(lang) {
     const fileNames = fs.readdirSync(postsDirectory);
-    const allPostsData = fileNames.map((fileName) => {
-        const fullPath = path.join(postsDirectory, fileName);
-        const fileContents = fs.readFileSync(fullPath, "utf8");
-        const matterResult = matter(fileContents);
-        const id = fileName.replace(/\.md$/, ""); // Use file name as the ID
+    const allPostsData = fileNames
+        .filter((fileName) => fileName.endsWith(`.${lang}.md`))
+        .map((fileName) => {
+            const fullPath = path.join(postsDirectory, fileName);
+            const fileContents = fs.readFileSync(fullPath, "utf8");
+            const matterResult = matter(fileContents);
+            const id = fileName
+                .replace(/\.en\.md$/, "")
+                .replace(/\.es\.md$/, "");
 
-        // This is a cleaner way to handle the data, ensuring the file name ID is used
-        const postData = {
-            id,
-            ...matterResult.data,
-        };
-
-        // If the frontmatter also contains an 'id', this will be overwritten.
-        // Let's explicitly delete the old 'id' to be safe.
-        delete postData.id;
-
-        return {
-            id, // Use the ID from the file name
-            ...matterResult.data,
-            author: matterResult.data.author, // Make sure the author data is correctly handled
-        };
-    });
+            return {
+                id,
+                ...matterResult.data,
+            };
+        });
 
     return allPostsData.sort((a, b) => {
         if (a.date < b.date) {
@@ -41,12 +33,11 @@ export function getSortedPostsData() {
     });
 }
 
-export async function getPostData(id) {
-    const fullPath = path.join(postsDirectory, `${id}.md`);
+export async function getPostData(id, lang) {
+    const fullPath = path.join(postsDirectory, `${id}.${lang}.md`);
 
-    // Check if the file exists before trying to read it
     if (!fs.existsSync(fullPath)) {
-        return null; // Return null to trigger notFound() in the page component
+        return null;
     }
 
     const fileContents = fs.readFileSync(fullPath, "utf8");
@@ -56,8 +47,6 @@ export async function getPostData(id) {
         .use(html)
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
-
-    // Correcting the author object format here as well
     const authorData =
         typeof matterResult.data.author === "string"
             ? JSON.parse(
@@ -76,11 +65,19 @@ export async function getPostData(id) {
     };
 }
 
-export function getAllPostIds() {
+export async function getAllPostIds() {
     const fileNames = fs.readdirSync(postsDirectory);
-    return fileNames.map((fileName) => {
-        return {
-            id: fileName.replace(/\.md$/, ""),
-        };
+    const postIds = fileNames.map((fileName) => {
+        const id = fileName.replace(/\.en\.md$/, "").replace(/\.es\.md$/, "");
+        return id;
+    });
+
+    const uniquePostIds = [...new Set(postIds)];
+
+    return uniquePostIds.flatMap((id) => {
+        return [
+            { id, lang: "en" },
+            { id, lang: "es" },
+        ];
     });
 }

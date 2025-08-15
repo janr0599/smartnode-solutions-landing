@@ -1,5 +1,5 @@
 ---
-slug: "ai-powered-workflows.md"
+slug: "ai-powered-workflows.en.md"
 title: "AI-Powered Workflows: A Game-Changer for Small Businesses"
 excerpt: "Discover how tailored AI workflows can transform your small business. Automate repetitive tasks, boost productivity, and free up valuable time to focus on strategic growth. AI is no longer just for big corporations—it's a game-changer for you."
 author:

@@ -4,31 +4,42 @@ import Link from "next/link";
 import { Workflow } from "lucide-react";
 import { FiInstagram, FiFacebook, FiLinkedin, FiMail } from "react-icons/fi";
 import { useTranslation } from "@/lib/i18n-provider"; // Import the useTranslation hook
+import { useParams } from "next/navigation";
 
 const Footer = () => {
     const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
+    const params = useParams();
+    const locale = params.lang;
 
-    // Get the product, company, and legal links from the translation file
     const productLinks = [
-        { name: t("components.Footer.features"), href: "/features" },
-        { name: t("components.Footer.plans"), href: "/plans" },
-        { name: t("components.Footer.caseStudies"), href: "/case-studies" },
+        { name: t("components.Footer.features"), href: `/${locale}/#features` },
+        { name: t("components.Footer.plans"), href: `/${locale}/#plans` },
+        {
+            name: t("components.Footer.caseStudies"),
+            href: `/${locale}/case-studies`,
+        },
     ];
 
     const companyLinks = [
-        { name: t("components.Footer.about"), href: "/about" },
-        { name: t("components.Footer.blog"), href: "/blog" },
-        { name: t("components.Footer.contact"), href: "/contact" },
+        { name: t("components.Footer.about"), href: `/${locale}/about` },
+        { name: t("components.Footer.blog"), href: `/${locale}/blog` },
+        { name: t("components.Footer.contact"), href: `/${locale}/contact` },
     ];
 
     const legalLinks = [
-        { name: t("components.Footer.privacyPolicy"), href: "/privacy-policy" },
+        {
+            name: t("components.Footer.privacyPolicy"),
+            href: `/${locale}/privacy-policy`,
+        },
         {
             name: t("components.Footer.termsOfService"),
-            href: "/terms-of-service",
+            href: `/${locale}/terms-of-service`,
         },
-        { name: t("components.Footer.cookiePolicy"), href: "/cookie-policy" },
+        {
+            name: t("components.Footer.cookiePolicy"),
+            href: `/${locale}/cookie-policy`,
+        },
     ];
 
     return (
@@ -37,7 +48,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-1 md:col-span-2">
                         <Link
-                            href="/"
+                            href={`/${locale}`}
                             className="flex items-center space-x-2 mb-4"
                         >
                             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
@@ -65,13 +76,13 @@ const Footer = () => {
                             >
                                 <FiFacebook className="w-5 h-5" />
                             </Link>
-                            <Link
+                            {/* <Link
                                 href="#"
                                 target="_blank"
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
                                 <FiLinkedin className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                             <Link
                                 href={`mailto:${t(
                                     "contact.emailSection.generalEmail"

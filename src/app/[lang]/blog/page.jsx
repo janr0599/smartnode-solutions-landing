@@ -8,7 +8,7 @@ import { getDictionary } from "@/lib/i18n"; // Correct server-side import
 
 export default async function Blog({ params: { lang } }) {
     const common = await getDictionary(lang);
-    const allPostsData = getSortedPostsData();
+    const allPostsData = getSortedPostsData(lang); // Pass the lang parameter here
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">

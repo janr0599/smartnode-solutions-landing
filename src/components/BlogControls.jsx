@@ -9,28 +9,37 @@ import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/lib/i18n-provider";
+import { useParams } from "next/navigation";
 
 export default function BlogControls({ posts }) {
     const { t } = useTranslation();
+    const params = useParams();
+    const lang = params.lang;
     const [searchQuery, setSearchQuery] = useState("");
     const [activeCategory, setActiveCategory] = useState(
         t("components.BlogControls.categories.0")
     );
 
-    const categories = t("components.BlogControls.categories", {
-        returnObjects: true,
-    });
+    const categories =
+        t("components.BlogControls.categories", { returnObjects: true }) || [];
 
-    const filteredPosts = posts.filter((post) => {
-        const matchesCategory =
-            activeCategory === categories[0] ||
-            post.category === activeCategory;
-        const matchesSearch =
-            post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            post.category.toLowerCase().includes(searchQuery.toLowerCase());
-        return matchesCategory && matchesSearch;
-    });
+    const filteredPosts =
+        posts?.filter((post) => {
+            const matchesCategory =
+                activeCategory === categories[0] ||
+                post.category === activeCategory;
+            const matchesSearch =
+                (post.title?.toLowerCase() || "").includes(
+                    searchQuery.toLowerCase()
+                ) ||
+                (post.excerpt?.toLowerCase() || "").includes(
+                    searchQuery.toLowerCase()
+                ) ||
+                (post.category?.toLowerCase() || "").includes(
+                    searchQuery.toLowerCase()
+                );
+            return matchesCategory && matchesSearch;
+        }) || [];
 
     return (
         <>
@@ -105,11 +114,11 @@ export default function BlogControls({ posts }) {
                                 <div className="flex items-center">
                                     <Avatar className="w-8 h-8 mr-3">
                                         <AvatarImage
-                                            src={post.author.avatar}
-                                            alt={post.author.name}
+                                            src={post.author?.avatar}
+                                            alt={post.author?.name}
                                         />
                                         <AvatarFallback>
-                                            {post.author.name
+                                            {(post.author?.name || "")
                                                 .split(" ")
                                                 .map((n) => n[0])
                                                 .join("")}
@@ -117,15 +126,15 @@ export default function BlogControls({ posts }) {
                                     </Avatar>
                                     <div>
                                         <div className="text-sm font-medium text-gray-900">
-                                            {post.author.name}
+                                            {post.author?.name}
                                         </div>
                                         <div className="text-xs text-gray-500">
-                                            {post.author.role}
+                                            {post.author?.role}
                                         </div>
                                     </div>
                                 </div>
                                 <Link
-                                    href={`/blog/${post.id}`}
+                                    href={`/${lang}/blog/${post.id}`}
                                     className="block mt-4"
                                 >
                                     <div className="flex items-center text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium">

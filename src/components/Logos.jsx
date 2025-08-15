@@ -1,4 +1,4 @@
-// src/components/InfiniteLogos.jsx
+// src/components/Logos.jsx
 "use client";
 
 import Image from "next/image";

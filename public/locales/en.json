@@ -1,0 +1,437 @@
+{
+    "main": {
+        "title": "SmartNode Solutions - Automation for Small Businesses",
+        "description": "Streamline your workflow with our powerful AI Automation Solutions. Built for modern teams."
+    },
+    "about": {
+        "team": [
+            {
+                "name": "Javier Noguera",
+                "role": "CEO & Co-Founder",
+                "bio": "Javier brings a unique blend of engineering and low-code expertise, building the technical foundation for our tailored automation solutions. He is the architect behind our mission to simplify complex workflows.",
+                "avatar": "/javiernoguera202311.jpg"
+            },
+            {
+                "name": "Roselis Perez",
+                "role": "Project Management Lead",
+                "bio": "With a Master's in Project Management, Roselis ensures every client project is executed flawlessly. Her focus on clear communication and methodical execution guarantees that our solutions deliver tangible results.",
+                "avatar": "/roselisperez202311.jpg"
+            }
+        ],
+        "stats": [
+            {
+                "label": "Projects Delivered",
+                "value": "50"
+            },
+            {
+                "label": "Industries Served",
+                "value": "10"
+            },
+            {
+                "label": "Average ROI",
+                "value": "300"
+            },
+            {
+                "label": "Hours Saved",
+                "value": "1000"
+            }
+        ],
+        "badge": "Our Story",
+        "mainTitle": "Simplifying Business with Smart Automation",
+        "mainTitleHighlight": "Smart Automation",
+        "mainDescription": "At SmartNode Solutions, we believe that powerful automation should be accessible to every business, regardless of size. We’re on a mission to free small business owners and their teams from tedious, repetitive tasks so they can focus on what truly matters: growth and innovation.",
+        "missionTitle": "Our Mission",
+        "missionParagraph1": "We are dedicated to empowering small and medium-sized businesses with custom-built AI automation solutions. Our approach is to work closely with you to understand your unique challenges and build powerful, scalable workflows using low-code, no-code, and full code tools that deliver a clear return on investment.",
+        "missionParagraph2": "Our vision is to be the go-to partner for businesses seeking to harness the power of AI to work smarter, not harder. We don't just build solutions; we build long-term partnerships based on trust, expertise, and a shared commitment to your success.",
+        "principles": [
+            "Founded on the principle of accessible technology",
+            "Dedicated to tailored solutions, not one-size-fits-all products",
+            "Expertise in low-code, no-code, and full code platforms"
+        ],
+        "whyTitle": "Why We Do What We Do",
+        "whyDescription": "We started SmartNode Solutions to eliminate the daily frustrations caused by manual, repetitive work. Our motivation comes from seeing businesses thrive once they are freed from mundane tasks, allowing them to focus on innovation, strategy, and serving their customers better.",
+        "leadershipTitle": "Meet Our Leadership",
+        "leadershipDescription": "We are a small but mighty team of builders and strategists, united by a passion for solving complex business problems with elegant, effective automation."
+    },
+    "blog": {
+        "badge": "Blog",
+        "title": "Insights & Stories from SmartNode Solutions",
+        "description": "Stay updated with the latest trends in productivity, remote work, and team collaboration. Learn from our experiences and industry insights.",
+        "newsletterPrompt": "Want to stay updated with our latest posts?"
+    },
+    "contact": {
+        "badge": "Contact Us",
+        "title": "Let's Start a Conversation",
+        "description": "Ready to streamline your operations and unlock new growth? Connect with our team of AI experts to discuss how intelligent automation can enhance your business. We're here to build reliable solutions that deliver tangible value.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "company": "Company",
+            "message": "Message",
+            "send": "Send Message",
+            "success": "Thank you for your message! We'll get back to you within 24 hours.",
+            "error": "Failed to send message. Please try again later.",
+            "errorGeneric": "An error occurred. Please try again."
+        },
+        "emailSection": {
+            "title": "Email us",
+            "general": "General:",
+            "support": "Support:",
+            "sales": "Sales:",
+            "generalEmail": "contact@smartnode.solutions",
+            "supportEmail": "support@smartnode.solutions",
+            "salesEmail": "sales@smartnode.solutions",
+            "description": "For general inquiries and support questions."
+        },
+        "supportHours": {
+            "title": "Support hours",
+            "mondayFriday": "Monday - Friday:",
+            "saturday": "Saturday:",
+            "sunday": "Sunday:",
+            "mondayFridayHours": "9AM - 5PM EST",
+            "saturdayHours": "10AM - 4PM EST",
+            "sundayHours": "Closed"
+        }
+    },
+    "login": {},
+    "signup": {},
+    "components": {
+        "BlogControls": {
+            "searchPlaceholder": "Search posts...",
+            "categories": [
+                "All",
+                "Remote Work",
+                "Productivity",
+                "Security",
+                "Analytics",
+                "Startup",
+                "Team Building"
+            ],
+            "readMore": "Read More"
+        },
+        "CTA": {
+            "title": "Ready to Transform Your Workflow?",
+            "description": "Discover how tailored AI automation and workflow solutions can save you time, cut costs, and boost productivity. Let's build the future of your small business, together.",
+            "button": "Schedule Your Free Consultation",
+            "forSmallBusinesses": "For Small Businesses",
+            "forSmallBusinessesDesc": "Solutions designed for your growth",
+            "secureReliable": "Secure & Reliable",
+            "secureReliableDesc": "Robust implementations you can trust",
+            "driveEfficiency": "Drive Efficiency",
+            "driveEfficiencyDesc": "Automate for maximum impact",
+            "customJourney": "Your custom AI journey starts here."
+        },
+        "Features": {
+            "title": "Solutions Crafted to Transform",
+            "titleHighlight": "Your Business",
+            "description": "We provide comprehensive AI automation services that tackle your unique business challenges, delivering tangible improvements across all departments.",
+            "infographic": {
+                "title": "Your Automated Workflow",
+                "nodes": [
+                    {
+                        "label": "Input & Data",
+                        "icon": "Play",
+                        "color": "bg-blue-50 text-blue-800",
+                        "arrowColor": "bg-blue-300"
+                    },
+                    {
+                        "label": "Custom AI Logic",
+                        "icon": "Settings2",
+                        "color": "bg-purple-50 text-purple-800",
+                        "arrowColor": "bg-purple-300"
+                    },
+                    {
+                        "label": "Automated Output",
+                        "icon": "Check",
+                        "color": "bg-green-50 text-green-800",
+                        "arrowColor": "bg-green-300"
+                    }
+                ]
+            },
+            "statistics": {
+                "title": "The Future of Your Small Business",
+                "description": "Our AI agency focuses on delivering practical, impactful automation. We help small businesses navigate the complexities of AI to implement solutions that drive real growth and operational excellence.",
+                "bullets": [
+                    "Custom workflows for sales, marketing & operations",
+                    "Expert guidance on low-code, no-code, and custom code",
+                    "Measurable improvements in time, money, and productivity"
+                ],
+                "stats": [
+                    {
+                        "label": "Productivity Boost",
+                        "value": "94"
+                    },
+                    {
+                        "label": "Hours Saved",
+                        "value": "47"
+                    },
+                    {
+                        "label": "Processes Automated",
+                        "value": "23"
+                    },
+                    {
+                        "label": "New Clients",
+                        "value": "18"
+                    }
+                ]
+            },
+            "features": [
+                {
+                    "title": "Tailored AI Automation",
+                    "description": "Custom-built AI workflows using low-code, no-code, or full code to fit your unique business needs.",
+                    "icon": "Zap",
+                    "color": "text-yellow-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-2",
+                        "lg": "lg:col-span-2"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-2",
+                        "lg": "lg:row-span-4"
+                    }
+                },
+                {
+                    "title": "Boost Productivity",
+                    "description": "Empower your team by automating tedious tasks, freeing them to focus on high-value work.",
+                    "icon": "Users",
+                    "color": "text-blue-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Cost & Time Savings",
+                    "description": "Reduce operational costs and save countless hours through efficient, automated processes.",
+                    "icon": "Shield",
+                    "color": "text-green-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Enhanced Sales & Marketing",
+                    "description": "Implement AI for lead nurturing, campaign management, and personalized customer interactions.",
+                    "icon": "BarChart",
+                    "color": "text-purple-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Streamlined Intake & Ops",
+                    "description": "Automate client onboarding, data entry, and internal workflows for smoother operations.",
+                    "icon": "Globe",
+                    "color": "text-cyan-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Scalable Solutions",
+                    "description": "Our solutions are designed to grow with your business, adapting to evolving demands.",
+                    "icon": "Smartphone",
+                    "color": "text-pink-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Less Hassle, More Control",
+                    "description": "Gain clarity and control over your processes with systems that work for you, not against you.",
+                    "icon": "Clock",
+                    "color": "text-orange-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-2",
+                        "lg": "lg:col-span-2"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Seamless Integration",
+                    "description": "We ensure your new AI solutions integrate smoothly with your existing tools and platforms.",
+                    "icon": "Settings",
+                    "color": "text-indigo-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-2",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                }
+            ]
+        },
+        "Footer": {
+            "companyName": "SmartNode Solutions",
+            "description": "Transform your operations with our tailored AI automation solutions. We empower small businesses to achieve more by designing workflows that truly fit their unique needs.",
+            "product": "Product",
+            "features": "Features",
+            "plans": "Plans",
+            "caseStudies": "Case Studies",
+            "company": "Company",
+            "about": "About",
+            "blog": "Blog",
+            "contact": "Contact",
+            "privacyPolicy": "Privacy Policy",
+            "termsOfService": "Terms of Service",
+            "cookiePolicy": "Cookie Policy",
+            "copyright": "All rights reserved."
+        },
+        "Header": {
+            "companyName": "SmartNode Solutions",
+            "features": "Features",
+            "plans": "Plans",
+            "about": "About",
+            "contact": "Contact",
+            "blog": "Blog",
+            "getInTouch": "Get in touch",
+            "menu": "Menu",
+            "close": "Close"
+        },
+        "Hero": {
+            "badge": "Empowering Small Businesses with AI Automation",
+            "title": "Streamline Your Workflow with Smart Automation",
+            "description": "Tailored AI-powered workflows for small businesses. Save time, cut costs, reduce hassle, and achieve greater productivity.",
+            "button": "Free Consultation",
+            "buttonUrl": "https://calendly.com/smartnode-solutions/30min",
+            "customized": "Customized for diverse use cases",
+            "secureReliable": "Secure & Reliable Implementations",
+            "provenROI": "Proven ROI & Efficiency Gains",
+            "salesAutomationTitle": "Sales Automation",
+            "salesAutomationDesc": "Automate lead qualification, CRM updates, and follow-ups.",
+            "marketingEfficiencyTitle": "Marketing Efficiency",
+            "marketingEfficiencyDesc": "Streamline campaigns, content scheduling, and analytics.",
+            "workflowStreamliningTitle": "Workflow Streamlining",
+            "workflowStreamliningDesc": "Automate repetitive tasks and integrate disparate systems."
+        },
+        "InfiniteLogos": {
+            "title": "Some of the tools we use to build your automation"
+        },
+        "NewsletterForm": {
+            "placeholder": "Enter your email",
+            "button": "Subscribe",
+            "success": "You have successfully subscribed to our newsletter!",
+            "error": "Failed to subscribe. Please try again.",
+            "errorGeneric": "An error occurred. Please try again."
+        },
+        "Plans": {
+            "title": "Unlock Your Business's Automation Potential",
+            "description": "Every successful automation journey begins with understanding. Let's discuss your unique needs and how our tailored AI solutions can drive efficiency and growth.",
+            "planName": "Schedule Your Free Consultation",
+            "planDescription": "Ready to see how SmartNode Solutions can transform your business? Book a personalized 1-on-1 session with our experts.",
+            "features": [
+                "Understand your current workflows & pain points",
+                "Identify tailored AI automation opportunities for your business",
+                "Receive high-level strategy and potential ROI insights",
+                "Explore a clear pathway to custom solutions",
+                "Absolutely no commitment or hidden costs"
+            ],
+            "buttonText": "Book Your Free Consultation",
+            "noObligation": "No Obligation",
+            "transparentProcess": "Transparent process",
+            "measurableROI": "Focus on measurable ROI",
+            "expertGuidance": "Expert guidance at every step",
+            "clientFocused": "Our approach is always transparent, client-focused, and designed for your success."
+        },
+        "Testimonials": {
+            "title": "Empowering Small Businesses",
+            "description": "Hear directly from the small business owners and teams who are achieving new levels of efficiency and growth with our tailored AI automation solutions.",
+            "trustedBy": "Trusted by businesses like yours",
+            "fiveStar": "5-star success stories",
+            "testimonials": [
+                {
+                    "name": "Maria Sanchez",
+                    "role": "Owner",
+                    "company": "Local Bake Shop",
+                    "content": "Our administrative tasks used to take hours. This AI solution handles everything seamlessly, freeing us to focus on our craft. Truly a game-changer for our small business!",
+                    "rating": 5
+                },
+                {
+                    "name": "John Miller",
+                    "role": "CEO",
+                    "company": "E-commerce Boutique",
+                    "content": "The custom workflow automation implemented by the agency has drastically improved our order processing and customer service. It's like having an extra team member.",
+                    "rating": 5
+                },
+                {
+                    "name": "Aisha Khan",
+                    "role": "Clinic Manager",
+                    "company": "Family Health Clinic",
+                    "content": "We needed a specific solution for patient scheduling and reminders. This agency delivered a perfect, tailored AI system that fits our clinic's unique needs.",
+                    "rating": 5
+                },
+                {
+                    "name": "Roberto Gomez",
+                    "role": "Operations Director",
+                    "company": "Logistics Innovators",
+                    "content": "Their expertise in AI for logistics is unmatched. The custom solution they built streamlined our inventory management and reduced errors significantly.",
+                    "rating": 5
+                },
+                {
+                    "name": "Sophia Lee",
+                    "role": "Marketing Lead",
+                    "company": "Creative Digital Studio",
+                    "content": "We thought AI was only for big corporations, but this agency showed us how accessible and powerful it is for small businesses. Our marketing campaigns are now smarter and more efficient.",
+                    "rating": 5
+                },
+                {
+                    "name": "Kevin Wong",
+                    "role": "Restaurant Owner",
+                    "company": "Gourmet Bistro",
+                    "content": "The personalized approach to automation made all the difference. They truly understood our pain points and delivered a solution that has transformed our daily operations.",
+                    "rating": 5
+                }
+            ]
+        },
+        "BlogPostPage": {
+            "backToArticles": "Back to all articles",
+            "likedArticle": "Liked this article?",
+            "newsletterPrompt": "Join our newsletter to get more exclusive insights and content delivered directly to your inbox."
+        }
+    }
+}

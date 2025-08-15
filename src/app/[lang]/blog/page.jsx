@@ -1,12 +1,13 @@
-// src/app/blog/page.jsx
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogControls from "@/components/BlogControls"; // Import the new client component
 import { Badge } from "@/components/ui/badge";
 import { getSortedPostsData } from "@/lib/posts"; // Import the data fetching function
 import NewsletterForm from "@/components/NewsletterForm";
+import { getDictionary } from "@/lib/i18n"; // Correct server-side import
 
-export default async function Blog() {
+export default async function Blog({ params: { lang } }) {
+    const common = await getDictionary(lang);
     const allPostsData = getSortedPostsData();
 
     return (
@@ -16,27 +17,21 @@ export default async function Blog() {
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-4xl mx-auto mb-16">
                         <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
-                            Blog
+                            {common.blog.badge}
                         </Badge>
                         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                            Insights & Stories from{" "}
-                            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                                SmartNode Solutions
-                            </span>
+                            {common.blog.title}
                         </h1>
                         <p className="text-xl text-gray-600 leading-relaxed">
-                            Stay updated with the latest trends in productivity,
-                            remote work, and team collaboration. Learn from our
-                            experiences and industry insights.
+                            {common.blog.description}
                         </p>
                     </div>
 
-                    {/* Render the new client component and pass the posts as a prop */}
                     <BlogControls posts={allPostsData} />
 
                     <div className="mt-16 text-center">
                         <p className="text-gray-600 mb-4">
-                            Want to stay updated with our latest posts?
+                            {common.blog.newsletterPrompt}
                         </p>
                         <NewsletterForm />
                     </div>

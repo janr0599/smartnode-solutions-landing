@@ -1,4 +1,3 @@
-// src/app/blog/[id]/page.jsx
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
@@ -8,10 +7,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPostData, getAllPostIds } from "@/lib/posts";
 import NewsletterForm from "@/components/NewsletterForm";
+import { getDictionary } from "@/lib/i18n"; // Import the server-side translation function
 
 export default async function BlogPostPage({ params }) {
-    const { id } = await params;
+    const { id, lang } = params; // Extract the lang parameter from the URL
 
+    const common = await getDictionary(lang); // Fetch translations on the server
     const postData = await getPostData(id);
 
     if (!postData) {
@@ -29,6 +30,9 @@ export default async function BlogPostPage({ params }) {
         image,
     } = postData;
 
+    // Use a null-check to safely access the translation keys
+    const translation = common?.components?.BlogPostPage || {};
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
             <Header />
@@ -36,11 +40,11 @@ export default async function BlogPostPage({ params }) {
             <article className="py-20 lg:py-32">
                 <div className="container mx-auto px-4 max-w-4xl">
                     <Link
-                        href="/blog"
+                        href={`/${lang}/blog`}
                         className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-8"
                     >
                         <ArrowLeft className="w-4 h-4 mr-2" />
-                        Back to all articles
+                        {translation.backToArticles || "Back to all articles"}
                     </Link>
 
                     {/* Blog Post Header */}
@@ -107,11 +111,11 @@ export default async function BlogPostPage({ params }) {
                     {/* Newsletter Subscription Section */}
                     <div className="mt-20 text-center border-t border-gray-200 pt-16">
                         <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Liked this article?
+                            {translation.likedArticle || "Liked this article?"}
                         </h3>
                         <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                            Join our newsletter to get more exclusive insights
-                            and content delivered directly to your inbox.
+                            {translation.newsletterPrompt ||
+                                "Join our newsletter to get more exclusive insights and content delivered directly to your inbox."}
                         </p>
                         <NewsletterForm />
                     </div>

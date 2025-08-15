@@ -3,8 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Shield, Zap } from "lucide-react";
 import Link from "next/link";
+import { useTranslation } from "@/lib/i18n-provider";
 
 const CTA = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="py-20 lg:py-32 bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
             <div className="absolute inset-0 bg-black/20" />
@@ -16,18 +19,15 @@ const CTA = () => {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center max-w-4xl mx-auto">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                        Ready to Transform Your Workflow?
+                        {t("components.CTA.title")}
                     </h2>
                     <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Discover how tailored AI automation and workflow
-                        solutions can save you time, cut costs, and boost
-                        productivity. Let's build the future of your small
-                        business, together.
+                        {t("components.CTA.description")}
                     </p>
 
                     <div className="justify-center items-center mb-12">
                         <Link
-                            href="https://calendly.com/smartnode-solutions/30min"
+                            href={t("Hero.buttonUrl")}
                             passHref
                             target="_blank"
                         >
@@ -35,7 +35,7 @@ const CTA = () => {
                                 size="lg"
                                 className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold group shadow-xl"
                             >
-                                Schedule Your Free Consultation
+                                {t("components.CTA.button")}
                                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
@@ -47,10 +47,10 @@ const CTA = () => {
                                 <Users className="w-8 h-8 text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-white mb-2">
-                                For Small Businesses
+                                {t("components.CTA.forSmallBusinesses")}
                             </h3>
                             <p className="text-blue-100">
-                                Solutions designed for your growth
+                                {t("components.CTA.forSmallBusinessesDesc")}
                             </p>
                         </div>
                         <div className="flex flex-col items-center text-center">
@@ -58,10 +58,10 @@ const CTA = () => {
                                 <Shield className="w-8 h-8 text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-white mb-2">
-                                Secure & Reliable
+                                {t("components.CTA.secureReliable")}
                             </h3>
                             <p className="text-blue-100">
-                                Robust implementations you can trust
+                                {t("components.CTA.secureReliableDesc")}
                             </p>
                         </div>
                         <div className="flex flex-col items-center text-center">
@@ -69,18 +69,17 @@ const CTA = () => {
                                 <Zap className="w-8 h-8 text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-white mb-2">
-                                Drive Efficiency
+                                {t("components.CTA.driveEfficiency")}
                             </h3>
                             <p className="text-blue-100">
-                                Automate for maximum impact
+                                {t("components.CTA.driveEfficiencyDesc")}
                             </p>
                         </div>
                     </div>
 
-                    {/* Removed the "No credit card required" line as it implies a product trial, not a service consultation. */}
                     <div className="mt-12 text-center">
                         <p className="text-blue-100 text-sm">
-                            Your custom AI journey starts here.
+                            {t("components.CTA.customJourney")}
                         </p>
                     </div>
                 </div>

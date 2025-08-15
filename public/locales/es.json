@@ -1,0 +1,437 @@
+{
+    "main": {
+        "title": "SmartNode Solutions - Automatización para Pequeñas Empresas",
+        "description": "Optimiza tu flujo de trabajo con nuestras potentes soluciones de automatización con IA. Diseñado para equipos modernos."
+    },
+    "about": {
+        "team": [
+            {
+                "name": "Javier Noguera",
+                "role": "CEO y Cofundador",
+                "bio": "Javier aporta una combinación única de ingeniería y experiencia en low-code, construyendo la base técnica para nuestras soluciones de automatización personalizadas. Es el arquitecto detrás de nuestra misión de simplificar flujos de trabajo complejos.",
+                "avatar": "/javiernoguera202311.jpg"
+            },
+            {
+                "name": "Roselis Perez",
+                "role": "Líder de Gestión de Proyectos",
+                "bio": "Con una Maestría en Gestión de Proyectos, Roselis asegura que cada proyecto de cliente se ejecute a la perfección. Su enfoque en la comunicación clara y la ejecución metódica garantiza que nuestras soluciones generen resultados tangibles.",
+                "avatar": "/roselisperez202311.jpg"
+            }
+        ],
+        "stats": [
+            {
+                "label": "Proyectos Entregados",
+                "value": "50"
+            },
+            {
+                "label": "Industrias Atendidas",
+                "value": "10"
+            },
+            {
+                "label": "ROI Promedio",
+                "value": "300"
+            },
+            {
+                "label": "Horas Ahorradas",
+                "value": "1000"
+            }
+        ],
+        "badge": "Nuestra Historia",
+        "mainTitle": "Simplificando los negocios con Automatización Inteligente",
+        "mainTitleHighlight": "Automatización Inteligente",
+        "mainDescription": "En SmartNode Solutions, creemos que la automatización poderosa debe ser accesible para cualquier empresa, sin importar su tamaño. Nuestra misión es liberar a los dueños de pequeñas empresas y sus equipos de tareas tediosas y repetitivas para que puedan enfocarse en lo que realmente importa: el crecimiento y la innovación.",
+        "missionTitle": "Nuestra Misión",
+        "missionParagraph1": "Estamos dedicados a empoderar a pequeñas y medianas empresas con soluciones de automatización de IA personalizadas. Nuestro enfoque es trabajar contigo para entender tus desafíos únicos y construir flujos de trabajo escalables usando herramientas low-code, no-code y código completo que generen un retorno claro de inversión.",
+        "missionParagraph2": "Nuestra visión es ser el socio de referencia para empresas que buscan aprovechar el poder de la IA para trabajar de forma más inteligente, no más difícil. No solo construimos soluciones; construimos relaciones a largo plazo basadas en confianza, experiencia y un compromiso compartido con tu éxito.",
+        "principles": [
+            "Fundados en el principio de tecnología accesible",
+            "Dedicados a soluciones personalizadas, no productos genéricos",
+            "Experiencia en plataformas low-code, no-code y código completo"
+        ],
+        "whyTitle": "Por qué hacemos lo que hacemos",
+        "whyDescription": "Comenzamos SmartNode Solutions para eliminar las frustraciones diarias causadas por el trabajo manual y repetitivo. Nuestra motivación viene de ver a las empresas prosperar una vez que se liberan de tareas mundanas, permitiéndoles enfocarse en la innovación, la estrategia y servir mejor a sus clientes.",
+        "leadershipTitle": "Conoce a nuestro liderazgo",
+        "leadershipDescription": "Somos un equipo pequeño pero poderoso de constructores y estrategas, unidos por la pasión de resolver problemas empresariales complejos con automatización elegante y efectiva."
+    },
+    "blog": {
+        "badge": "Blog",
+        "title": "Ideas e Historias de SmartNode Solutions",
+        "description": "Mantente al día con las últimas tendencias en productividad, trabajo remoto y colaboración en equipo. Aprende de nuestras experiencias y conocimientos del sector.",
+        "newsletterPrompt": "¿Quieres recibir nuestras últimas publicaciones?"
+    },
+    "contact": {
+        "badge": "Contáctanos",
+        "title": "Comencemos una Conversación",
+        "description": "¿Listo para optimizar tus operaciones y desbloquear nuevo crecimiento? Conéctate con nuestro equipo de expertos en IA para discutir cómo la automatización inteligente puede mejorar tu negocio. Estamos aquí para construir soluciones confiables que generen valor tangible.",
+        "form": {
+            "name": "Nombre",
+            "email": "Correo electrónico",
+            "company": "Empresa",
+            "message": "Mensaje",
+            "send": "Enviar Mensaje",
+            "success": "¡Gracias por tu mensaje! Nos pondremos en contacto contigo en 24 horas.",
+            "error": "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
+            "errorGeneric": "Ocurrió un error. Por favor, inténtalo de nuevo."
+        },
+        "emailSection": {
+            "title": "Envíanos un correo",
+            "general": "General:",
+            "support": "Soporte:",
+            "sales": "Ventas:",
+            "generalEmail": "contact@smartnode.solutions",
+            "supportEmail": "support@smartnode.solutions",
+            "salesEmail": "sales@smartnode.solutions",
+            "description": "Para consultas generales y preguntas de soporte."
+        },
+        "supportHours": {
+            "title": "Horario de soporte",
+            "mondayFriday": "Lunes - Viernes:",
+            "saturday": "Sábado:",
+            "sunday": "Domingo:",
+            "mondayFridayHours": "9AM - 5PM EST",
+            "saturdayHours": "10AM - 4PM EST",
+            "sundayHours": "Cerrado"
+        }
+    },
+    "login": {},
+    "signup": {},
+    "components": {
+        "BlogControls": {
+            "searchPlaceholder": "Buscar publicaciones...",
+            "categories": [
+                "Todos",
+                "Trabajo Remoto",
+                "Productividad",
+                "Seguridad",
+                "Analítica",
+                "Startup",
+                "Trabajo en Equipo"
+            ],
+            "readMore": "Leer más"
+        },
+        "CTA": {
+            "title": "¿Listo para transformar tu flujo de trabajo?",
+            "description": "Descubre cómo la automatización y los flujos de trabajo con IA pueden ahorrarte tiempo, reducir costos y aumentar la productividad. Construyamos juntos el futuro de tu pequeña empresa.",
+            "button": "Agenda tu consulta gratuita",
+            "forSmallBusinesses": "Para pequeñas empresas",
+            "forSmallBusinessesDesc": "Soluciones diseñadas para tu crecimiento",
+            "secureReliable": "Seguro y confiable",
+            "secureReliableDesc": "Implementaciones robustas en las que puedes confiar",
+            "driveEfficiency": "Impulsa la eficiencia",
+            "driveEfficiencyDesc": "Automatiza para lograr el máximo impacto",
+            "customJourney": "Tu viaje personalizado con IA comienza aquí."
+        },
+        "Features": {
+            "title": "Soluciones diseñadas para transformar",
+            "titleHighlight": "Tu negocio",
+            "description": "Ofrecemos servicios integrales de automatización con IA que abordan tus desafíos empresariales únicos, generando mejoras tangibles en todos los departamentos.",
+            "infographic": {
+                "title": "Tu Flujo de Trabajo Automatizado",
+                "nodes": [
+                    {
+                        "label": "Entrada y Datos",
+                        "icon": "Play",
+                        "color": "bg-blue-50 text-blue-800",
+                        "arrowColor": "bg-blue-300"
+                    },
+                    {
+                        "label": "Lógica Personalizada",
+                        "icon": "Settings2",
+                        "color": "bg-purple-50 text-purple-800",
+                        "arrowColor": "bg-purple-300"
+                    },
+                    {
+                        "label": "Salida Automatizada",
+                        "icon": "Check",
+                        "color": "bg-green-50 text-green-800",
+                        "arrowColor": "bg-green-300"
+                    }
+                ]
+            },
+            "statistics": {
+                "title": "El Futuro de tu Empresa",
+                "description": "Nuestra agencia de IA se centra en ofrecer automatización práctica e impactante. Ayudamos a las pequeñas empresas a navegar la complejidad de la IA para implementar soluciones que impulsan el crecimiento real y la excelencia operativa.",
+                "bullets": [
+                    "Flujos de trabajo a medida para ventas, marketing y operaciones",
+                    "Asesoramiento experto en low-code, no-code y código completo",
+                    "Mejoras medibles en tiempo, dinero y productividad"
+                ],
+                "stats": [
+                    {
+                        "label": "Aumento de Productividad",
+                        "value": "94"
+                    },
+                    {
+                        "label": "Horas Ahorradas",
+                        "value": "47"
+                    },
+                    {
+                        "label": "Procesos Automatizados",
+                        "value": "23"
+                    },
+                    {
+                        "label": "Nuevos Clientes",
+                        "value": "18"
+                    }
+                ]
+            },
+            "features": [
+                {
+                    "title": "Automatización de IA a medida",
+                    "description": "Flujos de trabajo de IA personalizados usando low-code, no-code o código completo para adaptarse a las necesidades únicas de tu negocio.",
+                    "icon": "Zap",
+                    "color": "text-yellow-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-2",
+                        "lg": "lg:col-span-2"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-2",
+                        "lg": "lg:row-span-4"
+                    }
+                },
+                {
+                    "title": "Impulsa la productividad",
+                    "description": "Empodera a tu equipo automatizando tareas tediosas, liberándolos para enfocarse en trabajo de alto valor.",
+                    "icon": "Users",
+                    "color": "text-blue-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Ahorro de costos y tiempo",
+                    "description": "Reduce costos operativos y ahorra horas a través de procesos eficientes y automatizados.",
+                    "icon": "Shield",
+                    "color": "text-green-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Ventas y marketing mejorados",
+                    "description": "Implementa IA para nutrir leads, gestionar campañas y personalizar la interacción con clientes.",
+                    "icon": "BarChart",
+                    "color": "text-purple-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Intake y operaciones optimizadas",
+                    "description": "Automatiza la incorporación de clientes, la entrada de datos y los flujos internos para operaciones más fluidas.",
+                    "icon": "Globe",
+                    "color": "text-cyan-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Soluciones escalables",
+                    "description": "Nuestras soluciones están diseñadas para crecer con tu negocio, adaptándose a nuevas demandas.",
+                    "icon": "Smartphone",
+                    "color": "text-pink-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-1",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Menos complicaciones, más control",
+                    "description": "Obtén claridad y control sobre tus procesos con sistemas que trabajan para ti, no en tu contra.",
+                    "icon": "Clock",
+                    "color": "text-orange-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-2",
+                        "lg": "lg:col-span-2"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                },
+                {
+                    "title": "Integración sin fricciones",
+                    "description": "Nos aseguramos de que tus nuevas soluciones de IA se integren perfectamente con tus herramientas y plataformas existentes.",
+                    "icon": "Settings",
+                    "color": "text-indigo-500",
+                    "colSpan": {
+                        "base": "col-span-full",
+                        "md": "md:col-span-2",
+                        "lg": "lg:col-span-1"
+                    },
+                    "rowSpan": {
+                        "base": "row-span-1",
+                        "md": "md:row-span-1",
+                        "lg": "lg:row-span-2"
+                    }
+                }
+            ]
+        },
+        "Footer": {
+            "companyName": "SmartNode Solutions",
+            "description": "Transforma tus operaciones con nuestras soluciones de automatización con IA a medida. Ayudamos a pequeñas empresas a lograr más diseñando flujos de trabajo que realmente se adapten a sus necesidades únicas.",
+            "product": "Producto",
+            "features": "Características",
+            "plans": "Planes",
+            "caseStudies": "Casos de éxito",
+            "company": "Empresa",
+            "about": "Acerca de",
+            "blog": "Blog",
+            "contact": "Contacto",
+            "privacyPolicy": "Política de privacidad",
+            "termsOfService": "Términos de servicio",
+            "cookiePolicy": "Política de cookies",
+            "copyright": "Todos los derechos reservados."
+        },
+        "Header": {
+            "companyName": "SmartNode Solutions",
+            "features": "Características",
+            "plans": "Planes",
+            "about": "Acerca de",
+            "contact": "Contacto",
+            "blog": "Blog",
+            "getInTouch": "Contáctanos",
+            "menu": "Menú",
+            "close": "Cerrar"
+        },
+        "Hero": {
+            "badge": "Impulsando pequeñas empresas con automatización IA",
+            "title": "Optimiza tu flujo de trabajo con Automatización Inteligente",
+            "description": "Flujos de trabajo personalizados con IA para pequeñas empresas. Ahorra tiempo, reduce costos, elimina complicaciones y logra mayor productividad.",
+            "button": "Consulta gratuita",
+            "buttonUrl": "https://calendly.com/smartnode-solutions/30min",
+            "customized": "Personalizado para diversos casos de uso",
+            "secureReliable": "Implementaciones seguras y confiables",
+            "provenROI": "ROI probado y mejoras en eficiencia",
+            "salesAutomationTitle": "Automatización de ventas",
+            "salesAutomationDesc": "Automatiza la calificación de leads, actualizaciones de CRM y seguimientos.",
+            "marketingEfficiencyTitle": "Eficiencia en marketing",
+            "marketingEfficiencyDesc": "Optimiza campañas, programación de contenido y analítica.",
+            "workflowStreamliningTitle": "Optimización de flujos de trabajo",
+            "workflowStreamliningDesc": "Automatiza tareas repetitivas e integra sistemas dispares."
+        },
+        "InfiniteLogos": {
+            "title": "Algunas de las herramientas que usamos para construir tu automatización"
+        },
+        "NewsletterForm": {
+            "placeholder": "Ingresa tu correo electrónico",
+            "button": "Suscribirse",
+            "success": "¡Te has suscrito exitosamente a nuestro boletín!",
+            "error": "No se pudo suscribir. Por favor, inténtalo de nuevo.",
+            "errorGeneric": "Ocurrió un error. Por favor, inténtalo de nuevo."
+        },
+        "Plans": {
+            "title": "Desbloquea el potencial de automatización de tu negocio",
+            "description": "Todo viaje exitoso de automatización comienza con el entendimiento. Hablemos de tus necesidades únicas y cómo nuestras soluciones de IA pueden impulsar la eficiencia y el crecimiento.",
+            "planName": "Agenda tu consulta gratuita",
+            "planDescription": "¿Listo para ver cómo SmartNode Solutions puede transformar tu negocio? Reserva una sesión personalizada 1-a-1 con nuestros expertos.",
+            "features": [
+                "Comprende tus flujos de trabajo y puntos de dolor actuales",
+                "Identifica oportunidades de automatización con IA para tu negocio",
+                "Recibe estrategia de alto nivel y posibles insights de ROI",
+                "Explora un camino claro hacia soluciones personalizadas",
+                "Sin compromiso ni costos ocultos"
+            ],
+            "buttonText": "Reserva tu consulta gratuita",
+            "noObligation": "Sin compromiso",
+            "transparentProcess": "Proceso transparente",
+            "measurableROI": "Enfoque en ROI medible",
+            "expertGuidance": "Guía experta en cada paso",
+            "clientFocused": "Nuestro enfoque siempre es transparente, centrado en el cliente y diseñado para tu éxito."
+        },
+        "Testimonials": {
+            "title": "Impulsando pequeñas empresas",
+            "description": "Escucha directamente a los dueños y equipos de pequeñas empresas que están logrando nuevos niveles de eficiencia y crecimiento con nuestras soluciones de automatización con IA a medida.",
+            "trustedBy": "Confiado por empresas como la tuya",
+            "fiveStar": "Historias de éxito de 5 estrellas",
+            "testimonials": [
+                {
+                    "name": "Maria Sanchez",
+                    "role": "Propietaria",
+                    "company": "Panadería Local",
+                    "content": "¡Nuestras tareas administrativas solían tomar horas! Esta solución de IA lo gestiona todo sin problemas, permitiéndonos enfocarnos en nuestro trabajo. ¡Un cambio total para nuestro negocio!",
+                    "rating": 5
+                },
+                {
+                    "name": "John Miller",
+                    "role": "Director Ejecutivo",
+                    "company": "Boutique de Comercio Electrónico",
+                    "content": "La automatización personalizada implementada por la agencia ha mejorado drásticamente nuestro procesamiento de pedidos y atención al cliente. Es como tener un miembro extra en el equipo.",
+                    "rating": 5
+                },
+                {
+                    "name": "Aisha Khan",
+                    "role": "Gerente de Clínica",
+                    "company": "Clínica Familiar de Salud",
+                    "content": "Necesitábamos una solución específica para la programación y recordatorios de pacientes. Esta agencia entregó un sistema de IA perfecto y adaptado a las necesidades únicas de nuestra clínica.",
+                    "rating": 5
+                },
+                {
+                    "name": "Roberto Gomez",
+                    "role": "Director de Operaciones",
+                    "company": "Innovadores Logísticos",
+                    "content": "Su experiencia en IA para logística es insuperable. La solución personalizada que construyeron optimizó nuestra gestión de inventario y redujo significativamente los errores.",
+                    "rating": 5
+                },
+                {
+                    "name": "Sophia Lee",
+                    "role": "Líder de Marketing",
+                    "company": "Estudio Creativo Digital",
+                    "content": "Pensábamos que la IA era solo para grandes corporaciones, pero esta agencia nos mostró lo accesible y poderosa que es para pequeñas empresas. Nuestras campañas de marketing ahora son más inteligentes y eficientes.",
+                    "rating": 5
+                },
+                {
+                    "name": "Kevin Wong",
+                    "role": "Propietario de Restaurante",
+                    "company": "Bistró Gourmet",
+                    "content": "El enfoque personalizado en la automatización marcó la diferencia. Realmente entendieron nuestros puntos de dolor y entregaron una solución que ha transformado nuestras operaciones diarias.",
+                    "rating": 5
+                }
+            ]
+        },
+        "BlogPostPage": {
+            "backToArticles": "Volver a todos los artículos",
+            "likedArticle": "¿Te gustó este artículo?",
+            "newsletterPrompt": "Únete a nuestro boletín para recibir más contenido exclusivo y novedades directamente en tu correo."
+        }
+    }
+}

@@ -1,9 +1,35 @@
+"use client";
+
 import Link from "next/link";
 import { Workflow } from "lucide-react";
 import { FiInstagram, FiFacebook, FiLinkedin, FiMail } from "react-icons/fi";
+import { useTranslation } from "@/lib/i18n-provider"; // Import the useTranslation hook
 
 const Footer = () => {
+    const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
+
+    // Get the product, company, and legal links from the translation file
+    const productLinks = [
+        { name: t("components.Footer.features"), href: "/features" },
+        { name: t("components.Footer.plans"), href: "/plans" },
+        { name: t("components.Footer.caseStudies"), href: "/case-studies" },
+    ];
+
+    const companyLinks = [
+        { name: t("components.Footer.about"), href: "/about" },
+        { name: t("components.Footer.blog"), href: "/blog" },
+        { name: t("components.Footer.contact"), href: "/contact" },
+    ];
+
+    const legalLinks = [
+        { name: t("components.Footer.privacyPolicy"), href: "/privacy-policy" },
+        {
+            name: t("components.Footer.termsOfService"),
+            href: "/terms-of-service",
+        },
+        { name: t("components.Footer.cookiePolicy"), href: "/cookie-policy" },
+    ];
 
     return (
         <footer className="bg-gray-900 text-white">
@@ -18,36 +44,38 @@ const Footer = () => {
                                 <Workflow className="w-5 h-5 text-white" />
                             </div>
                             <span className="text-xl font-bold">
-                                SmartNode Solutions
+                                {t("components.Footer.companyName")}
                             </span>
                         </Link>
                         <p className="text-gray-400 mb-6 max-w-md">
-                            Transform your operations with our tailored AI
-                            automation solutions. We empower small businesses to
-                            achieve more by designing workflows that truly fit
-                            their unique needs.
+                            {t("components.Footer.description")}
                         </p>
                         <div className="flex space-x-4">
                             <Link
-                                href="#"
+                                href="https://www.instagram.com/smartnode.solutions/"
+                                target="_blank"
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
                                 <FiInstagram className="w-5 h-5" />
                             </Link>
                             <Link
-                                href="#"
+                                href="https://www.facebook.com/profile.php?id=61578950055630"
+                                target="_blank"
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
                                 <FiFacebook className="w-5 h-5" />
                             </Link>
                             <Link
                                 href="#"
+                                target="_blank"
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
                                 <FiLinkedin className="w-5 h-5" />
                             </Link>
                             <Link
-                                href="mailto:smartnode.solutions"
+                                href={`mailto:${t(
+                                    "contact.emailSection.generalEmail"
+                                )}`}
                                 className="text-gray-400 hover:text-white transition-colors"
                             >
                                 <FiMail className="w-5 h-5" />
@@ -56,62 +84,38 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">Product</h3>
+                        <h3 className="text-lg font-semibold mb-4">
+                            {t("components.Footer.product")}
+                        </h3>
                         <ul className="space-y-2">
-                            <li>
-                                <Link
-                                    href="#features"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Features
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#plans"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Plans
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/case-studies"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Case Studies
-                                </Link>
-                            </li>
+                            {productLinks.map((link, index) => (
+                                <li key={index}>
+                                    <Link
+                                        href={link.href}
+                                        className="text-gray-400 hover:text-white transition-colors"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">Company</h3>
+                        <h3 className="text-lg font-semibold mb-4">
+                            {t("components.Footer.company")}
+                        </h3>
                         <ul className="space-y-2">
-                            <li>
-                                <Link
-                                    href="/about"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    About
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/blog"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Blog
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/contact"
-                                    className="text-gray-400 hover:text-white transition-colors"
-                                >
-                                    Contact
-                                </Link>
-                            </li>
+                            {companyLinks.map((link, index) => (
+                                <li key={index}>
+                                    <Link
+                                        href={link.href}
+                                        className="text-gray-400 hover:text-white transition-colors"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
@@ -119,28 +123,19 @@ const Footer = () => {
                 <div className="border-t border-gray-800 mt-12 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-400 text-sm text-center">
-                            © {currentYear} SmartNode Solutions. All rights
-                            reserved.
+                            © {currentYear} {t("components.Footer.companyName")}
+                            . {t("components.Footer.copyright")}
                         </p>
                         <div className="flex gap-6 flex-wrap max-[400px]:justify-center mt-4 md:mt-0">
-                            <Link
-                                href="/privacy"
-                                className="text-gray-400 hover:text-white text-sm transition-colors"
-                            >
-                                Privacy Policy
-                            </Link>
-                            <Link
-                                href="/terms"
-                                className="text-gray-400 hover:text-white text-sm transition-colors"
-                            >
-                                Terms of Service
-                            </Link>
-                            <Link
-                                href="/cookies"
-                                className="text-gray-400 hover:text-white text-sm transition-colors"
-                            >
-                                Cookie Policy
-                            </Link>
+                            {legalLinks.map((link, index) => (
+                                <Link
+                                    key={index}
+                                    href={link.href}
+                                    className="text-gray-400 hover:text-white text-sm transition-colors"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -8,24 +8,23 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-
-const categories = [
-    "All",
-    "Remote Work",
-    "Productivity",
-    "Security",
-    "Analytics",
-    "Startup",
-    "Team Building",
-];
+import { useTranslation } from "@/lib/i18n-provider";
 
 export default function BlogControls({ posts }) {
+    const { t } = useTranslation();
     const [searchQuery, setSearchQuery] = useState("");
-    const [activeCategory, setActiveCategory] = useState("All");
+    const [activeCategory, setActiveCategory] = useState(
+        t("components.BlogControls.categories.0")
+    );
+
+    const categories = t("components.BlogControls.categories", {
+        returnObjects: true,
+    });
 
     const filteredPosts = posts.filter((post) => {
         const matchesCategory =
-            activeCategory === "All" || post.category === activeCategory;
+            activeCategory === categories[0] ||
+            post.category === activeCategory;
         const matchesSearch =
             post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
             post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -41,7 +40,9 @@ export default function BlogControls({ posts }) {
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                     <Input
                         type="text"
-                        placeholder="Search posts..."
+                        placeholder={t(
+                            "components.BlogControls.searchPlaceholder"
+                        )}
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="pl-10 pr-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500 transition-colors"
@@ -50,9 +51,9 @@ export default function BlogControls({ posts }) {
             </div>
 
             <div className="flex flex-wrap justify-center gap-2 mb-12">
-                {categories.map((category) => (
+                {categories.map((category, index) => (
                     <Badge
-                        key={category}
+                        key={index}
                         variant={
                             activeCategory === category ? "default" : "outline"
                         }
@@ -75,7 +76,6 @@ export default function BlogControls({ posts }) {
                         key={post.id}
                         className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm border-0"
                     >
-                        {/* ... Your Card Content (the same as before) ... */}
                         <div className="aspect-video bg-gray-200 rounded-t-lg overflow-hidden">
                             <img
                                 src={post.image}
@@ -124,20 +124,16 @@ export default function BlogControls({ posts }) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex items-center text-xs text-gray-500">
-                                    <Calendar className="w-3 h-3 mr-1" />
-                                    {new Date(post.date).toLocaleDateString()}
-                                </div>
+                                <Link
+                                    href={`/blog/${post.id}`}
+                                    className="block mt-4"
+                                >
+                                    <div className="flex items-center text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium">
+                                        {t("components.BlogControls.readMore")}
+                                        <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                                    </div>
+                                </Link>
                             </div>
-                            <Link
-                                href={`/blog/${post.id}`}
-                                className="block mt-4"
-                            >
-                                <div className="flex items-center text-blue-600 hover:text-blue-800 transition-colors text-sm font-medium">
-                                    Read More
-                                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                                </div>
-                            </Link>
                         </CardContent>
                     </Card>
                 ))}

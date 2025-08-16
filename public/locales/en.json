@@ -164,21 +164,15 @@
                 "nodes": [
                     {
                         "label": "Input & Data",
-                        "icon": "Play",
-                        "color": "bg-blue-50 text-blue-800",
-                        "arrowColor": "bg-blue-300"
+                        "icon": "Play"
                     },
                     {
                         "label": "Custom AI Logic",
-                        "icon": "Settings2",
-                        "color": "bg-purple-50 text-purple-800",
-                        "arrowColor": "bg-purple-300"
+                        "icon": "Settings2"
                     },
                     {
                         "label": "Automated Output",
-                        "icon": "Check",
-                        "color": "bg-green-50 text-green-800",
-                        "arrowColor": "bg-green-300"
+                        "icon": "Check"
                     }
                 ]
             },
@@ -193,19 +187,19 @@
                 "stats": [
                     {
                         "label": "Productivity Boost",
-                        "value": "94"
+                        "value": 94
                     },
                     {
                         "label": "Hours Saved",
-                        "value": "47"
+                        "value": 47
                     },
                     {
                         "label": "Processes Automated",
-                        "value": "23"
+                        "value": 23
                     },
                     {
                         "label": "New Clients",
-                        "value": "18"
+                        "value": 18
                     }
                 ]
             },
@@ -213,130 +207,42 @@
                 {
                     "title": "Tailored AI Automation",
                     "description": "Custom-built AI workflows using low-code, no-code, or full code to fit your unique business needs.",
-                    "icon": "Zap",
-                    "color": "text-yellow-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-2",
-                        "lg": "lg:col-span-2"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-2",
-                        "lg": "lg:row-span-4"
-                    }
+                    "icon": "Zap"
                 },
                 {
                     "title": "Boost Productivity",
                     "description": "Empower your team by automating tedious tasks, freeing them to focus on high-value work.",
-                    "icon": "Users",
-                    "color": "text-blue-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Users"
                 },
                 {
                     "title": "Cost & Time Savings",
                     "description": "Reduce operational costs and save countless hours through efficient, automated processes.",
-                    "icon": "Shield",
-                    "color": "text-green-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Shield"
                 },
                 {
                     "title": "Enhanced Sales & Marketing",
                     "description": "Implement AI for lead nurturing, campaign management, and personalized customer interactions.",
-                    "icon": "BarChart",
-                    "color": "text-purple-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "BarChart"
                 },
                 {
                     "title": "Streamlined Intake & Ops",
                     "description": "Automate client onboarding, data entry, and internal workflows for smoother operations.",
-                    "icon": "Globe",
-                    "color": "text-cyan-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Globe"
                 },
                 {
                     "title": "Scalable Solutions",
                     "description": "Our solutions are designed to grow with your business, adapting to evolving demands.",
-                    "icon": "Smartphone",
-                    "color": "text-pink-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Smartphone"
                 },
                 {
                     "title": "Less Hassle, More Control",
                     "description": "Gain clarity and control over your processes with systems that work for you, not against you.",
-                    "icon": "Clock",
-                    "color": "text-orange-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-2",
-                        "lg": "lg:col-span-2"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Clock"
                 },
                 {
                     "title": "Seamless Integration",
                     "description": "We ensure your new AI solutions integrate smoothly with your existing tools and platforms.",
-                    "icon": "Settings",
-                    "color": "text-indigo-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-2",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Settings"
                 }
             ]
         },

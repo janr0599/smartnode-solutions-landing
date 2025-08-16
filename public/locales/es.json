@@ -164,21 +164,15 @@
                 "nodes": [
                     {
                         "label": "Entrada y Datos",
-                        "icon": "Play",
-                        "color": "bg-blue-50 text-blue-800",
-                        "arrowColor": "bg-blue-300"
+                        "icon": "Play"
                     },
                     {
                         "label": "Lógica Personalizada",
-                        "icon": "Settings2",
-                        "color": "bg-purple-50 text-purple-800",
-                        "arrowColor": "bg-purple-300"
+                        "icon": "Settings2"
                     },
                     {
                         "label": "Salida Automatizada",
-                        "icon": "Check",
-                        "color": "bg-green-50 text-green-800",
-                        "arrowColor": "bg-green-300"
+                        "icon": "Check"
                     }
                 ]
             },
@@ -193,19 +187,19 @@
                 "stats": [
                     {
                         "label": "Mejora de Productividad",
-                        "value": "94"
+                        "value": 94
                     },
                     {
                         "label": "Horas Ahorradas",
-                        "value": "47"
+                        "value": 47
                     },
                     {
                         "label": "Procesos Automatizados",
-                        "value": "23"
+                        "value": 23
                     },
                     {
                         "label": "Nuevos Clientes",
-                        "value": "18"
+                        "value": 18
                     }
                 ]
             },
@@ -213,130 +207,42 @@
                 {
                     "title": "Automatización de IA a medida",
                     "description": "Flujos de trabajo de IA personalizados usando low-code, no-code o código completo para adaptarse a las necesidades únicas de tu negocio.",
-                    "icon": "Zap",
-                    "color": "text-yellow-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-2",
-                        "lg": "lg:col-span-2"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-2",
-                        "lg": "lg:row-span-4"
-                    }
+                    "icon": "Zap"
                 },
                 {
                     "title": "Impulsa la productividad",
                     "description": "Empodera a tu equipo automatizando tareas tediosas, liberándolos para enfocarse en trabajo de alto valor.",
-                    "icon": "Users",
-                    "color": "text-blue-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Users"
                 },
                 {
                     "title": "Ahorro de costos y tiempo",
                     "description": "Reduce costos operativos y ahorra horas a través de procesos eficientes y automatizados.",
-                    "icon": "Shield",
-                    "color": "text-green-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Shield"
                 },
                 {
                     "title": "Ventas y marketing mejorados",
                     "description": "Implementa IA para nutrir leads, gestionar campañas y personalizar la interacción con clientes.",
-                    "icon": "BarChart",
-                    "color": "text-purple-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "BarChart"
                 },
                 {
                     "title": "Intake y operaciones optimizadas",
                     "description": "Automatiza la incorporación de clientes, la entrada de datos y los flujos internos para operaciones más fluidas.",
-                    "icon": "Globe",
-                    "color": "text-cyan-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Globe"
                 },
                 {
                     "title": "Soluciones escalables",
                     "description": "Nuestras soluciones están diseñadas para crecer con tu negocio, adaptándose a nuevas demandas.",
-                    "icon": "Smartphone",
-                    "color": "text-pink-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-1",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Smartphone"
                 },
                 {
                     "title": "Menos complicaciones, más control",
                     "description": "Obtén claridad y control sobre tus procesos con sistemas que trabajan para ti, no en tu contra.",
-                    "icon": "Clock",
-                    "color": "text-orange-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-2",
-                        "lg": "lg:col-span-2"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Clock"
                 },
                 {
                     "title": "Integración sin fricciones",
                     "description": "Nos aseguramos de que tus nuevas soluciones de IA se integren perfectamente con tus herramientas y plataformas existentes.",
-                    "icon": "Settings",
-                    "color": "text-indigo-500",
-                    "colSpan": {
-                        "base": "col-span-full",
-                        "md": "md:col-span-2",
-                        "lg": "lg:col-span-1"
-                    },
-                    "rowSpan": {
-                        "base": "row-span-1",
-                        "md": "md:row-span-1",
-                        "lg": "lg:row-span-2"
-                    }
+                    "icon": "Settings"
                 }
             ]
         },

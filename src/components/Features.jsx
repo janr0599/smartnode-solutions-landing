@@ -45,17 +45,164 @@ const iconMap = {
     Check,
 };
 
+// Hard-coded styling and layout data, separated from translations.
+const featuresStyling = [
+    {
+        icon: "Zap",
+        color: "text-yellow-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-2",
+            lg: "lg:col-span-2",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-2",
+            lg: "lg:row-span-4",
+        },
+    },
+    {
+        icon: "Users",
+        color: "text-blue-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
+    },
+    {
+        icon: "Shield",
+        color: "text-green-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
+    },
+    {
+        icon: "BarChart",
+        color: "text-purple-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
+    },
+    {
+        icon: "Globe",
+        color: "text-cyan-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
+    },
+    {
+        icon: "Smartphone",
+        color: "text-pink-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-1",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
+    },
+    {
+        icon: "Clock",
+        color: "text-orange-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-2",
+            lg: "lg:col-span-2",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
+    },
+    {
+        icon: "Settings",
+        color: "text-indigo-500",
+        colSpan: {
+            base: "col-span-full",
+            md: "md:col-span-2",
+            lg: "lg:col-span-1",
+        },
+        rowSpan: {
+            base: "row-span-1",
+            md: "md:row-span-1",
+            lg: "lg:row-span-2",
+        },
+    },
+];
+
+const infographicStyling = [
+    {
+        icon: "Play",
+        color: "bg-blue-50 text-blue-800",
+        arrowColor: "bg-blue-300",
+    },
+    {
+        icon: "Settings2",
+        color: "bg-purple-50 text-purple-800",
+        arrowColor: "bg-purple-300",
+    },
+    {
+        icon: "Check",
+        color: "bg-green-50 text-green-800",
+        arrowColor: "bg-green-300",
+    },
+];
+
 const Features = () => {
     const { t } = useTranslation();
     const [progressBarWidth, setProgressBarWidth] = useState(0);
     const progressBarRef = useRef(null);
 
-    // Get all content from the Features section of the JSON file
+    // Get all text content from the Features section of the JSON file
     const featuresData =
         t("components.Features", { returnObjects: true }) || {};
-    const features = featuresData.features || [];
-    const infographic = featuresData.infographic || {};
+    const featuresText = featuresData.features || [];
+    const infographicText = featuresData.infographic || {};
     const statistics = featuresData.statistics || {};
+
+    // Merge the text content with the hard-coded styling
+    const features = featuresText.map((feature, index) => ({
+        ...feature,
+        ...featuresStyling[index],
+    }));
+
+    const infographicNodes = (infographicText.nodes || []).map(
+        (node, index) => ({
+            ...node,
+            ...infographicStyling[index],
+        })
+    );
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -102,13 +249,13 @@ const Features = () => {
 
                 <div
                     className="mx-auto grid max-w-5xl gap-4
-                            grid-cols-1
-                            md:grid-cols-2
-                            lg:grid-cols-4
-                            grid-rows-[repeat(8,_minmax(150px,_1fr))]
-                            md:grid-rows-[repeat(auto-fill,_minmax(150px,_1fr))]
-                            lg:grid-rows-6
-                            auto-rows-fr"
+                                grid-cols-1
+                                md:grid-cols-2
+                                lg:grid-cols-4
+                                grid-rows-[repeat(8,_minmax(150px,_1fr))]
+                                md:grid-rows-[repeat(auto-fill,_minmax(150px,_1fr))]
+                                lg:grid-rows-6
+                                auto-rows-fr"
                 >
                     {features.map((feature, index) => {
                         const Icon = iconMap[feature.icon];
@@ -126,12 +273,7 @@ const Features = () => {
                                 )}
                             >
                                 <CardHeader className="pb-1">
-                                    <div
-                                        className={cn(
-                                            "w-6 h-6 rounded-xl bg-gradient-to-r from-gray-50 to-gray-100 flex items-center justify-center mb-4",
-                                            `bg-gradient-to-r from-gray-50 to-gray-100 flex items-center justify-center mb-4`
-                                        )}
-                                    >
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-gray-50 to-gray-100 flex items-center justify-center mb-4">
                                         {Icon && (
                                             <Icon
                                                 className={`w-6 h-6 ${feature.color}`}
@@ -152,10 +294,10 @@ const Features = () => {
                                             <div className="relative w-full max-w-sm">
                                                 <div className="bg-white rounded-2xl shadow-xl p-6 relative z-10 border border-gray-100 overflow-hidden">
                                                     <h4 className="text-md font-semibold text-gray-800 text-center mb-6">
-                                                        {infographic.title}
+                                                        {infographicText.title}
                                                     </h4>
                                                     <div className="flex flex-col items-center justify-center space-y-4 ">
-                                                        {infographic.nodes.map(
+                                                        {infographicNodes.map(
                                                             (node, i) => {
                                                                 const NodeIcon =
                                                                     iconMap[
@@ -182,9 +324,7 @@ const Features = () => {
                                                                             </span>
                                                                         </div>
                                                                         {i <
-                                                                            infographic
-                                                                                .nodes
-                                                                                .length -
+                                                                            infographicNodes.length -
                                                                                 1 && (
                                                                             <div
                                                                                 className={cn(
@@ -230,8 +370,8 @@ const Features = () => {
                                         key={index}
                                         className="flex items-center"
                                     >
-                                        <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                                            <div className="w-2 h-2 bg-white rounded-full" />
+                                        <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                            <Check className="w-4 h-4 text-white" />
                                         </div>
                                         <span className="text-gray-700">
                                             {bullet}

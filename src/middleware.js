@@ -37,13 +37,21 @@ export function middleware(request) {
     if (pathnameIsMissingLocale) {
         const locale = getLocaleFromHeader(request);
         const url = request.nextUrl.clone();
-
         url.pathname = `/${locale}${url.pathname}`;
-
         return NextResponse.redirect(url);
     }
 
-    return NextResponse.next();
+    // **NEW:** Add a header to every request to indicate the current language.
+    const locale = getLocale(request) || DEFAULT_LOCALE;
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set("x-lang", locale);
+
+    // Apply the new headers to the requeAst.
+    return NextResponse.next({
+        request: {
+            headers: requestHeaders,
+        },
+    });
 }
 
 function getLocaleFromHeader(request) {

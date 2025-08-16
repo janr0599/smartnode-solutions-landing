@@ -27,7 +27,7 @@ const CTA = () => {
 
                     <div className="justify-center items-center mb-12">
                         <Link
-                            href={t("Hero.buttonUrl")}
+                            href="https://calendly.com/smartnode-solutions/30min"
                             passHref
                             target="_blank"
                         >

@@ -137,10 +137,11 @@
             "noResults": "No se encontraron casos de éxito que coincidan con tu búsqueda.",
             "industries": [
                 "Todos",
-                "Comercio Electrónico",
+                "E-commerce",
                 "Comercio Minorista",
-                "Servicios Profesionales",
-                "Logística"
+                "Bienes Raíces",
+                "Salud",
+                "Legal"
             ]
         },
         "CTA": {

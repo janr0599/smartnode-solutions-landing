@@ -15,7 +15,7 @@ const Hero = () => {
                 <BackgroundBeams />
             </div>
 
-            <div className="container mx-auto px-4 relative z-10 pointer-events-none">
+            <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center max-w-4xl mx-auto">
                     <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-sm font-medium mb-8">
                         <TrendingUp className="w-4 h-4 mr-2" />

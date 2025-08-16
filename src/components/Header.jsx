@@ -17,6 +17,10 @@ const Header = () => {
     const navItems = [
         { name: t("components.Header.features"), href: `/${locale}#features` },
         { name: t("components.Header.plans"), href: `/${locale}#plans` },
+        {
+            name: t("components.Header.caseStudies"),
+            href: `/${locale}/case-studies`,
+        },
         { name: t("components.Header.about"), href: `/${locale}/about` },
         { name: t("components.Header.contact"), href: `/${locale}/contact` },
         { name: t("components.Header.blog"), href: `/${locale}/blog` },

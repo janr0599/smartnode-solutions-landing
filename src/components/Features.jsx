@@ -1,5 +1,11 @@
 "use client";
 
+/*
+  Ensure Tailwind JIT compiler includes these classes:
+  col-span-full md:col-span-1 md:col-span-2 lg:col-span-1 lg:col-span-2
+  row-span-1 md:row-span-1 md:row-span-2 lg:row-span-2 lg:row-span-4
+*/
+
 import {
     Card,
     CardContent,
@@ -272,7 +278,7 @@ const Features = () => {
                                             }}
                                         />
                                     </div>
-                                    <div className="grid grid-cols-3 gap-4 pt-4">
+                                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
                                         {statistics.stats
                                             ?.slice(1)
                                             ?.map((stat, index) => (

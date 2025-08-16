@@ -37,7 +37,7 @@
             }
         ],
         "badge": "Nuestra Historia",
-        "mainTitle": "Simplificando Negocios Con Automatización Inteligente",
+        "mainTitle": "Simplificando negocios con ",
         "mainTitleHighlight": "Automatización Inteligente",
         "mainDescription": "En SmartNode Solutions, creemos que la automatización poderosa debe ser accesible para cualquier empresa, sin importar su tamaño. Nuestra misión es liberar a los dueños de pequeñas empresas y sus equipos de tareas tediosas y repetitivas para que puedan enfocarse en lo que realmente importa: el crecimiento y la innovación.",
         "missionTitle": "Nuestra Misión",
@@ -53,15 +53,20 @@
         "leadershipTitle": "Conoce a nuestro liderazgo",
         "leadershipDescription": "Somos un equipo pequeño pero poderoso de constructores y estrategas, unidos por la pasión de resolver problemas empresariales complejos con automatización elegante y efectiva."
     },
+    "notFound": {
+        "title": "Ruta de automatización no encontrada",
+        "description": "Parece que el flujo de trabajo que buscas ha sido movido o no existe. Volvamos a una ruta conocida para encontrar una solución.",
+        "button": "Volver a la página principal"
+    },
     "blog": {
         "badge": "Blog",
-        "title": "Ideas e Historias de SmartNode Solutions",
+        "title": "Ideas e historias de SmartNode Solutions",
         "description": "Mantente al día con las últimas tendencias en productividad, trabajo remoto y colaboración en equipo. Aprende de nuestras experiencias y conocimientos del sector.",
         "newsletterPrompt": "¿Quieres recibir nuestras últimas publicaciones?"
     },
     "contact": {
         "badge": "Contáctanos",
-        "title": "Comencemos una Conversación",
+        "title": "Comencemos una conversación",
         "description": "¿Listo para optimizar tus operaciones y desbloquear nuevo crecimiento? Conéctate con nuestro equipo de expertos en IA para discutir cómo la automatización inteligente puede mejorar tu negocio. Estamos aquí para construir soluciones confiables que generen valor tangible.",
         "form": {
             "title": "Envíanos un mensaje",
@@ -96,6 +101,22 @@
     },
     "login": {},
     "signup": {},
+    "successCases": {
+        "badge": "Casos de Éxito",
+        "title": "Historias de transformación empresarial",
+        "description": "Descubre cómo hemos ayudado a empresas como la tuya a optimizar sus operaciones y a alcanzar sus objetivos con automatización inteligente."
+    },
+    "successCasePage": {
+        "backLink": "Volver a Casos de Éxito",
+        "clientLabel": "Cliente",
+        "challengeTitle": "El Reto",
+        "solutionTitle": "La Solución",
+        "resultsTitle": "Los Resultados",
+        "ctaTitle": "¿Listo para transformar tu negocio?",
+        "ctaDescription": "Descubre cómo la automatización puede llevar tu empresa al siguiente nivel. Agenda una consulta gratuita con nosotros.",
+        "ctaButton": "Agendar Consulta Gratuita",
+        "ctaButtonUrl": "https://calendly.com/smartnode-solutions/30min"
+    },
     "components": {
         "BlogControls": {
             "searchPlaceholder": "Buscar publicaciones...",
@@ -110,8 +131,20 @@
             ],
             "readMore": "Leer más"
         },
+        "SuccessCasesControls": {
+            "searchPlaceholder": "Buscar por cliente, industria o título...",
+            "readMore": "Leer caso completo",
+            "noResults": "No se encontraron casos de éxito que coincidan con tu búsqueda.",
+            "industries": [
+                "Todos",
+                "Comercio Electrónico",
+                "Comercio Minorista",
+                "Servicios Profesionales",
+                "Logística"
+            ]
+        },
         "CTA": {
-            "title": "¿Listo Para Transformar Tu Flujo De Trabajo?",
+            "title": "¿Listo para transformar tu flujo de trabajo?",
             "description": "Descubre cómo la automatización y los flujos de trabajo con IA pueden ahorrarte tiempo, reducir costos y aumentar la productividad. Construyamos juntos el futuro de tu pequeña empresa.",
             "button": "Agenda tu consulta gratuita",
             "forSmallBusinesses": "Para pequeñas empresas",
@@ -123,11 +156,11 @@
             "customJourney": "Tu viaje personalizado con IA comienza aquí."
         },
         "Features": {
-            "title": "Soluciones Diseñadas Para Transformar",
-            "titleHighlight": "Tu Negocio",
+            "title": "Soluciones diseñadas para transformar",
+            "titleHighlight": "tu Negocio",
             "description": "Ofrecemos servicios integrales de automatización con IA que abordan tus desafíos empresariales únicos, generando mejoras tangibles en todos los departamentos.",
             "infographic": {
-                "title": "Tu Flujo de Trabajo Automatizado",
+                "title": "Tu flujo de trabajo automatizado",
                 "nodes": [
                     {
                         "label": "Entrada y Datos",
@@ -150,7 +183,7 @@
                 ]
             },
             "statistics": {
-                "title": "El Futuro De Tu Empresa",
+                "title": "El futuro de tu empresa",
                 "description": "Nuestra agencia de IA se centra en ofrecer automatización práctica e impactante. Ayudamos a las pequeñas empresas a navegar la complejidad de la IA para implementar soluciones que impulsan el crecimiento real y la excelencia operativa.",
                 "bullets": [
                     "Flujos de trabajo a medida para ventas, marketing y operaciones",
@@ -159,7 +192,7 @@
                 ],
                 "stats": [
                     {
-                        "label": "Aumento de Productividad",
+                        "label": "Mejora de Productividad",
                         "value": "94"
                     },
                     {
@@ -194,7 +227,7 @@
                     }
                 },
                 {
-                    "title": "Impulsa la Productividad",
+                    "title": "Impulsa la productividad",
                     "description": "Empodera a tu equipo automatizando tareas tediosas, liberándolos para enfocarse en trabajo de alto valor.",
                     "icon": "Users",
                     "color": "text-blue-500",
@@ -210,7 +243,7 @@
                     }
                 },
                 {
-                    "title": "Ahorro de Costos y Tiempo",
+                    "title": "Ahorro de costos y tiempo",
                     "description": "Reduce costos operativos y ahorra horas a través de procesos eficientes y automatizados.",
                     "icon": "Shield",
                     "color": "text-green-500",
@@ -226,7 +259,7 @@
                     }
                 },
                 {
-                    "title": "Ventas y Marketing Mejorados",
+                    "title": "Ventas y marketing mejorados",
                     "description": "Implementa IA para nutrir leads, gestionar campañas y personalizar la interacción con clientes.",
                     "icon": "BarChart",
                     "color": "text-purple-500",
@@ -242,7 +275,7 @@
                     }
                 },
                 {
-                    "title": "Intake y Operaciones Optimizadas",
+                    "title": "Intake y operaciones optimizadas",
                     "description": "Automatiza la incorporación de clientes, la entrada de datos y los flujos internos para operaciones más fluidas.",
                     "icon": "Globe",
                     "color": "text-cyan-500",
@@ -258,7 +291,7 @@
                     }
                 },
                 {
-                    "title": "Soluciones Escalables",
+                    "title": "Soluciones escalables",
                     "description": "Nuestras soluciones están diseñadas para crecer con tu negocio, adaptándose a nuevas demandas.",
                     "icon": "Smartphone",
                     "color": "text-pink-500",
@@ -274,7 +307,7 @@
                     }
                 },
                 {
-                    "title": "Menos Complicaciones, Más Control",
+                    "title": "Menos complicaciones, más control",
                     "description": "Obtén claridad y control sobre tus procesos con sistemas que trabajan para ti, no en tu contra.",
                     "icon": "Clock",
                     "color": "text-orange-500",
@@ -290,7 +323,7 @@
                     }
                 },
                 {
-                    "title": "Integración Sin Fricciones",
+                    "title": "Integración sin fricciones",
                     "description": "Nos aseguramos de que tus nuevas soluciones de IA se integren perfectamente con tus herramientas y plataformas existentes.",
                     "icon": "Settings",
                     "color": "text-indigo-500",
@@ -326,6 +359,7 @@
         "Header": {
             "companyName": "SmartNode Solutions",
             "features": "Características",
+            "caseStudies": "Casos de Éxito",
             "plans": "Planes",
             "about": "Acerca de",
             "contact": "Contacto",
@@ -336,7 +370,7 @@
         },
         "Hero": {
             "badge": "Impulsando pequeñas empresas con automatización IA",
-            "title": "Optimiza Tu Trabajo Con ",
+            "title": "Optimiza tu trabajo con ",
             "titleHighlight": "Automatización Inteligente",
             "description": "Flujos de trabajo personalizados con IA para pequeñas empresas. Ahorra tiempo, reduce costos y logra mayor productividad.",
             "button": "Consulta gratuita",
@@ -362,8 +396,8 @@
             "errorGeneric": "Ocurrió un error. Por favor, inténtalo de nuevo."
         },
         "Plans": {
-            "title": "Desbloquea El Potencial De Automatización De ",
-            "titleHighlight": "Tu Negocio",
+            "title": "Desbloquea el potencial de automatización de ",
+            "titleHighlight": "tu Negocio",
             "description": "Todo viaje exitoso de automatización comienza con el entendimiento. Hablemos de tus necesidades únicas y cómo nuestras soluciones de IA pueden impulsar la eficiencia y el crecimiento.",
             "planName": "Agenda tu consulta gratuita",
             "planDescription": "¿Listo para ver cómo SmartNode Solutions puede transformar tu negocio? Reserva una sesión personalizada 1-a-1 con nuestros expertos.",

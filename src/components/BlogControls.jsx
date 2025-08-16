@@ -66,7 +66,7 @@ export default function BlogControls({ posts }) {
                         variant={
                             activeCategory === category ? "default" : "outline"
                         }
-                        className={`cursor-pointer transition-colors ${
+                        className={`cursor-pointer transition-colors px-4 py-2 text-sm ${
                             activeCategory === category
                                 ? "bg-blue-600 text-white hover:bg-blue-700"
                                 : "hover:bg-blue-100 hover:border-blue-300"

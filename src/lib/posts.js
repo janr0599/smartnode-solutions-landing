@@ -4,19 +4,28 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
+// The base directory for all posts
 const postsDirectory = path.join(process.cwd(), "src/posts");
 
 export function getSortedPostsData(lang) {
-    const fileNames = fs.readdirSync(postsDirectory);
+    // Point to the language-specific subfolder (e.g., 'src/posts/en')
+    const langDirectory = path.join(postsDirectory, lang);
+
+    // Check if the directory for the language exists
+    if (!fs.existsSync(langDirectory)) {
+        return [];
+    }
+
+    const fileNames = fs.readdirSync(langDirectory);
     const allPostsData = fileNames
-        .filter((fileName) => fileName.endsWith(`.${lang}.md`))
+        .filter((fileName) => fileName.endsWith(`.md`)) // Filter for markdown files
         .map((fileName) => {
-            const fullPath = path.join(postsDirectory, fileName);
+            const fullPath = path.join(langDirectory, fileName);
             const fileContents = fs.readFileSync(fullPath, "utf8");
             const matterResult = matter(fileContents);
-            const id = fileName
-                .replace(/\.en\.md$/, "")
-                .replace(/\.es\.md$/, "");
+
+            // The ID is now just the filename without the .md extension
+            const id = fileName.replace(/\.md$/, "");
 
             return {
                 id,
@@ -34,7 +43,8 @@ export function getSortedPostsData(lang) {
 }
 
 export async function getPostData(id, lang) {
-    const fullPath = path.join(postsDirectory, `${id}.${lang}.md`);
+    // Construct the full path using the language subfolder
+    const fullPath = path.join(postsDirectory, lang, `${id}.md`);
 
     if (!fs.existsSync(fullPath)) {
         return null;
@@ -47,6 +57,8 @@ export async function getPostData(id, lang) {
         .use(html)
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
+
+    // The author data parsing logic remains the same
     const authorData =
         typeof matterResult.data.author === "string"
             ? JSON.parse(
@@ -66,18 +78,20 @@ export async function getPostData(id, lang) {
 }
 
 export async function getAllPostIds() {
-    const fileNames = fs.readdirSync(postsDirectory);
-    const postIds = fileNames.map((fileName) => {
-        const id = fileName.replace(/\.en\.md$/, "").replace(/\.es\.md$/, "");
-        return id;
+    const languages = ["en", "es"];
+    let allIds = [];
+
+    languages.forEach((lang) => {
+        const langDirectory = path.join(postsDirectory, lang);
+        if (fs.existsSync(langDirectory)) {
+            const fileNames = fs.readdirSync(langDirectory);
+            const postIds = fileNames.map((fileName) => {
+                const id = fileName.replace(/\.md$/, "");
+                return { params: { id, lang } };
+            });
+            allIds = allIds.concat(postIds);
+        }
     });
 
-    const uniquePostIds = [...new Set(postIds)];
-
-    return uniquePostIds.flatMap((id) => {
-        return [
-            { id, lang: "en" },
-            { id, lang: "es" },
-        ];
-    });
+    return allIds;
 }

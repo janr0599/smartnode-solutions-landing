@@ -37,7 +37,7 @@
             }
         ],
         "badge": "Our Story",
-        "mainTitle": "Simplifying Business With Smart Automation",
+        "mainTitle": "Simplifying Business with Smart Automation",
         "mainTitleHighlight": "Smart Automation",
         "mainDescription": "At SmartNode Solutions, we believe that powerful automation should be accessible to every business, regardless of size. We’re on a mission to free small business owners and their teams from tedious, repetitive tasks so they can focus on what truly matters: growth and innovation.",
         "missionTitle": "Our Mission",
@@ -52,6 +52,11 @@
         "whyDescription": "We started SmartNode Solutions to eliminate the daily frustrations caused by manual, repetitive work. Our motivation comes from seeing businesses thrive once they are freed from mundane tasks, allowing them to focus on innovation, strategy, and serving their customers better.",
         "leadershipTitle": "Meet Our Leadership",
         "leadershipDescription": "We are a small but mighty team of builders and strategists, united by a passion for solving complex business problems with elegant, effective automation."
+    },
+    "notFound": {
+        "title": "Automation Path Not Found",
+        "description": "It seems the workflow you're looking for has been moved or doesn't exist. Let's get you back to a known route and find a solution.",
+        "button": "Return to Homepage"
     },
     "blog": {
         "badge": "Blog",
@@ -96,6 +101,22 @@
     },
     "login": {},
     "signup": {},
+    "successCases": {
+        "badge": "Success Stories",
+        "title": "Business Transformation Stories",
+        "description": "Discover how we have helped businesses like yours to optimize their operations and achieve their goals with intelligent automation."
+    },
+    "successCasePage": {
+        "backLink": "Back to Success Stories",
+        "clientLabel": "Client",
+        "challengeTitle": "The Challenge",
+        "solutionTitle": "The Solution",
+        "resultsTitle": "The Results",
+        "ctaTitle": "Ready to Transform Your Business?",
+        "ctaDescription": "Discover how automation can take your company to the next level. Schedule a free consultation with us.",
+        "ctaButton": "Schedule Free Consultation",
+        "ctaButtonUrl": "https://calendly.com/smartnode-solutions/30min"
+    },
     "components": {
         "BlogControls": {
             "searchPlaceholder": "Search posts...",
@@ -110,8 +131,20 @@
             ],
             "readMore": "Read More"
         },
+        "SuccessCasesControls": {
+            "searchPlaceholder": "Search by client, industry, or title...",
+            "readMore": "Read full case study",
+            "noResults": "No success cases were found that match your search.",
+            "industries": [
+                "All",
+                "E-commerce",
+                "Retail",
+                "Professional Services",
+                "Logistics"
+            ]
+        },
         "CTA": {
-            "title": "Ready To Transform Your Workflow?",
+            "title": "Ready to Transform Your Workflow?",
             "description": "Discover how tailored AI automation and workflow solutions can save you time, cut costs, and boost productivity. Let's build the future of your small business, together.",
             "button": "Schedule Your Free Consultation",
             "forSmallBusinesses": "For Small Businesses",
@@ -123,7 +156,7 @@
             "customJourney": "Your custom AI journey starts here."
         },
         "Features": {
-            "title": "Solutions Crafted To Transform",
+            "title": "Solutions Crafted to Transform",
             "titleHighlight": "Your Business",
             "description": "We provide comprehensive AI automation services that tackle your unique business challenges, delivering tangible improvements across all departments.",
             "infographic": {
@@ -326,6 +359,7 @@
         "Header": {
             "companyName": "SmartNode Solutions",
             "features": "Features",
+            "caseStudies": "Case Studies",
             "plans": "Plans",
             "about": "About",
             "contact": "Contact",
@@ -335,8 +369,8 @@
             "close": "Close"
         },
         "Hero": {
-            "badge": "Empowering Small Businesses With AI Automation",
-            "title": "Streamline Your Workflow With ",
+            "badge": "Empowering Small Businesses with AI Automation",
+            "title": "Streamline Your Workflow with ",
             "titleHighlight": "Smart Automation",
             "description": "Tailored AI-powered workflows for small businesses. Save time, cut costs, reduce hassle, and achieve greater productivity.",
             "button": "Free Consultation",
@@ -382,7 +416,8 @@
             "clientFocused": "Our approach is always transparent, client-focused, and designed for your success."
         },
         "Testimonials": {
-            "title": "Empowering Small Businesses",
+            "title": "Empowering ",
+            "titleHighlight": "Small Businesses",
             "description": "Hear directly from the small business owners and teams who are achieving new levels of efficiency and growth with our tailored AI automation solutions.",
             "trustedBy": "Trusted by businesses like yours",
             "fiveStar": "5-star success stories",

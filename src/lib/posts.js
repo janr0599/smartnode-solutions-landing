@@ -24,7 +24,7 @@ export function getSortedPostsData(lang) {
             const fileContents = fs.readFileSync(fullPath, "utf8");
             const matterResult = matter(fileContents);
 
-            // The ID is now just the filename without the .md extension
+            // **FIX:** The ID is now just the filename without the .md extension.
             const id = fileName.replace(/\.md$/, "");
 
             return {
@@ -43,7 +43,7 @@ export function getSortedPostsData(lang) {
 }
 
 export async function getPostData(id, lang) {
-    // Construct the full path using the language subfolder
+    // **FIX:** Construct the full path without the language suffix in the filename.
     const fullPath = path.join(postsDirectory, lang, `${id}.md`);
 
     if (!fs.existsSync(fullPath)) {
@@ -58,7 +58,6 @@ export async function getPostData(id, lang) {
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
-    // The author data parsing logic remains the same
     const authorData =
         typeof matterResult.data.author === "string"
             ? JSON.parse(
@@ -86,6 +85,7 @@ export async function getAllPostIds() {
         if (fs.existsSync(langDirectory)) {
             const fileNames = fs.readdirSync(langDirectory);
             const postIds = fileNames.map((fileName) => {
+                // **FIX:** The ID is now just the filename without the .md extension.
                 const id = fileName.replace(/\.md$/, "");
                 return { params: { id, lang } };
             });

@@ -6,15 +6,12 @@ import { ArrowLeft, Search, Wrench } from "lucide-react";
 import { getDictionary } from "@/lib/i18n";
 import "@/app/globals.css";
 import { i18n } from "@/i18n-config";
-import { headers } from "next/headers";
 
-// This is a Server Component that reads headers to determine the language.
+// This is a Server Component that now defaults to a single language.
 export default async function NotFound() {
-    const headersList = headers();
-    // Read the custom 'x-lang' header set by the middleware.
-    const lang = headersList.get("x-lang") || i18n.defaultLocale;
-
-    // Fetch the dictionary for the detected language on the server.
+    // **FIX:** Fetch the dictionary for the default language (e.g., 'en').
+    // Reading headers here forces pages to be dynamic, causing build errors.
+    const lang = i18n.defaultLocale;
     const dict = await getDictionary(lang);
     const notFoundContent = dict.notFound || {};
 
@@ -41,7 +38,7 @@ export default async function NotFound() {
                         size="lg"
                         className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 transition-opacity text-lg px-8 py-6 group"
                     >
-                        {/* Link back to the correct language homepage */}
+                        {/* Link back to the default language homepage */}
                         <Link href={`/${lang}`}>
                             <ArrowLeft className="w-5 h-5 mr-2 transition-transform group-hover:-translate-x-1" />
                             {notFoundContent.button}

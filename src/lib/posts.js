@@ -24,10 +24,8 @@ export function getSortedPostsData(lang) {
             const fileContents = fs.readFileSync(fullPath, "utf8");
             const matterResult = matter(fileContents);
 
-            // **FIX:** Correctly remove the language suffix and .md extension
-            const id = fileName
-                .replace(/\.en\.md$/, "")
-                .replace(/\.es\.md$/, "");
+            // The ID is now just the filename without the .md extension.
+            const id = fileName.replace(/\.md$/, "");
 
             return {
                 id,
@@ -45,8 +43,8 @@ export function getSortedPostsData(lang) {
 }
 
 export async function getPostData(id, lang) {
-    // **FIX:** Construct the full path using the language suffix in the filename
-    const fullPath = path.join(postsDirectory, lang, `${id}.${lang}.md`);
+    // Construct the full path without the language suffix in the filename.
+    const fullPath = path.join(postsDirectory, lang, `${id}.md`);
 
     if (!fs.existsSync(fullPath)) {
         return null;
@@ -87,10 +85,8 @@ export async function getAllPostIds() {
         if (fs.existsSync(langDirectory)) {
             const fileNames = fs.readdirSync(langDirectory);
             const postIds = fileNames.map((fileName) => {
-                // **FIX:** Correctly remove the language suffix to get the base ID
-                const id = fileName
-                    .replace(/\.en\.md$/, "")
-                    .replace(/\.es\.md$/, "");
+                // The ID is now just the filename without the .md extension.
+                const id = fileName.replace(/\.md$/, "");
                 return { params: { id, lang } };
             });
             allIds = allIds.concat(postIds);

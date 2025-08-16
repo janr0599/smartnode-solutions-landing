@@ -41,17 +41,8 @@ export function middleware(request) {
         return NextResponse.redirect(url);
     }
 
-    // **NEW:** Add a header to every request to indicate the current language.
-    const locale = getLocale(request) || DEFAULT_LOCALE;
-    const requestHeaders = new Headers(request.headers);
-    requestHeaders.set("x-lang", locale);
-
-    // Apply the new headers to the requeAst.
-    return NextResponse.next({
-        request: {
-            headers: requestHeaders,
-        },
-    });
+    // **FIX:** The header modification has been removed to allow static site generation.
+    return NextResponse.next();
 }
 
 function getLocaleFromHeader(request) {

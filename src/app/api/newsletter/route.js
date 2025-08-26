@@ -8,9 +8,19 @@ const audienceId = "c3a4e09d-9827-4d5a-83ab-9c8691e51138";
 
 export async function POST(request) {
     try {
-        const { email } = await request.json();
+        // 1. Read both email and lang from the request body
+        const { email, lang } = await request.json();
 
-        // 1. Add contact to the Resend audience
+        // Create an instance of the email component to access its translations
+        const emailComponent = WelcomeEmail({
+            subscriberEmail: email,
+            lang: lang,
+        });
+        const subject =
+            WelcomeEmail.translations[lang]?.subject ||
+            WelcomeEmail.translations.en.subject;
+
+        // 2. Add contact to the Resend audience
         const { data: contactData, error: contactError } =
             await resend.contacts.create({
                 email,
@@ -22,14 +32,14 @@ export async function POST(request) {
             return NextResponse.json({ error: contactError }, { status: 500 });
         }
 
-        // 2. Send the welcome email
+        // 3. Send the welcome email
         const { data: emailData, error: emailError } = await resend.emails.send(
             {
                 from: "SmartNode Solutions <contact@updates.smartnode.solutions>",
                 to: [email],
                 replyTo: "contact@smartnode.solutions",
-                subject: "Welcome to SmartNode Solutions!",
-                react: <WelcomeEmail subscriberEmail={email} />,
+                subject: subject, // Use the dynamic subject here
+                react: emailComponent,
             }
         );
 

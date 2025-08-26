@@ -3,10 +3,13 @@
 
 import { useState } from "react";
 import { toast } from "sonner";
-import { useTranslation } from "@/lib/i18n-provider"; // Import the useTranslation hook
+import { useTranslation } from "@/lib/i18n-provider";
+import { useParams } from "next/navigation"; // 1. Import useParams
 
 export default function NewsletterForm() {
     const { t } = useTranslation();
+    const params = useParams(); // 2. Get params from the URL
+    const lang = params.lang; // 3. Extract the language
 
     const [email, setEmail] = useState("");
 
@@ -18,7 +21,8 @@ export default function NewsletterForm() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ email }),
+                // 4. Send the language along with the email
+                body: JSON.stringify({ email, lang }),
             });
 
             if (response.ok) {

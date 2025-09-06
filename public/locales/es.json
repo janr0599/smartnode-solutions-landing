@@ -97,6 +97,13 @@
             "mondayFridayHours": "9AM - 5PM EST",
             "saturdayHours": "10AM - 4PM EST",
             "sundayHours": "Cerrado"
+        },
+        "chat": {
+            "title": "Chatea con nosotros",
+            "description": "Para preguntas rápidas y asistencia inmediata.",
+            "channel": "WhatsApp:",
+            "link": "https://wa.me/message/SZIJQ6JJ757TN1",
+            "phoneNumber": "+1 (646) 914-6335"
         }
     },
     "login": {},

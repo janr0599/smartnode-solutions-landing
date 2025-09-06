@@ -9,9 +9,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 import { useTranslation } from "@/lib/i18n-provider";
+import { MessageCircleQuestionMark } from "lucide-react";
 
 export default function Contact() {
     const { t } = useTranslation();
@@ -239,14 +240,43 @@ export default function Contact() {
                             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
                                 <CardHeader>
                                     <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
+                                        <MessageCircle className="w-5 h-5 mr-2 text-green-500" />
+                                        {t("contact.chat.title")}
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-gray-600 mb-4">
+                                        {t("contact.chat.description")}
+                                    </p>
+                                    <div className="space-y-2">
+                                        <div className="flex items-center">
+                                            <span className="text-sm text-gray-500 w-24">
+                                                {t("contact.chat.channel")}
+                                            </span>
+                                            <a
+                                                href={`${t(
+                                                    "contact.chat.link"
+                                                )}`}
+                                                target="_blank"
+                                                className="text-gray-900 hover:text-blue-600 transition-colors"
+                                            >
+                                                {t("contact.chat.phoneNumber")}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+                                <CardHeader>
+                                    <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
                                         <Clock className="w-5 h-5 mr-2 text-purple-500" />
                                         {t("contact.supportHours.title")}
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
                                     <div className="space-y-2">
-                                        <div className="flex items-center justify-between">
-                                            <span className="text-gray-600">
+                                        <div className="flex items-center">
+                                            <span className="text-sm text-gray-600 w-36">
                                                 {t(
                                                     "contact.supportHours.mondayFriday"
                                                 )}
@@ -257,8 +287,8 @@ export default function Contact() {
                                                 )}
                                             </span>
                                         </div>
-                                        <div className="flex items-center justify-between">
-                                            <span className="text-gray-600">
+                                        <div className="flex items-center">
+                                            <span className="text-sm text-gray-600 w-36">
                                                 {t(
                                                     "contact.supportHours.saturday"
                                                 )}
@@ -269,8 +299,8 @@ export default function Contact() {
                                                 )}
                                             </span>
                                         </div>
-                                        <div className="flex items-center justify-between">
-                                            <span className="text-gray-600">
+                                        <div className="flex items-center">
+                                            <span className="text-sm text-gray-600 w-36">
                                                 {t(
                                                     "contact.supportHours.sunday"
                                                 )}

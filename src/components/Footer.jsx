@@ -51,8 +51,11 @@ const Footer = () => {
                             href={`/${locale}`}
                             className="flex items-center space-x-2 mb-4"
                         >
-                            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            {/* <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                                 <Workflow className="w-5 h-5 text-white" />
+                            </div> */}
+                            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                                <img src="/Logo-white.svg" />
                             </div>
                             <span className="text-xl font-bold">
                                 {t("components.Footer.companyName")}

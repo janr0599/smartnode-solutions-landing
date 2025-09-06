@@ -6,7 +6,8 @@ import { getSortedPostsData } from "@/lib/posts"; // Import the data fetching fu
 import NewsletterForm from "@/components/NewsletterForm";
 import { getDictionary } from "@/lib/i18n"; // Correct server-side import
 
-export default async function Blog({ params: { lang } }) {
+export default async function Blog({ params }) {
+    const { lang } = await params;
     const common = await getDictionary(lang);
     const allPostsData = getSortedPostsData(lang); // Pass the lang parameter here
 

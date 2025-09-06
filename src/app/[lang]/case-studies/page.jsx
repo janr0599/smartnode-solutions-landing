@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { getSortedSuccessCasesData } from "@/lib/successCases"; // Lógica de datos
 import { getDictionary } from "@/lib/i18n";
 
-export default async function SuccessCasesPage({ params: { lang } }) {
+export default async function SuccessCasesPage({ params }) {
+    const { lang } = await params;
     const common = await getDictionary(lang);
     const allCasesData = getSortedSuccessCasesData(lang); // Pasa el idioma
 

@@ -14,7 +14,8 @@ export async function generateStaticParams() {
 
 // NOTE: The <html> and <body> tags are REMOVED from this nested layout.
 export default async function LangLayout({ children, params }) {
-    const common = await getDictionary(params.lang);
+    const { lang } = await params;
+const common = await getDictionary(lang);
     return (
         <I18nProvider dictionary={common}>
             {/* Google Analytics scripts can be placed here. */}

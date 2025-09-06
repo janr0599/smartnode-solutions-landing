@@ -10,7 +10,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 import { getDictionary } from "@/lib/i18n"; // Import the server-side translation function
 
 export default async function BlogPostPage({ params }) {
-    const { id, lang } = params; // Extract the lang parameter from the URL
+    const { id, lang } = await params; // Extract the lang parameter from the URL
 
     const common = await getDictionary(lang); // Fetch translations on the server
     const postData = await getPostData(id, lang); // <-- Correctly pass 'lang' here

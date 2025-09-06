@@ -14,7 +14,8 @@ import {
 } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 
-export default async function SuccessCasePage({ params: { id, lang } }) {
+export default async function SuccessCasePage({ params }) {
+    const { id, lang } = await params;
     const caseData = await getSuccessCaseData(id, lang);
     const common = await getDictionary(lang);
     const t = common.successCasePage; // Traducciones específicas de esta página

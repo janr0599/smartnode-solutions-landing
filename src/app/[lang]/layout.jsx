@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 // NOTE: The <html> and <body> tags are REMOVED from this nested layout.
 export default async function LangLayout({ children, params }) {
     const { lang } = await params;
-const common = await getDictionary(lang);
+    const common = await getDictionary(lang);
     return (
         <I18nProvider dictionary={common}>
             {/* Google Analytics scripts can be placed here. */}
@@ -29,6 +29,24 @@ const common = await getDictionary(lang);
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     gtag('config', 'G-89ENM9L4J1');
+                `}
+            </Script>
+
+            <Script id="chatwoot-widget" strategy="afterInteractive">
+                {`
+                    (function(d,t) {
+                        var BASE_URL="https://chat.smartnode.solutions";
+                        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                        g.src=BASE_URL+"/packs/js/sdk.js";
+                        g.async = true;
+                        s.parentNode.insertBefore(g,s);
+                        g.onload=function(){
+                            window.chatwootSDK.run({
+                                websiteToken: 'UZXBqrJ9SNKpKN4eRLfLEEov',
+                                baseUrl: BASE_URL
+                            })
+                        }
+                    })(document,"script");
                 `}
             </Script>
 

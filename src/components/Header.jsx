@@ -7,6 +7,7 @@ import { Menu, X, Workflow } from "lucide-react";
 import { useTranslation } from "@/lib/i18n-provider";
 import { cn } from "@/lib/utils";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 
 const Header = () => {
     const { t } = useTranslation();
@@ -37,9 +38,15 @@ const Header = () => {
                         {/* <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                             <Workflow className="w-5 h-5 text-white" />
                         </div> */}
-                        <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                        {/* <div className="w-8 h-8 rounded-lg flex items-center justify-center">
                             <img src="/Logo.svg" />
-                        </div>
+                        </div> */}
+                        <Image
+                            src="/Logo.svg"
+                            alt="Company Logo"
+                            width={32}
+                            height={32}
+                        />
                         <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                             {t("components.Header.companyName")}
                         </span>

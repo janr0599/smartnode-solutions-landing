@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Users, Target, Award, Globe } from "lucide-react";
+import { Users, Target, Award, Globe, Check } from "lucide-react";
 import CountUp from "react-countup";
 import { useTranslation } from "@/lib/i18n-provider";
 
@@ -122,7 +122,7 @@ export default function About() {
                                         className="flex items-center"
                                     >
                                         <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                                            <div className="w-2 h-2 bg-white rounded-full" />
+                                            <Check className="w-4 h-4 text-white" />
                                         </div>
                                         <span className="text-gray-700">
                                             {principle}

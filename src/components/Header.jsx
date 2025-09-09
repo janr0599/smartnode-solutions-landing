@@ -38,7 +38,7 @@ const Header = () => {
                             <Workflow className="w-5 h-5 text-white" />
                         </div> */}
                         <Image
-                            src="/SmartNode_Logo.svg"
+                            src="/SMARTNODE_ISOTIPO.svg"
                             alt="Company Logo"
                             width={32}
                             height={32}

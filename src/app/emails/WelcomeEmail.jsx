@@ -100,7 +100,7 @@ const WelcomeEmail = ({ subscriberEmail, lang = "en" }) => {
                         <td align="center">
                             <div style={containerStyle}>
                                 <img
-                                    src="https://res.cloudinary.com/dijjudk6z/image/upload/v1754611763/Logo_and_Name_no_background_rhhfwg.png"
+                                    src="https://res.cloudinary.com/dijjudk6z/image/upload/v1757385586/SMARTNODE_LOGO_BASE_HORIZONTAL_hv1aqs.png"
                                     alt="SmartNode Solutions Logo"
                                     style={logoImageStyle}
                                 />

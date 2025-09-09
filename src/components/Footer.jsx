@@ -56,7 +56,7 @@ const Footer = () => {
                                 <Workflow className="w-5 h-5 text-white" />
                             </div> */}
                             <Image
-                                src="/SmartNode_Logo_White.svg"
+                                src="/SMARTNODE_ISOTIPO_WHITE.svg"
                                 alt="Company Logo"
                                 width={32}
                                 height={32}

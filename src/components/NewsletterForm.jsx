@@ -5,6 +5,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { useTranslation } from "@/lib/i18n-provider";
 import { useParams } from "next/navigation"; // 1. Import useParams
+import { LoaderCircle } from "lucide-react";
 
 export default function NewsletterForm() {
     const { t } = useTranslation();
@@ -12,10 +13,12 @@ export default function NewsletterForm() {
     const lang = params.lang; // 3. Extract the language
 
     const [email, setEmail] = useState("");
+    const [disabled, setDisabled] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            setDisabled(true);
             const response = await fetch("/api/newsletter", {
                 method: "POST",
                 headers: {
@@ -34,6 +37,8 @@ export default function NewsletterForm() {
         } catch (error) {
             console.error("Subscription error:", error);
             toast.error(t("components.NewsletterForm.errorGeneric"));
+        } finally {
+            setDisabled(false);
         }
     };
 
@@ -48,12 +53,21 @@ export default function NewsletterForm() {
                     required
                     className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
-                <button
-                    type="submit"
-                    className="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
-                >
-                    {t("components.NewsletterForm.button")}
-                </button>
+                <div className="flex-shrink-0">
+                    <button
+                        type="submit"
+                        className={`px-6 py-2 text-white rounded-lg transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 w-32 ${
+                            disabled ? "cursor-not-allowed" : "cursor-pointer"
+                        }`}
+                        disabled={disabled}
+                    >
+                        {disabled ? (
+                            <LoaderCircle className="animate-spin h-5 w-5 mx-auto" />
+                        ) : (
+                            t("components.NewsletterForm.button")
+                        )}
+                    </button>
+                </div>
             </div>
         </form>
     );

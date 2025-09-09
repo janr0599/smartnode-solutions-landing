@@ -6,7 +6,6 @@ import { FiInstagram, FiFacebook, FiLinkedin, FiMail } from "react-icons/fi";
 import { useTranslation } from "@/lib/i18n-provider"; // Import the useTranslation hook
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import SmartNode_Logo_White from "../../public/SmartNode_Logo_White.svg";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -57,7 +56,7 @@ const Footer = () => {
                                 <Workflow className="w-5 h-5 text-white" />
                             </div> */}
                             <Image
-                                src={SmartNode_Logo_White}
+                                src="/SmartNode_Logo_White.svg"
                                 alt="Company Logo"
                                 width={32}
                                 height={32}

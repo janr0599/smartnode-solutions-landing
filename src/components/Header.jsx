@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react";
 import { useTranslation } from "@/lib/i18n-provider";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import SmartNode_Logo from "../../public/SmartNode_Logo.svg";
 
 const Header = () => {
     const { t } = useTranslation();
@@ -39,7 +38,7 @@ const Header = () => {
                             <Workflow className="w-5 h-5 text-white" />
                         </div> */}
                         <Image
-                            src={SmartNode_Logo}
+                            src="/SmartNode_Logo.svg"
                             alt="Company Logo"
                             width={32}
                             height={32}

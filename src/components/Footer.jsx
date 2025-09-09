@@ -5,6 +5,8 @@ import { Workflow } from "lucide-react";
 import { FiInstagram, FiFacebook, FiLinkedin, FiMail } from "react-icons/fi";
 import { useTranslation } from "@/lib/i18n-provider"; // Import the useTranslation hook
 import { useParams } from "next/navigation";
+import Image from "next/image";
+import SmartNode_Logo_White from "../../public/SmartNode_Logo_White.svg";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -54,9 +56,12 @@ const Footer = () => {
                             {/* <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                                 <Workflow className="w-5 h-5 text-white" />
                             </div> */}
-                            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-                                <img src="/Logo-white.svg" />
-                            </div>
+                            <Image
+                                src={SmartNode_Logo_White}
+                                alt="Company Logo"
+                                width={32}
+                                height={32}
+                            />
                             <span className="text-xl font-bold">
                                 {t("components.Footer.companyName")}
                             </span>

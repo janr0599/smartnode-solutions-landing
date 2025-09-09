@@ -3,11 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Workflow } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useTranslation } from "@/lib/i18n-provider";
-import { cn } from "@/lib/utils";
 import { useParams } from "next/navigation";
 import Image from "next/image";
+import SmartNode_Logo from "../../public/SmartNode_Logo.svg";
 
 const Header = () => {
     const { t } = useTranslation();
@@ -38,11 +38,8 @@ const Header = () => {
                         {/* <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                             <Workflow className="w-5 h-5 text-white" />
                         </div> */}
-                        {/* <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-                            <img src="/Logo.svg" />
-                        </div> */}
                         <Image
-                            src="/Logo.svg"
+                            src={SmartNode_Logo}
                             alt="Company Logo"
                             width={32}
                             height={32}

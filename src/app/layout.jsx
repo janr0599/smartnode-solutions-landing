@@ -26,8 +26,10 @@ export const metadata = {
 
     // --- Favicons ---
     icons: {
-        icon: "/SMARTNODE_ISOTIPO.svg",
-        shortcut: "/favicon-32x32.png", // Add other favicon sizes
+        icon: [
+            { url: "/SMARTNODE_ISOTIPO.svg", type: "image/svg+xml" },
+            { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+        ],
         apple: "/apple-touch-icon.png",
     },
 
@@ -76,12 +78,16 @@ export const metadata = {
         // creator: siteMetadata.twitterHandle, // Optional
         images: [siteMetadata.image],
     },
+
+    other: {
+        "fb:app_id": "1939763916870955", // Optional: Facebook App ID
+    },
 };
 
 // This is the one and only root layout.
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params }) {
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang={params.lang || "en"} className="scroll-smooth">
             <body className={inter.className}>{children}</body>
         </html>
     );

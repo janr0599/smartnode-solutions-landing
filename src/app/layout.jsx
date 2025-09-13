@@ -9,6 +9,9 @@ export const metadata = {
     title: "SmartNode Solutions - Automation for Small Businesses",
     description:
         "Streamline your workflow with our powerful AI Automation Solutions. Built for modern teams.",
+    icons: {
+        icon: '/SMARTNODE_ISOTIPO.svg',
+    },
 };
 
 // This is the one and only root layout. It provides the html and body tags.

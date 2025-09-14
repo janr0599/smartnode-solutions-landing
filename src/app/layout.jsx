@@ -68,6 +68,7 @@ export const metadata = {
         locale: "en_US",
         alternateLocale: ["es_ES"], // Optional: Add other locales if applicable
         type: "website",
+        appId: "1939763916870955", // Optional: Facebook App ID
     },
 
     // --- Twitter Card (for X sharing) ---
@@ -77,10 +78,6 @@ export const metadata = {
         description: siteMetadata.description,
         // creator: siteMetadata.twitterHandle, // Optional
         images: [siteMetadata.image],
-    },
-
-    other: {
-        "fb:app_id": "1939763916870955", // Optional: Facebook App ID
     },
 };
 

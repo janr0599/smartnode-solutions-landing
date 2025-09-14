@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const siteMetadata = {
     title: "SmartNode Solutions - AI Automation for Small Businesses",
     description:
-        "We help small businesses navigate the complexities of AI to implement solutions that drive real growth and operational excellence. Custom workflows for sales, marketing, and operations.",
+        "We help small businesses navigate the complexities of AI to implement automation solutions that drive real growth and operational excellence. Custom workflows for sales, marketing, and operations.",
     url: "https://www.smartnode.solutions", // Replace with your actual domain
     siteName: "SmartNode Solutions",
     image: "https://res.cloudinary.com/dijjudk6z/image/upload/v1757385586/SMARTNODE_LOGO_BASE_HORIZONTAL_hv1aqs.png", // IMPORTANT: Create and upload this image
